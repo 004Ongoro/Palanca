@@ -55,6 +55,40 @@ window.addEventListener("scroll", () => {
   lastScrollTop = currentScrollTop;
 });
 
+// Theme switch
+const themeSelect = document.getElementById("theme-select");
+const root = document.documentElement;
+
+function applyTheme(mode) {
+  if (mode === "auto") {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    root.setAttribute("data-theme", prefersDark ? "dark" : "light");
+  } else {
+    root.setAttribute("data-theme", mode);
+  }
+}
+
+const savedTheme = localStorage.getItem("theme") || "auto";
+themeSelect.value = savedTheme;
+applyTheme(savedTheme);
+
+themeSelect.addEventListener("change", (e) => {
+  const selectedTheme = e.target.value;
+  localStorage.setItem("theme", selectedTheme);
+  applyTheme(selectedTheme);
+});
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    const current = localStorage.getItem("theme") || "auto";
+    if (current === "auto") {
+      applyTheme("auto");
+    }
+  });
+
 // Infinite Slider Functionality
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
