@@ -25,6 +25,17 @@
   --m-bold: Montserrat-bold;
   --m-semibold: Montserrat-semibold;
   --m-regular: Montserrat-regular;
+
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.translate-container {
+  select {
+    font-size: 1rem;
+    background-color: #2c3e50;
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
 }
 
 .reveal {
@@ -1221,4 +1232,647 @@ textarea.form-input {
 
 .footer-column p {
   font-size: 1rem;
+}
+
+/* ======================== PAGE 404 =================== */
+.not-found {
+  .container {
+    max-width: 800px;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .error-code {
+    font-size: 8rem;
+    font-family: var(--m-bold);
+    color: var(--primary);
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  .nf-message {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nf-description {
+    margin-bottom: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .other-links {
+    margin-top: 2rem;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  .illustration {
+    width: 300px;
+    height: 200px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ghost {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    background-color: #f0f0f0;
+    border-radius: 50px 50px 0 0;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .ghost::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: #f0f0f0;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .eye {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 40px;
+  }
+
+  .eye.left {
+    left: 25px;
+  }
+
+  .eye.right {
+    right: 25px;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* ============================= DESTINATIONS ============================ */
+.destinations-page {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/luanda_city.jpeg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+
+  .search-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50px;
+    padding: 0.5rem;
+    display: flex;
+    box-shadow: var(--card-shadow);
+  }
+
+  .search-container input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 50px;
+  }
+
+  .search-container button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+
+  .search-container button:hover {
+    background-color: #248277;
+  }
+
+  .main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 5%;
+  }
+
+  .filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background-color: var(--secondary);
+    bottom: -10px;
+    left: 0;
+  }
+
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .destination-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s;
+  }
+
+  .destination-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card-image {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+
+  .destination-card:hover .card-image img {
+    transform: scale(1.05);
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .card-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--light-text);
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary);
+  }
+
+  .details-btn {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+  }
+
+  .details-btn:hover {
+    background-color: #d5603f;
+  }
+
+  .featured-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .featured-title .section-title {
+    margin-bottom: 0;
+  }
+
+  .see-all {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .cta-section {
+    background-color: var(--primary);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* ====================================== SERVICES PAGE ================ */
+.services-page {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/dallys\ resort\ -\ mussulo\ in\ luanda.png") center/cover
+        no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Services Section */
+  .services {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  .section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    color: #666;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+  }
+
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .service-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .service-content {
+    padding: 25px;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+
+  .service-description {
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  .service-features {
+    margin-bottom: 20px;
+  }
+
+  .service-features h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+  .service-features ul {
+    padding-left: 20px;
+    color: #666;
+  }
+
+  .service-features li {
+    margin-bottom: 5px;
+  }
+
+  .service-link {
+    display: inline-block;
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .service-link:hover {
+    color: #2980b9;
+  }
+
+  /* Booking Process */
+  .booking-process {
+    background-color: #f1f8fe;
+    padding: 80px 0;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .step {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .step-number {
+    background-color: #3498db;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 20px;
+  }
+
+  .step h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .step {
+      max-width: 100%;
+    }
+  }
+}
+
+/* =========================== GALARY PAGE ====================== */
+.galary-page {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 200px;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.03);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .modal.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+    padding: 0 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  .nav-button:hover {
+    opacity: 1;
+  }
+
+  .prev-button {
+    left: 20px;
+  }
+
+  .next-button {
+    right: 20px;
+  }
+
+  .image-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .nav-button {
+      font-size: 30px;
+      padding: 0 10px;
+    }
+  }
 }

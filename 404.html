@@ -75,30 +75,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="../assets/fa_web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/fa_web/css/all.min.css" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="logo">
-          <img src="../logo.png" alt="logo" />
+          <img src="./logo.png" alt="logo" />
           <h2>Palanca Safari</h2>
         </div>
         <ul class="nav-links">
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../services/">Services</a></li>
-          <li><a href="../destinations/">Destinations</a></li>
-          <li><a href="../galary/">Gallery</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about/">About</a></li>
+          <li><a href="./services/">Services</a></li>
+          <li><a href="./destinations/">Destinations</a></li>
+          <li><a href="./contact/">Contact</a></li>
         </ul>
+
         <div class="translate-container">
           <select name="language-select" id="langs">
             <option value="pt">Portuguese</option>
@@ -118,6 +118,37 @@
         </div>
       </div>
     </nav>
+
+    <section class="section not-found">
+      <div class="container error-container">
+        <div class="error-code">404</div>
+        <h1 class="nf-message">Page Not Found</h1>
+        <div class="illustration">
+          <div class="ghost">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+          </div>
+        </div>
+        <p class="nf-description">
+          Oops! The page you're looking for seems to have vanished into the
+          digital abyss. <br />
+          It might have been moved, deleted or never existed in the first place.
+          <br /><br />
+          <span class="error-highlight"
+            >But don't worry, we'll get you back on track.</span
+          >
+        </p>
+
+        <a href="/" class="btn">Back to Home</a>
+
+        <div class="other-links">
+          <a href="/en/" class="btn-link">English</a>
+          <a href="/es/" class="btn-link">Espanol</a>
+          <a href="/it/" class="btn-link">Italiano</a>
+          <a href="/zh-cn/" class="btn-link">Mandarin</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -184,9 +215,10 @@
     </div>
 
     <!-- js -->
-    <script src="../assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/langs.js"></script>
 
     <!-- fontawesome -->
-    <script src="../assets/fa_web/js/all.min.js"></script>
+    <script src="./assets/fa_web/js/all.min.js"></script>
   </body>
 </html>
