@@ -1,14 +1,14 @@
 @font-face {
-  font-family: Montserrat-regular;
-  src: url("../fonts/Montserrat-Regular.ttf");
+  font-family: Boska-regular;
+  src: url("../fonts/Boska-Regular.ttf");
 }
 @font-face {
-  font-family: Montserrat-semibold;
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-family: Boska-semibold;
+  src: url("../fonts/Boska-Medium.ttf");
 }
 @font-face {
-  font-family: Montserrat-bold;
-  src: url("../fonts/Montserrat-Bold.ttf");
+  font-family: Boska-bold;
+  src: url("../fonts/Boska-Bold.ttf");
 }
 
 :root {
@@ -27,19 +27,19 @@
   --dark-6: #666;
   --dark-d: #f1f8fe;
 
-  --m-bold: Montserrat-bold;
-  --m-semibold: Montserrat-semibold;
-  --m-regular: Montserrat-regular;
+  --m-bold: Boska-bold;
+  --m-semibold: Boska-semibold;
+  --m-regular: Boska-regular;
 
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
-  --primary: #0c2e0d;
-  --secondary: #6b4703;
+  --primary: #0d5cee;
+  --secondary: #cf0340;
   --dark: #ffffff;
-  --light: #141414;
-  --white: #000000;
+  --light: #aca9a9;
+  --white: #ddd8d8;
   --light-gray: #252525;
   --dark-gray: #cccbcb;
   --error-color: #e74c3c;
@@ -86,6 +86,10 @@ body {
   color: #333;
   background-color: var(--light);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .container {
@@ -186,6 +190,7 @@ body {
   overflow: hidden;
   img {
     width: 90px;
+    transform: scale(1.5);
   }
 }
 
