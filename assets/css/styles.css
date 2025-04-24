@@ -62,6 +62,22 @@
   }
 }
 
+.error-message {
+  padding: 1rem;
+  background-color: var(--error-color);
+  color: var(--white);
+  font-size: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  place-content: center;
+}
+
+#results-text {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: none;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -191,6 +207,10 @@ p {
   img {
     width: 90px;
     transform: scale(1.5);
+  }
+
+  h2 {
+    text-align: end;
   }
 }
 
@@ -1308,7 +1328,7 @@ textarea.form-input {
 
   .nf-description {
     margin-bottom: 2rem;
-    color: var(--dark-6);
+    color: var(--footer-color);
     font-size: 1.1rem;
     line-height: 1.6;
   }

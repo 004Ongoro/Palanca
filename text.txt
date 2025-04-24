@@ -97,3 +97,195 @@ Palanca Safari & Travel arranges flying Safaris for clients who would like to ex
 adventure but with a touch of luxury. Scheduled flights depart from Luanda with a timetable
  and connecting different Parks across the country or alternatively private charters can be 
  arranged.
+
+
+====================================================================
+<div class="destinations-grid">
+        <div class="destination-card">
+          <div class="card-image">
+            <img
+              src="../../assets/images/luanda_city.jpeg"
+              alt="Luanda City, Angola"
+            />
+          </div>
+          <div class="card-content">
+            <div class="card-location">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <span>Angola</span>
+            </div>
+            <h3 class="card-title">Luanda City - Angola</h3>
+            <p class="card-description">
+              Experience the culture, and the people of Luanda city of Angola
+            </p>
+            <!-- <div class="card-footer">
+              <span class="price">From $899</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <div class="card-image">
+            <img
+              src="../../assets/images/pungo andongo black stones.jpg"
+              alt="Luanda City, Angola"
+            />
+          </div>
+          <div class="card-content">
+            <div class="card-location">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <span>Angola</span>
+            </div>
+            <h3 class="card-title">Pungo Andongo Black Stones</h3>
+            <p class="card-description">
+              Explore pungo adongo black stones; The Angola's geological rock
+              formations.
+            </p>
+            <!-- <div class="card-footer">
+              <span class="price">From $899</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <div class="card-image">
+            <img
+              src="../../assets/images/mussulo beach - luanda (2).jpg"
+              alt="Luanda City, Angola"
+            />
+          </div>
+          <div class="card-content">
+            <div class="card-location">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <span>Angola</span>
+            </div>
+            <h3 class="card-title">Mussulo Beach</h3>
+            <p class="card-description">
+              Visit Mussulo Beach for an outstanding beach experience
+            </p>
+            <!-- <div class="card-footer">
+              <span class="price">From $899</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <div class="card-image">
+            <img
+              src="../../assets/images/welwitschia mirrabilis never die.jpg"
+              alt="Luanda City, Angola"
+            />
+          </div>
+          <div class="card-content">
+            <div class="card-location">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <span>Angola</span>
+            </div>
+            <h3 class="card-title">Welwitschia Mirrabilis</h3>
+            <p class="card-description">
+              Explore the oldest plant that can survive years without water in
+              the Namib
+            </p>
+            <!-- <div class="card-footer">
+              <span class="price">From $899</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <div class="card-image">
+            <img
+              src="../../assets/images/dallys resort - mussulo in luanda.png"
+              alt="Luanda City, Angola"
+            />
+          </div>
+          <div class="card-content">
+            <div class="card-location">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <span>Angola</span>
+            </div>
+            <h3 class="card-title">Dallys Resort</h3>
+            <p class="card-description">
+              Spend your quality time in the best resort; Dallys resort in
+              Luanda
+            </p>
+            <!-- <div class="card-footer">
+              <span class="price">From $899</span>
+            </div> -->
+          </div>
+        </div>
+        <div class="destination-card">
+          <div class="card-image">
+            <img
+              src="../../assets/images/palanca negra of angola.jpg"
+              alt="Luanda City, Angola"
+            />
+          </div>
+          <div class="card-content">
+            <div class="card-location">
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              <span>Angola</span>
+            </div>
+            <h3 class="card-title">Palanca Negra</h3>
+            <p class="card-description">
+              Experience Angola's outstanding wildlife
+            </p>
+            <!-- <div class="card-footer">
+              <span class="price">From $899</span>
+            </div> -->
+          </div>
+        </div>
+      </div>

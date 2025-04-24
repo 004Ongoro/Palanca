@@ -1,0 +1,44 @@
+[
+  {
+    "country": "Angola",
+    "tags": "Angola",
+    "title": "Luanda City - Angola",
+    "description": "Experience the culture, and the people of Luanda city of Angola",
+    "image": "/assets/images/luanda_city.jpeg"
+  },
+  {
+    "country": "Angola",
+    "tags": "Angola",
+    "title": "Pungo Andongo Black Stones",
+    "description": "Explore pungo adongo black stones; The Angola's geological rock formations.",
+    "image": "/assets/images/pungo andongo black stones.jpg"
+  },
+  {
+    "country": "Angola",
+    "tags": "Angola, beach, enjoy, luanda, mussulo",
+    "title": "Mussulo Beach",
+    "description": "Visit Mussulo Beach for an outstanding beach experience",
+    "image": "/assets/images/mussulo beach - luanda (2).jpg"
+  },
+  {
+    "country": "Angola",
+    "tags": "Angola, wel, mira, billis, bilis",
+    "title": "Welwitschia Mirrabilis",
+    "description": "Explore the oldest plant that can survive years without water in the Namib",
+    "image": "/assets/images/welwitschia mirrabilis never die.jpg"
+  },
+  {
+    "country": "Angola",
+    "tags": "Angola",
+    "title": "Dallys Resort",
+    "description": "Spend your quality time in the best resort; Dallys resort in Luanda",
+    "image": "/assets/images/dallys resort - mussulo in luanda.png"
+  },
+  {
+    "country": "Angola",
+    "tags": "Angola",
+    "title": "Palanca Negra",
+    "description": "Experience Angola's outstanding wildlife",
+    "image": "/assets/images/palanca negra of angola.jpg"
+  }
+]
