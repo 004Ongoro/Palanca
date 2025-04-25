@@ -46,7 +46,7 @@ const search = () => {
           </div>
 `;
 
-    resultsText.textContent = `Showing results for "${query}" (Found ${filteredDestinations.length} items)`;
+    resultsText.textContent = `Showing results for "${query}" (Found ${filteredDestinations.length} destinations)`;
     resultsText.style.display = "block";
     const card = document.createElement("article");
     card.className = "destination-card";

@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palanca Safari & Travel - Our Gallery</title>
+    <title>Contact Us Directly | Palanca Safari & Travel</title>
 
     <meta
       name="description"
-      content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
+      content="Contact Us - Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
     <meta
       name="keywords"
@@ -74,13 +74,13 @@
     />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
   </head>
-  <body class="galary-page">
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
@@ -98,6 +98,7 @@
           <li><a href="../destinations/">Destinations</a></li>
           <li><a href="../galary/">Gallery</a></li>
           <li><a href="../contact/">Contact</a></li>
+
           <div class="translate-container">
             <select name="language-select" id="langs">
               <option value="pt">Portuguese</option>
@@ -111,6 +112,7 @@
             </select>
           </div>
         </ul>
+
         <div class="hamburger">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -119,93 +121,85 @@
       </div>
     </nav>
 
-    <section class="section galary">
+    <section class="section contact">
       <div class="container">
-        <h2 class="section-title">Our Gallery</h2>
-        <div class="gallery" id="gallery">
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/diving_excursions_benguela.jpg"
-              alt="Image 6"
-            />
+        <h1 class="section-title">We Love to Hear From You</h1>
+        <div class="contact-container">
+          <div class="social-contact">
+            <p>
+              Viana<br />Luanda - Angola<br />Phone: (244) 924-200397<br />Email:
+              reservations@palancasafari.com <br />
+              palancasafari.andtravel@gmail.com
+            </p>
+            <h2>Find Us on Social Media</h2>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61554952583256"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/palancasafari"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/+244924200397"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://tiktok.com/@palanca.safari.travel"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
           </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/mussulo_flamingo_bay_resort.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/dallys resort - mussulo in luanda.png"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/mussulo beach - luanda.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/palanca negra of angola.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/pungo andongo black stones.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/roca das mangueiras - mussulo in luanda.png"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/welwitschia mirrabilis never die.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img src="../../assets/images/angola-1.jpg" alt="Image 6" />
-          </div>
-          <div class="gallery-item">
-            <img src="../../assets/images/angola-2.jpg" alt="Image 6" />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/cape dien - cabo ledo.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img
-              src="../../assets/images/fenda_da_tundavala_na_hailu.jpg"
-              alt="Image 6"
-            />
-          </div>
-          <div class="gallery-item">
-            <img src="../../assets/images/fenda_tundavala.jpg" alt="Image 6" />
+          <div class="contact-form-container">
+            <h1 class="form-title">Contact Us</h1>
+            <form id="contactForm">
+              <div class="form-field">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  placeholder=" "
+                  required
+                />
+                <label for="name" class="form-label">Name</label>
+              </div>
+
+              <div class="form-field">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="form-label">Email</label>
+              </div>
+
+              <div class="form-field">
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-input"
+                  placeholder=" "
+                />
+                <label for="phone" class="form-label">Phone (optional)</label>
+              </div>
+
+              <div class="form-field">
+                <textarea
+                  id="message"
+                  class="form-input"
+                  placeholder=" "
+                  required
+                ></textarea>
+                <label for="message" class="form-label">Message</label>
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="submit-button">Send</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Modal -->
-    <div class="modal" id="imageModal">
-      <span class="close-button" id="closeModal">&times;</span>
-      <button class="nav-button prev-button" id="prevButton">&#10094;</button>
-      <div class="modal-content">
-        <img src="" alt="Full-size Image" class="modal-image" id="modalImage" />
-      </div>
-      <button class="nav-button next-button" id="nextButton">&#10095;</button>
-      <div class="image-counter" id="imageCounter">1/6</div>
-    </div>
 
     <!-- Footer -->
     <footer>
@@ -282,9 +276,25 @@
     </div>
 
     <!-- js -->
+    <script>
+      // Form submission handler
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const message = document.getElementById("message").value;
+
+          // Reset form
+          this.reset();
+        });
+    </script>
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/langs.js"></script>
-    <script src="../../assets/js/modal.js"></script>
 
     <!-- fontawesome -->
     <script src="../../assets/fa_web/js/all.min.js"></script>
