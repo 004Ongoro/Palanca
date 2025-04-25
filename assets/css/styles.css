@@ -1,31 +1,40 @@
 @font-face {
   font-family: Boska-regular;
-  src: url("../fonts/Boska-Regular.ttf");
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf");
 }
 @font-face {
   font-family: Boska-semibold;
-  src: url("../fonts/Boska-Medium.ttf");
+  src: url("../fonts/MPLUSRounded1c-Medium.ttf");
 }
 @font-face {
   font-family: Boska-bold;
-  src: url("../fonts/Boska-Bold.ttf");
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf");
 }
 
 :root {
-  --primary: #4caf50;
-  --secondary: #ffa500;
+  /* --color-primary: #4caf50;
+  --color-secondary: #ffa500;
   --dark: #333;
   --light: #f9f9f9;
-  --white: #ffffff;
+  --color-text-light: #ffffff;
   --light-gray: #f5f5f5;
   --dark-gray: #333;
   --error-color: #e74c3c;
   --success-color: #27ae60;
   --third-color: #1d1e1f;
   --footer-color: #2c3e50;
-  --color-gold: #d4af37;
   --dark-6: #666;
-  --dark-d: #f1f8fe;
+  --dark-d: #f1f8fe; */
+
+  --color-gold: #d4af37;
+  --color-primary: #4caf50;
+  --color-secondary: #ffa500;
+  --color-text-dark: #333;
+  --color-text-light: #f9f9f9;
+  --color-bg-dark: #333;
+  --color-bg-light: #f9f9f9;
+  --color-nav: #2c3e50;
+  --color-white: #ffffff;
 
   --m-bold: Boska-bold;
   --m-semibold: Boska-semibold;
@@ -35,20 +44,14 @@
 }
 
 [data-theme="dark"] {
-  --primary: #0d5cee;
-  --secondary: #cf0340;
-  --dark: #ffffff;
-  --light: #aca9a9;
-  --white: #ddd8d8;
-  --light-gray: #252525;
-  --dark-gray: #cccbcb;
-  --error-color: #e74c3c;
-  --success-color: #27ae60;
-  --third-color: #011935;
-  --footer-color: #0f1d2b;
-  --color-gold: #ecbc1d;
-  --dark-6: #d3d2d2;
-  --dark-d: #080808;
+  --color-gold: #795e05;
+  --color-primary: #1047ac;
+  --color-secondary: #ff5e00;
+  --color-text-dark: #f3f2f2;
+  --color-text-light: #000000;
+  --color-bg-dark: #f3f3f3;
+  --color-bg-light: #000000;
+  --color-nav: #021622;
 
   --card-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
@@ -56,16 +59,16 @@
 .translate-container {
   select {
     font-size: 1rem;
-    background-color: var(--third-color);
-    color: var(--white);
-    border: 1px solid var(--white);
+    background-color: var(--color-nav);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
   }
 }
 
 .error-message {
   padding: 1rem;
   background-color: var(--error-color);
-  color: var(--white);
+  color: var(--color-text-light);
   font-size: 2rem;
   border-radius: 1rem;
   display: grid;
@@ -99,8 +102,8 @@
 
 body {
   line-height: 1.6;
-  color: #333;
-  background-color: var(--light);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-light);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -124,8 +127,8 @@ p {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -143,18 +146,18 @@ p {
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid var(--white);
+  border: 2px solid var(--color-white);
 }
 
 .btn-outline:hover {
-  background-color: var(--white);
-  color: var(--primary);
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .btn-link {
   text-decoration: none;
   font-size: 14px;
-  color: var(--primary);
+  color: var(--color-primary);
   font-family: var(--m-semibold);
   position: relative;
   padding: 0.5rem 1rem;
@@ -167,7 +170,7 @@ p {
   bottom: -3px;
   width: 80%;
   height: 2px;
-  background-color: var(--primary);
+  background-color: var(--color-primary);
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.2s ease-in-out;
@@ -180,8 +183,8 @@ p {
 
 /* Navbar Styles */
 .navbar {
-  background-color: var(--third-color);
-  color: white;
+  background-color: var(--color-nav);
+  color: var(--color-text-light);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -206,11 +209,12 @@ p {
   overflow: hidden;
   img {
     width: 90px;
-    transform: scale(1.5);
+    border-radius: 50%;
   }
 
   h2 {
     text-align: end;
+    color: var(--color-white);
   }
 }
 
@@ -221,7 +225,7 @@ p {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -240,7 +244,7 @@ p {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: var(--color-text-light);
   margin: 3px 0;
   transition: 0.4s;
 }
@@ -314,8 +318,8 @@ p {
 
 /* Footer Styles */
 footer {
-  background-color: var(--third-color);
-  color: white;
+  background-color: var(--color-nav);
+  color: var(--color-white);
   padding: 3rem 2rem;
 }
 
@@ -342,7 +346,7 @@ footer {
 }
 
 .footer-column a {
-  color: #ecf0f1;
+  color: var(--color-white);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -375,7 +379,7 @@ footer {
 }
 
 .social-icons a:hover {
-  background-color: #3498db;
+  background-color: #032a94;
 }
 
 .copyright {
@@ -390,10 +394,10 @@ footer {
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
-  background-color: var(--third-color);
-  color: var(--white);
+  background-color: var(--color-nav);
+  color: var(--color-white);
   outline: none;
-  border: 1px solid var(--white);
+  border: 1px solid var(--color-white);
   overflow: hidden;
 }
 
@@ -407,7 +411,7 @@ footer {
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    background-color: var(--third-color);
+    background-color: var(--color-nav);
     flex-direction: column;
     width: 100%;
     top: 70px;
@@ -501,7 +505,7 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 2.5rem;
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .highlight-item > i {
@@ -563,7 +567,7 @@ footer {
   .icon {
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: var(--primary);
+    color: var(--color-primary);
     animation: translateY 1s ease-in-out infinite;
   }
 
@@ -593,7 +597,7 @@ footer {
 .container-inner {
   max-width: 800px;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--color-text-light);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -633,7 +637,7 @@ footer {
 .testimonial-content::before,
 .testimonial-content::after {
   content: '"';
-  color: var(--primary);
+  color: var(--color-primary);
   font-size: 24px;
   font-weight: bold;
   font-family: var(--m-bold);
@@ -650,7 +654,7 @@ footer {
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--primary);
+  border: 3px solid var(--color-primary);
 }
 
 .author-name {
@@ -682,7 +686,7 @@ footer {
 }
 
 .dot.active {
-  background-color: var(--primary);
+  background-color: var(--color-primary);
 }
 
 .slider-btns {
@@ -698,7 +702,7 @@ footer {
 .prev-btn,
 .next-btn {
   background-color: rgba(43, 61, 79, 0.89);
-  color: var(--white);
+  color: var(--color-text-light);
   border: none;
   width: 40px;
   height: 40px;
@@ -715,7 +719,7 @@ footer {
 
 .prev-btn:hover,
 .next-btn:hover {
-  background-color: var(--primary);
+  background-color: var(--color-primary);
   color: var(--third-color);
 }
 
@@ -747,7 +751,7 @@ footer {
 .faq .container {
   max-width: 800px;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--color-text-light);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -817,7 +821,7 @@ footer {
   }
 
   .section {
-    background-color: var(--white);
+    background-color: var(--color-text-light);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -825,7 +829,7 @@ footer {
   }
 
   h2 {
-    color: var(--primary);
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
     border-bottom: 2px solid var(--light-gray);
     padding-bottom: 0.5rem;
@@ -833,7 +837,7 @@ footer {
 
   h3 {
     margin: 1.5rem 0 1rem;
-    color: var(--secondary);
+    color: var(--color-secondary);
   }
   /* Form Styles */
   .form-group {
@@ -860,7 +864,7 @@ footer {
   input:focus,
   select:focus,
   textarea:focus {
-    border-color: var(--primary);
+    border-color: var(--color-primary);
     outline: none;
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
   }
@@ -877,8 +881,8 @@ footer {
 
   .btn {
     padding: 0.8rem 1.5rem;
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -893,7 +897,7 @@ footer {
   }
 
   .btn-alt {
-    background-color: var(--secondary);
+    background-color: var(--color-secondary);
   }
 
   .btn-alt:hover {
@@ -943,7 +947,7 @@ footer {
 
   .package-price {
     font-size: 1.5rem;
-    color: var(--primary);
+    color: var(--color-primary);
     font-weight: bold;
     margin-bottom: 1rem;
   }
@@ -1015,16 +1019,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: var(--color-text-light);
     font-weight: bold;
   }
 
   .step.active .step-circle {
-    background-color: var(--primary);
+    background-color: var(--color-primary);
   }
 
   .step.completed .step-circle {
-    background-color: var(--secondary);
+    background-color: var(--color-secondary);
   }
 
   /* Booking summary */
@@ -1052,7 +1056,7 @@ footer {
   .summary-total {
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--primary);
+    color: var(--color-primary);
   }
 
   @media (max-width: 768px) {
@@ -1070,8 +1074,8 @@ footer {
 input,
 textarea,
 select {
-  background-color: var(--light);
-  color: var(--dark-gray);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
 }
 
 /* ================================= CONTACT CTA ================= */
@@ -1102,8 +1106,8 @@ select {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
   font-size: 2rem;
   border: none;
   display: flex;
@@ -1147,7 +1151,7 @@ select {
     box-shadow: none;
   }
   50% {
-    border-color: var(--primary);
+    border-color: var(--color-primary);
     box-shadow: 0 0 10px 2px rgba(0, 255, 213, 0.7);
   }
 }
@@ -1160,7 +1164,7 @@ select {
   }
 
   p span {
-    color: var(--primary);
+    color: var(--color-primary);
     font-family: var(--m-bold);
   }
 
@@ -1196,7 +1200,7 @@ select {
   .social-icons a {
     background-color: transparent;
     font-size: 2rem;
-    color: var(--primary);
+    color: var(--color-primary);
     transition: transform 0.4s ease-in-out;
   }
 
@@ -1256,7 +1260,7 @@ select {
 
 .form-input:focus,
 .form-input:not(:placeholder-shown) {
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--color-secondary);
   padding: 15px 13px 7px; /* Adjust padding to compensate for thicker border */
 }
 
@@ -1264,8 +1268,8 @@ select {
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-25px);
   font-size: 12px;
-  color: var(--primary);
-  background-color: var(--white);
+  color: var(--color-primary);
+  background-color: var(--color-text-light);
 }
 
 textarea.form-input {
@@ -1274,7 +1278,7 @@ textarea.form-input {
 }
 
 .submit-button {
-  background-color: var(--primary);
+  background-color: var(--color-primary);
   color: white;
   border: none;
   border-radius: 4px;
@@ -1308,7 +1312,7 @@ textarea.form-input {
   .container {
     max-width: 800px;
     padding: 2rem;
-    background-color: var(--white);
+    background-color: var(--color-text-light);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -1316,7 +1320,7 @@ textarea.form-input {
   .error-code {
     font-size: 8rem;
     font-family: var(--m-bold);
-    color: var(--primary);
+    color: var(--color-primary);
     margin-bottom: 1rem;
     line-height: 1;
   }
@@ -1423,7 +1427,7 @@ textarea.form-input {
   .search-container {
     max-width: 700px;
     margin: 0 auto;
-    background: white;
+    background: var(--color-bg-light);
     border-radius: 50px;
     padding: 0.5rem;
     display: flex;
@@ -1440,7 +1444,7 @@ textarea.form-input {
   }
 
   .search-container button {
-    background-color: var(--primary);
+    background-color: var(--color-primary);
     color: white;
     border: none;
     border-radius: 50px;
@@ -1479,9 +1483,9 @@ textarea.form-input {
 
   .filter-btn:hover,
   .filter-btn.active {
-    background-color: var(--primary);
+    background-color: var(--color-primary);
     color: white;
-    border-color: var(--primary);
+    border-color: var(--color-primary);
   }
 
   .section-title {
@@ -1496,7 +1500,7 @@ textarea.form-input {
     position: absolute;
     width: 60%;
     height: 4px;
-    background-color: var(--secondary);
+    background-color: var(--color-secondary);
     bottom: -10px;
     left: 0;
   }
@@ -1509,7 +1513,7 @@ textarea.form-input {
   }
 
   .destination-card {
-    background-color: white;
+    background-color: var(--color-text-light);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--card-shadow);
@@ -1569,11 +1573,11 @@ textarea.form-input {
   .price {
     font-weight: 700;
     font-size: 1.2rem;
-    color: var(--primary);
+    color: var(--color-primary);
   }
 
   .details-btn {
-    background-color: var(--secondary);
+    background-color: var(--color-secondary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -1599,7 +1603,7 @@ textarea.form-input {
   }
 
   .see-all {
-    color: var(--primary);
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     display: flex;
@@ -1608,7 +1612,7 @@ textarea.form-input {
   }
 
   .cta-section {
-    background-color: var(--primary);
+    background-color: var(--color-primary);
     color: white;
     padding: 4rem 5%;
     text-align: center;
@@ -1692,7 +1696,7 @@ textarea.form-input {
   }
 
   .service-card {
-    background-color: var(--white);
+    background-color: var(--color-text-light);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
@@ -1772,7 +1776,7 @@ textarea.form-input {
   }
 
   .step {
-    background-color: var(--white);
+    background-color: var(--color-text-light);
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
@@ -1783,7 +1787,7 @@ textarea.form-input {
 
   .step-number {
     background-color: #3498db;
-    color: var(--white);
+    color: var(--color-text-light);
     width: 50px;
     height: 50px;
     border-radius: 50%;
