@@ -206,6 +206,7 @@ p {
 
   h2 {
     color: var(--color-white);
+    font-family: boska-bold;
   }
 }
 
@@ -213,11 +214,6 @@ p {
   display: flex;
   list-style: none;
   gap: 2rem;
-  height: 100%;
-}
-
-.nav-links li {
-  height: 100%;
 }
 
 .nav-links a {
@@ -235,14 +231,66 @@ p {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  width: 35px;
+  height: 30px;
+  justify-content: space-between;
 }
 
 .bar {
-  width: 25px;
-  height: 3px;
+  height: 4px;
   background-color: var(--color-text-light);
-  margin: 3px 0;
+  transform-origin: left center;
   transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    background-color: var(--color-nav);
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links.active ~ .hamburger {
+    .bar:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 10;
+  }
+
+  .slider-container {
+    height: 100%;
+  }
+
+  .slide h2 {
+    font-size: 1.5rem;
+  }
+
+  .slide p {
+    font-size: 1rem;
+  }
 }
 
 /* =============================== HERO ======================== */
@@ -401,41 +449,6 @@ footer {
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    background-color: var(--color-nav);
-    flex-direction: column;
-    width: 100%;
-    top: 70px;
-    left: 0;
-    padding: 2rem;
-    transform: translateY(-150%);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-links.active {
-    transform: translateY(0);
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .slider-container {
-    height: 100%;
-  }
-
-  .slide h2 {
-    font-size: 1.5rem;
-  }
-
-  .slide p {
-    font-size: 1rem;
   }
 }
 
