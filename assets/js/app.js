@@ -26,6 +26,7 @@ hamburger.addEventListener("click", () => {
 
 // Handle scrolling
 const scrollToTopBtn = document.querySelector(".scroll-up");
+const navBar = document.querySelector(".navbar");
 
 let lastScrollTop = 0;
 let scrollDirection = "down";
@@ -48,8 +49,10 @@ window.addEventListener("scroll", () => {
 
   if (currentScrollTop > scrollThreshold && scrollDirection === "down") {
     scrollToTopBtn.style.bottom = "1rem";
+    navBar.style.top = "-100%";
   } else if (currentScrollTop < scrollThreshold || scrollDirection === "up") {
     scrollToTopBtn.style.bottom = "-100%";
+    navBar.style.top = "0";
   }
 
   lastScrollTop = currentScrollTop;
@@ -88,6 +91,20 @@ window
       applyTheme("auto");
     }
   });
+
+// Active link
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll(".nav-links li a");
+
+  navLinks.forEach((link) => {
+    const linkpath = new URL(link.href).pathname;
+    if (linkpath === currentPath) {
+      link.classList.add("active-link");
+    }
+  });
+});
 
 // Infinite Slider Functionality
 const slider = document.querySelector(".slider");
