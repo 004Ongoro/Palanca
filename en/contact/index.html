@@ -85,9 +85,10 @@
               // these IDs from the previous steps
               emailjs.sendForm('service_uyly99c', 'template_lv13fp2', this)
                   .then(() => {
-                      console.log('SUCCESS!');
+                      document.querySelector(".sbm").textContent ="Email is sent"
                   }, (error) => {
-                      console.log('FAILED...', error);
+                    document.querySelector(".sbm").textContent ="Failed: An error occurred" 
+
                   });
           });
       }
@@ -223,6 +224,7 @@
               <div class="form-footer">
                 <button type="submit" class="submit-button">Send</button>
               </div>
+              <div class="sbm"></div>
             </form>
           </div>
         </div>
