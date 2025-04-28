@@ -68,6 +68,30 @@
         ]
       }
     </script>
+
+    <!-- Emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     <script type="text/javascript">
+      (function() {
+        emailjs.init({
+          publicKey: "ue9cGsLtxU8zHNmeU",
+        });
+      })();
+     </script>
+     <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contactForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // these IDs from the previous steps
+              emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(() => {
+                      console.log('SUCCESS!');
+                  }, (error) => {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
