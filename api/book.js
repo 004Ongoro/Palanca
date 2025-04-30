@@ -20,22 +20,22 @@ module.exports = async function handler(req, res) {
   const paymentOption = req.body.PaymentOption;
   const due = req.body.TotalDue;
 
-  // Validate required fields
-  if (
-    !name ||
-    !email ||
-    !phone ||
-    !destPackage ||
-    !destination ||
-    !dates ||
-    !travelers ||
-    !paymentOption ||
-    !due
-  ) {
-    return res
-      .status(400)
-      .json({ message: "Missing required booking fields." });
-  }
+  // // Validate required fields
+  // if (
+  //   !name ||
+  //   !email ||
+  //   !phone ||
+  //   !destPackage ||
+  //   !destination ||
+  //   !dates ||
+  //   !travelers ||
+  //   !paymentOption ||
+  //   !due
+  // ) {
+  //   return res
+  //     .status(400)
+  //     .json({ message: "Missing required booking fields." });
+  // }
 
   const formattedDue = parseFloat(due).toFixed(2);
   const packageSlug = destPackage.toLowerCase().replace(/\s+/g, "-");
