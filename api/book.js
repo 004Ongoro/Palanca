@@ -106,10 +106,7 @@ const due = req.body.TotalDue;
   `,
 };
 
-
-  try {
-    await transporter.sendMail(mailOptions);
-       const confirmationMailOptions = {
+     const confirmationMailOptions = {
   from: `"Palanca Safari & Travel" <gtechong72@gmail.com>`,
   to: email,
   subject: `Booking Confirmation - Palanca Safari & Travel`,
@@ -157,7 +154,12 @@ const due = req.body.TotalDue;
   `,
 };
 
-       await transporter.sendMail(confirmationMailOptions);
+
+
+  try {
+    await transporter.sendMail(mailOptions);
+       
+await transporter.sendMail(confirmationMailOptions);
 
     return res
       .status(200)
