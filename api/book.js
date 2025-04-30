@@ -9,18 +9,17 @@ export default async function handler(req, res) {
   
   const bookingReceiver = "gtechong72@gmail.com";
 
-  const {
-    name,
-    email,
-    phone,
-    destPackage,
-    destination,
-    travelers,
-    dates,
-    notes,
-    paymentOption,
-    due,
-  } = req.body;
+  const name = req.body.Name;
+const email = req.body.Email;
+const phone = req.body.Phone;
+const destPackage = req.body.Package;
+const destination = req.body.Destination;
+const travelers = req.body.Travelers;
+const dates = req.body.Dates;
+const notes = req.body.Notes;
+const paymentOption = req.body.PaymentOption;
+const due = req.body.TotalDue;
+
   const userEmail = email;
 
   const transporter = nodemailer.createTransport({
