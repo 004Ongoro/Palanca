@@ -7,7 +7,7 @@ module.exports = async function handler(req, res) {
 
   console.log("Incoming Request Body:", req.body);
 
-  const bookingReceiver = "gtechong72@gmail.com";
+  const bookingReceiver = "palancasafari.andtravel@gmail.com";
 
   const name = req.body.Name;
   const email = req.body.Email;
