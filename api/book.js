@@ -123,21 +123,21 @@ const due = req.body.TotalDue;
         </div>
 
         <div style="padding: 20px;">
-          <p>Hello <strong>${Name}</strong>,</p>
+          <p>Hello <strong>${name}</strong>,</p>
           <p>We’ve received your booking and our team is reviewing it. You will receive a follow-up shortly. Below are your booking details for your reference:</p>
 
           <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Package:</td><td style="padding: 8px;">${Package}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Destination:</td><td style="padding: 8px;">${Destination}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Travelers:</td><td style="padding: 8px;">${Travelers}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Dates:</td><td style="padding: 8px;">${Dates}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Payment Option:</td><td style="padding: 8px;">${PaymentOption}</td></tr>
-            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Total Due:</td><td style="padding: 8px;">$${TotalDue}</td></tr>
+            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Package:</td><td style="padding: 8px;">${package}</td></tr>
+            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Destination:</td><td style="padding: 8px;">${destination}</td></tr>
+            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Travelers:</td><td style="padding: 8px;">${travelers}</td></tr>
+            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Dates:</td><td style="padding: 8px;">${dates}</td></tr>
+            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Payment Option:</td><td style="padding: 8px;">${paymentOption}</td></tr>
+            <tr><td style="padding: 8px; font-weight: bold; background: #f0f8ff;">Total Due:</td><td style="padding: 8px;">$${totalDue}</td></tr>
           </table>
 
           ${
             Notes
-              ? `<p style="margin-top: 10px;"><strong>Additional Notes:</strong> ${Notes}</p>`
+              ? `<p style="margin-top: 10px;"><strong>Additional Notes:</strong> ${notes}</p>`
               : ""
           }
 
