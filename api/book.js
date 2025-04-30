@@ -26,13 +26,13 @@ export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: userEmail,
+      user: bookingReceiver,
       pass: "baxhrkzjjlsznotf",
     },
   });
 
   const mailOptions = {
-    from: `"Palanca Safari Booking" <${userEmail}>`,
+    from: `"Palanca Safari Booking" <${bookingReceiver}>`,
     to: bookingReceiver,
     subject: `New Booking From ${name}`,
     text: `
