@@ -1,12 +1,12 @@
 const nodemailer = require("nodemailer");
 
 export default async function handler(req, res) {
-  //   if (req.method !== "POST") {
-  //     return res.status(405).json({ message: "Method not allowed" });
-  //   }
+     if (req.method !== "POST") {
+       return res.status(405).json({ message: "Method not allowed" });
+  }
 
   console.log(req.method);
-  const userEmail = email;
+  
   const bookingReceiver = "gtechong72@gmail.com";
 
   const {
@@ -21,6 +21,7 @@ export default async function handler(req, res) {
     paymentOption,
     due,
   } = req.body;
+  const userEmail = email;
 
   const transporter = nodemailer.createTransport({
     service: "Gmail",
