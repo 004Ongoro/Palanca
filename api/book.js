@@ -5,7 +5,7 @@ export default async function handler(req, res) {
        return res.status(405).json({ message: "Method not allowed" });
   }
 
-  console.log(req.method);
+  console.log("Incoming Request Body:", req.body);
   
   const bookingReceiver = "gtechong72@gmail.com";
 
