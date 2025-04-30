@@ -109,7 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // mailing
 //
 
-
 // Infinite Slider Functionality
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
@@ -410,6 +409,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add 80% of base price for each additional traveler
       totalPrice =
         packagePrice + packagePrice * 0.8 * (parseInt(travelersValue) - 1);
+      dataForm.TotalDue = totalPrice;
     }
 
     // Dates
@@ -466,9 +466,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // Form is valid, show success message and reset
       formSuccess.style.display = "block";
       formError.style.display = "none";
-
-      // TODO: Submit form to backend
-      console.log("Form submitted successfully");
+      console.log(dataForm);
+      submitBooking(dataForm);
 
       // Reset form after successful submission
       setTimeout(() => {
@@ -483,9 +482,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  //data
+  const dataForm = {
+    Name: "",
+    Email: "",
+    Phone: "",
+    Package: "",
+    Destination: "",
+    Travelers: travelers.value,
+    Dates: "",
+    Notes: "NA",
+    PaymentOption: "",
+    TotalDue: "",
+  };
+
+  async function submitBooking(data) {
+    const res = await fetch("https://palanca-kohl.vercel.app/api/book", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+    console.log(result.message);
+  }
+
   // Form validation function
   function validateForm() {
     let isValid = true;
+    dataForm.Travelers = travelers.value;
 
     // First name validation
     const firstName = document.getElementById("first-name");
@@ -511,6 +536,8 @@ document.addEventListener("DOMContentLoaded", function () {
       lastName.style.borderColor = "";
     }
 
+    dataForm.Name = `${firstName.value} ${lastName.value}`;
+
     // Email validation
     const email = document.getElementById("email");
     const emailError = document.getElementById("email-error");
@@ -520,6 +547,7 @@ document.addEventListener("DOMContentLoaded", function () {
       email.style.borderColor = "var(--error-color)";
       isValid = false;
     } else {
+      dataForm.Email = email.value.trim();
       emailError.style.display = "none";
       email.style.borderColor = "";
     }
@@ -534,6 +562,7 @@ document.addEventListener("DOMContentLoaded", function () {
       phone.style.borderColor = "var(--error-color)";
       isValid = false;
     } else {
+      dataForm.Phone = phone.value.trim();
       phoneError.style.display = "none";
       phone.style.borderColor = "";
     }
@@ -545,6 +574,8 @@ document.addEventListener("DOMContentLoaded", function () {
       packageSelect.style.borderColor = "var(--error-color)";
       isValid = false;
     } else {
+      dataForm.Package = packageSelect.value;
+      dataForm.Destination = packageSelect.value | "";
       packageError.style.display = "none";
       packageSelect.style.borderColor = "";
     }
@@ -575,6 +606,7 @@ document.addEventListener("DOMContentLoaded", function () {
       returnDateError.style.display = "none";
       returnDate.style.borderColor = "";
     }
+    dataForm.Dates = `From ${departureDate.value} to ${returnDate.value}`;
 
     // Payment option validation
     const paymentOptionError = document.getElementById("payment-option-error");
@@ -583,6 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
       paymentOption.style.borderColor = "var(--error-color)";
       isValid = false;
     } else {
+      dataForm.PaymentOption = paymentOption.value;
       paymentOptionError.style.display = "none";
       paymentOption.style.borderColor = "";
     }

@@ -2,7 +2,7 @@ document.body.insertAdjacentHTML(
   "afterbegin",
   `<div id="loader">
     <div class="spinner"></div>
-    <h3 class="loading">Loading.... Almost There.</h3>
+    <h3 class="loading">Loading.... Please Wait.</h3>
   </div>`
 );
 
