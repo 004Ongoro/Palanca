@@ -1,48 +1,50 @@
 const supportedLanguages = ["en", "es", "pt", "fr", "it", "hi", "ar", "ru", "bn", "zh"];
 const defaultLanguage = "en";
 
-const currentPath = window.location.pathname;
-const currentLang = currentPath.split("/")[1];
-const savedLang = localStorage.getItem("preferredLang");
-
 document.addEventListener("DOMContentLoaded", () => {
   const languageSelect = document.getElementById("language");
-
   if (!languageSelect) return;
 
-  // Set select dropdown value to currentLang
-  if (supportedLanguages.includes(currentLang)) {
+  const currentPath = window.location.pathname;
+  const pathParts = currentPath.split("/").filter(Boolean); 
+  const currentLang = supportedLanguages.includes(pathParts[0]) ? pathParts[0] : null;
+  const savedLang = localStorage.getItem("preferredLang");
+
+  
+  if (currentLang) {
     languageSelect.value = currentLang;
   }
 
-  // Redirect to saved language if current is not supported
-  if (
-    !supportedLanguages.includes(currentLang) &&
-    savedLang &&
-    supportedLanguages.includes(savedLang)
-  ) {
-    window.location.href = `/${savedLang}/`;
+  
+  if (!currentLang && savedLang && supportedLanguages.includes(savedLang)) {
+    const newPath = `/${savedLang}/${pathParts.join("/")}`;
+    window.location.href = newPath;
     return;
   }
 
-  // Detect browser language if no savedLang
+  // Fallback to browser language
   if (!savedLang) {
     const browserLang = navigator.language.slice(0, 2);
-    if (supportedLanguages.includes(browserLang)) {
-      localStorage.setItem("preferredLang", browserLang);
-      window.location.href = `/${browserLang}/`;
-      return;
-    } else {
-      localStorage.setItem("preferredLang", defaultLanguage);
-      window.location.href = `/${defaultLanguage}/`;
-      return;
-    }
+    const fallbackLang = supportedLanguages.includes(browserLang) ? browserLang : defaultLanguage;
+    localStorage.setItem("preferredLang", fallbackLang);
+    const newPath = `/${fallbackLang}/${pathParts.join("/")}`;
+    window.location.href = newPath;
+    return;
   }
 
-  // Handle select change
+  // Handle language change
   languageSelect.addEventListener("change", () => {
     const selectedLang = languageSelect.value;
     localStorage.setItem("preferredLang", selectedLang);
-    window.location.href = `/${selectedLang}/`;
+
+    const newPathParts = [...pathParts];
+    if (currentLang) {
+      newPathParts[0] = selectedLang; 
+    } else {
+      newPathParts.unshift(selectedLang); 
+    }
+
+    const newPath = `/${newPathParts.join("/")}`;
+    window.location.href = newPath;
   });
 });
