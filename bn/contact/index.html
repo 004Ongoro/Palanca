@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us Directly | Palanca Safari & Travel</title>
+    <title>সরাসরি আমাদের সাথে যোগাযোগ করুন | Palanca Safari & Travel</title>
 
     <meta
       name="description"
-      content="Contact Us - Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
+      content="যোগাযোগ করুন - Palanca Safari & Travel অ্যাঙ্গোলা এবং বিশ্বজুড়ে অবিস্মরণীয় সাফারি, সৈকত ছুটি এবং অ্যাডভেঞ্চার ট্যুর অফার করে। আজই আপনার ব্যক্তিগতকৃত ভ্রমণ অভিজ্ঞতা বুক করুন।"
     />
     <meta
       name="keywords"
-      content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola"
+      content="Palanca Safari, অ্যাঙ্গোলা ট্যুর, অ্যাঙ্গোলা সাফারি, অ্যাঙ্গোলা ভ্রমণ, অ্যাঙ্গোলা সৈকত ছুটি, আফ্রিকান ওয়াইল্ডলাইফ ট্যুর, অ্যাঙ্গোলা, অ্যাডভেঞ্চার ট্র্যাভেল, ভ্রমণ, ট্যুর, কাস্টমাইজড সাফারি, অ্যাঙ্গোলা ট্র্যাভেল এজেন্সি"
     />
     <meta name="author" content="George Ongoro" />
-    <!-- Robots -->
     <meta name="robots" content="index, follow" />
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://www.palankasafari.co.ke" />
 
-    <!-- Open Graph -->
     <meta
       name="og:title"
-      content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours"
+      content="Palanca Safari & Travel - টেইলর-মেড ট্যুরের মাধ্যমে অ্যাঙ্গোলা ও তার বাইরে অনুসন্ধান করুন"
     />
     <meta
       name="og:description"
-      content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
+      content="Palanca Safari & Travel অ্যাঙ্গোলা এবং বিশ্বজুড়ে অবিস্মরণীয় সাফারি, সৈকত ছুটি এবং অ্যাডভেঞ্চার ট্যুর অফার করে। আজই আপনার ব্যক্তিগতকৃত ভ্রমণ অভিজ্ঞতা বুক করুন।"
     />
     <meta name="og:url" content="https://www.palancasafari.co.ke" />
     <meta name="og:type" content="website" />
     <meta name="og:image" content="palanca-kohl.vercel.app/open-graph.png" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
     <meta
       name="twitter:description"
-      content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences."
+      content="কাস্টম সাফারি, সৈকত ভ্রমণ এবং অবিস্মরণীয় ভ্রমণ অভিজ্ঞতার সাথে অ্যাঙ্গোলা এবং তার বাইরে অনুসন্ধান করুন।"
     />
     <meta
       name="twitter:image"
       content="https://www.palancasafari.co.ke/assets/images/jpeg.jpg"
     />
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -53,60 +48,65 @@
         "name": "Palanca Safari & Travel",
         "url": "https://www.palancasafari.co.ke",
         "logo": "https://www.palancasafari.co.ke/assets/images/jpeg.jpg",
-        "description": "Tour and Travel company offering safaris, beach holidays, and scenic adventures across Angola and Africa",
+        "description": "ট্যুর এবং ট্র্যাভেল কোম্পানি অ্যাঙ্গোলা এবং আফ্রিকা জুড়ে সাফারি, সৈকত ছুটি এবং মনোরম অ্যাডভেঞ্চার অফার করে",
         "telephone": "+254714941173",
         "address":{
           "@type": "PostalAddress",
-          "streetAddress": ""
-          "addressLocality": "Nairobi"
+          "streetAddress": "",
+          "addressLocality": "Nairobi",
           "addressCountry": "KE"
         },
         "sameAs": [
-          "https://www.facebook.com/"
-          "https://www.instagram.com/"
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
           "https://www.x.com/"
         ]
       }
     </script>
 
-    <!-- Emailjs -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-     <script type="text/javascript">
-      (function() {
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
         emailjs.init({
           publicKey: "ue9cGsLtxU8zHNmeU",
         });
       })();
-     </script>
-     <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contactForm').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // these IDs from the previous steps
-              emailjs.sendForm('service_uyly99c', 'template_lv13fp2', this)
-                  .then(() => {
-                      document.querySelector(".sbm").textContent ="Email is sent"
-                  }, (error) => {
-                    document.querySelector(".sbm").textContent ="Failed: An error occurred" 
-
-                  });
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // আগের ধাপগুলো থেকে আইডি
+            emailjs
+              .sendForm("service_uyly99c", "template_lv13fp2", this)
+              .then(
+                () => {
+                  document.querySelector(".sbm").textContent = "ইমেইল পাঠানো হয়েছে";
+                },
+                (error) => {
+                  document.querySelector(".sbm").textContent =
+                    "ব্যর্থ: একটি ত্রুটি ঘটেছে";
+                }
+              );
           });
-      }
-  </script>
+      };
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
 
-    <!-- Favicon -->
     <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
 
-    <!-- fontawesome -->
     <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="logo">
@@ -117,23 +117,23 @@
           </h2>
         </div>
         <ul class="nav-links">
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../services/">Services</a></li>
-          <li><a href="../destinations/">Destinations</a></li>
-          <li><a href="../galary/">Gallery</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="../">হোম</a></li>
+          <li><a href="../about/">আমাদের সম্পর্কে</a></li>
+          <li><a href="../services/">পরিষেবা</a></li>
+          <li><a href="../destinations/">গন্তব্য</a></li>
+          <li><a href="../galary/">গ্যালারি</a></li>
+          <li><a href="../contact/">যোগাযোগ</a></li>
 
           <div class="translate-container">
             <select name="language-select" id="langs">
-              <option value="pt">Portuguese</option>
-              <option value="es">Espanol</option>
-              <option value="it">Italiano</option>
-              <option value="en">English</option>
-              <option value="fr">Francais</option>
-              <option value="zh">Zhongwen</option>
-              <option value="zh-cn">Putonghua</option>
-              <option value="ar">AI-Arabiyya</option>
+              <option value="pt">পর্তুগিজ</option>
+              <option value="es">স্প্যানিশ</option>
+              <option value="it">ইতালিয়ান</option>
+              <option value="en">ইংরেজি</option>
+              <option value="fr">ফরাসি</option>
+              <option value="zh">চীনা</option>
+              <option value="zh-cn">মান্দারিন</option>
+              <option value="ar">আরবি</option>
             </select>
           </div>
         </ul>
@@ -148,17 +148,18 @@
 
     <section class="section contact">
       <div class="container">
-        <h1 class="section-title">We Love to Hear From You</h1>
+        <h1 class="section-title">আমরা আপনার কাছ থেকে শুনতে ভালোবাসি</h1>
         <div class="contact-container">
           <div class="social-contact">
             <p>
-              Viana<br />Luanda - Angola<br />Phone: (244) 924-200397<br />Email:
+              ভিয়ানা<br />লুয়ান্ডা - অ্যাঙ্গোলা<br />ফোন: (244) 924-200397<br />ইমেইল:
               reservations@palancasafari.com <br />
               palancasafari.andtravel@gmail.com
             </p>
-            <h2>Find Us on Social Media</h2>
+            <h2>আমাদেরকে সামাজিক মাধ্যমে খুঁজুন</h2>
             <div class="social-icons">
-              <a href="https://www.facebook.com/profile.php?id=61554952583256"
+              <a
+                href="https://www.facebook.com/profile.php?id=61554952583256"
                 ><i class="fab fa-facebook"></i
               ></a>
               <a href="https://www.instagram.com/palancasafari"
@@ -173,7 +174,7 @@
             </div>
           </div>
           <div class="contact-form-container">
-            <h1 class="form-title">Contact Us</h1>
+            <h1 class="form-title">যোগাযোগ করুন</h1>
             <form id="contactForm">
               <div class="form-field">
                 <input
@@ -184,7 +185,7 @@
                   placeholder=" "
                   required
                 />
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label">নাম</label>
               </div>
 
               <div class="form-field">
@@ -196,7 +197,7 @@
                   placeholder=" "
                   required
                 />
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">ইমেইল</label>
               </div>
 
               <div class="form-field">
@@ -207,7 +208,7 @@
                   class="form-input"
                   placeholder=" "
                 />
-                <label for="phone" class="form-label">Phone (optional)</label>
+                <label for="phone" class="form-label">ফোন (ঐচ্ছিক)</label>
               </div>
 
               <div class="form-field">
@@ -218,11 +219,11 @@
                   placeholder=" "
                   required
                 ></textarea>
-                <label for="message" class="form-label">Message</label>
+                <label for="message" class="form-label">বার্তা</label>
               </div>
 
               <div class="form-footer">
-                <button type="submit" class="submit-button">Send</button>
+                <button type="submit" class="submit-button">প্রেরণ করুন</button>
               </div>
               <div class="sbm"></div>
             </form>
@@ -231,50 +232,50 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-column">
           <h3>Palanca Safari & Travel</h3>
           <p>
-            At Palanca Safari & Travel, we create journeys inspired by passion -
-            for people, wildlife, and the breathtaking landscapes of Angola and
-            the world. Whether you're craving a beach holiday, thrilling safari,
-            or mountain adventure, we're here to make your dream trip come true.
+            Palanca Safari & Travel-এ, আমরা আবেগ দ্বারা অনুপ্রাণিত ভ্রমণ তৈরি করি -
+            মানুষ, বন্যপ্রাণী এবং অ্যাঙ্গোলা ও বিশ্বের শ্বাসরুদ্ধকর প্রাকৃতিক দৃশ্যের জন্য।
+            আপনি সৈকত ছুটি, রোমাঞ্চকর সাফারি, বা পর্বত অভিযান কামনা করুন না কেন,
+            আমরা আপনার স্বপ্নের ভ্রমণকে সত্যি করতে এখানে আছি।
           </p>
         </div>
         <div class="footer-column">
-          <h3>Quick Links</h3>
+          <h3>দ্রুত লিঙ্ক</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#">হোম</a></li>
+            <li><a href="#">গন্তব্য</a></li>
+            <li><a href="#">প্যাকেজ</a></li>
+            <li><a href="#">যোগাযোগ করুন</a></li>
+            <li><a href="#">আমাদের সম্পর্কে</a></li>
           </ul>
         </div>
         <div class="footer-column">
-          <h3>Legal</h3>
+          <h3>আইনগত</h3>
           <ul>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Refund policy</a></li>
+            <li><a href="#">পরিষেবার শর্তাবলী</a></li>
+            <li><a href="#">ফেরতের নীতি</a></li>
           </ul>
-          <h3>Change Theme</h3>
+          <h3>থিম পরিবর্তন করুন</h3>
           <select name="theme-select" id="theme-select">
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-            <option value="auto">Auto</option>
+            <option value="dark">গাঢ়</option>
+            <option value="light">আলো</option>
+            <option value="auto">স্বয়ংক্রিয়</option>
           </select>
         </div>
         <div class="footer-column">
-          <h3>Contact Us</h3>
+          <h3>যোগাযোগ করুন</h3>
           <p>
-            Viana<br />Luanda, Angola<br />Phone: (244) 924-200397<br />Email:
+            ভিয়ানা<br />লুয়ান্ডা, অ্যাঙ্গোলা<br />ফোন: (244) 924-200397<br />ইমেইল:
             reservations@palancasafari.com <br />
             palancasafari.andtravel@gmail.com
           </p>
           <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61554952583256"
+            <a
+              href="https://www.facebook.com/profile.php?id=61554952583256"
               ><i class="fab fa-facebook"></i
             ></a>
             <a href="https://www.instagram.com/palancasafari"
@@ -294,10 +295,9 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        Palanca Safari & Travel. All Rights Reserved.
+        Palanca Safari & Travel। সর্বস্বত্ব সংরক্ষিত।
       </div>
     </footer>
-    <!-- scroll to top -->
     <div class="scroll-up">
       <a href="#" class="circular-btn blinking">
         <i class="fas fa-arrow-up jumping"></i>
@@ -305,29 +305,10 @@
       <div class="blinking-border"></div>
     </div>
 
-    <!-- js -->
-    <script>
-      // Form submission handler
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          // Get form data
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const phone = document.getElementById("phone").value;
-          const message = document.getElementById("message").value;
-
-          // Reset form
-          this.reset();
-        });
-    </script>
     <script src="/assets/js/loader.js"></script>
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/langs.js"></script>
 
-    <!-- fontawesome -->
     <script src="../../assets/fa_web/js/all.min.js"></script>
   </body>
 </html>
