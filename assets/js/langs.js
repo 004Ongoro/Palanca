@@ -1,4 +1,4 @@
-const supportedLnaguages = ["en", "es", "pt", "fr", "it", "hi", "ar", "ru", "bn", "zh"];
+const supportedLanguages = ["en", "es", "pt", "fr", "it", "hi", "ar", "ru", "bn", "zh"];
 
 const defaultLanguage = "en";
 
@@ -48,16 +48,16 @@ container.appendChild(select);
 if (!savedLang) {
   const browserLang = navigator.language.slice(0, 2);
 
-  if (supportedLnaguages.includes(browserLang)) {
+  if (supportedLanguages.includes(browserLang)) {
     localStorage.setItem("preferredLang", browserLang);
     window.location.href = `/${browserLang}/`;
   }
 }
 
 if (
-  !supportedLnaguages.includes(currentLang) &&
+  !supportedLanguages.includes(currentLang) &&
   savedLang &&
-  supportedLnaguages.includes(savedLang)
+  supportedLanguages.includes(savedLang)
 ) {
   window.location.href = `/${savedLang}/`;
 }
@@ -65,7 +65,7 @@ if (
 const languageSelect = document.getElementById("language");
 
 if (languageSelect) {
-  if (supportedLnaguages.includes(currentLang)) {
+  if (supportedLanguages.includes(currentLang)) {
     languageSelect.value = currentLang;
   }
 
