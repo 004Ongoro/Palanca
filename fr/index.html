@@ -374,7 +374,8 @@
     <div class="container">
       <div class="section">
         <h2>Réservez votre forfait voyage</h2>
-
+  
+        <!-- Step Indicator -->
         <div class="steps">
           <div class="step active">
             <div class="step-circle">1</div>
@@ -389,7 +390,8 @@
             <div class="step-name">Paiement</div>
           </div>
         </div>
-
+  
+        <!-- Booking Form -->
         <div id="booking-form-container">
           <div class="alert alert-success" id="form-success">
             Votre réservation a bien été soumise ! Nous vous contacterons sous peu.
@@ -398,7 +400,7 @@
             Une erreur s'est produite lors de la soumission de votre réservation. Veuillez vérifier vos informations et
             réessayer.
           </div>
-
+  
           <form id="booking-form">
             <h3>Informations personnelles</h3>
             <div class="form-row">
@@ -406,225 +408,171 @@
                 <div class="form-group">
                   <label for="first-name">Prénom *</label>
                   <input type="text" id="first-name" name="first-name" required />
-                  <div class="error-text" id="first-name-error">
-                    Veuillez saisir votre prénom.
-                  </div>
+                  <div class="error-text" id="first-name-error">Veuillez saisir votre prénom.</div>
                 </div>
               </div>
               <div class="form-col">
                 <div class="form-group">
                   <label for="last-name">Nom *</label>
                   <input type="text" id="last-name" name="last-name" required />
-                  <div class="error-text" id="last-name-error">
-                    Veuillez saisir votre nom.
-                  </div>
+                  <div class="error-text" id="last-name-error">Veuillez saisir votre nom.</div>
                 </div>
               </div>
-
-              <div class="form-row">
-                <div class="form-col">
-                  <div class="form-group">
-                    <label for="email">Adresse e-mail *</label>
-                    <input type="email" id="email" name="email" required />
-                    <div class="error-text" id="email-error">
-                      Veuillez saisir une adresse e-mail valide.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-col">
-                  <div class="form-group">
-                    <label for="phone">Numéro de téléphone *</label>
-                    <input type="tel" id="phone" name="phone" required />
-                    <div class="error-text" id="phone-error">
-                      Veuillez saisir un numéro de téléphone valide.
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <h3>Détails du voyage</h3>
-              <div class="form-group">
-                <label for="package">Forfait ou destination souhaité(e) *</label>
-                <select id="package" name="package" required>
-                  <option value="">Sélectionnez un forfait</option>
-                  <option value="beach-getaway">Escapade à la plage - 1 200 $</option>
-                  <option value="mountain-retreat">
-                    Retraite en montagne - 950 $
-                  </option>
-                  <option value="city-explorer">Exploration urbaine - 1 100 $</option>
-                  <option value="adventure-trek">
-                    Aventure Trek - 1 500 $
-                  </option>
-                  <option value="custom">Destination personnalisée</option>
-                </select>
-                <div class="error-text" id="package-error">
-                  Veuillez sélectionner un forfait
-                </div>
-              </div>
-
-              <div class="form-group" id="custom-destination-group" style="display: none">
-                <label for="custom-destination">Destination personnalisée</label>
-                <input type="text" id="custom-destination" name="custom-destination" />
-              </div>
-
-              <div class="form-group">
-                <label for="travelers">Nombre de voyageurs *</label>
-                <select id="travelers" name="travelers" required>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10+">10+</option>
-                </select>
-                <div class="error-text" id="travelers-error">
-                  Veuillez sélectionner le nombre de voyageurs
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-col">
-                  <div class="form-group">
-                    <label for="departure-date">Date de départ *</label>
-                    <input type="date" id="departure-date" name="departure-date" required />
-                    <div class="error-text" id="departure-date-error">
-                      Veuillez sélectionner une date de départ.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-col">
-                  <div class="form-group">
-                    <label for="return-date">Date de retour *</label>
-                    <input type="date" id="return-date" name="return-date" required />
-                    <div class="error-text" id="return-date-error">
-                      Veuillez sélectionner une date de retour.
-                    </div>
-                  </div>
-                </div>
-
+            </div>
+  
+            <div class="form-row">
+              <div class="form-col">
                 <div class="form-group">
-                  <label for="special-requests">Demandes spéciales ou remarques</label>
-                  <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                  <label for="email">Adresse e-mail *</label>
+                  <input type="email" id="email" name="email" required />
+                  <div class="error-text" id="email-error">Veuillez saisir une adresse e-mail valide.</div>
                 </div>
-
-                <h3>Détails du paiement</h3>
+              </div>
+              <div class="form-col">
                 <div class="form-group">
-                  <label for="payment-option">Option de paiement *</label>
-                  <select id="payment-option" name="payment-option" required>
-                    <option value="">Sélectionnez l'option de paiement</option>
-                    <option value="deposit">Acompte (20 %)</option>
-                    <option value="half">Demi-paiement (50 %)</option>
-                    <option value="full">Paiement intégral (100 %)</option>
-                  </select>
-                  <div class="error-text" id="payment-option-error">
-                    Veuillez sélectionner une option de paiement.
-                  </div>
+                  <label for="phone">Numéro de téléphone *</label>
+                  <input type="tel" id="phone" name="phone" required />
+                  <div class="error-text" id="phone-error">Veuillez saisir un numéro de téléphone valide.</div>
                 </div>
-
-                <div class="booking-summary" id="booking-summary">
-                  <h3>Récapitulatif de la réservation</h3>
-                  <div class="summary-item">
-                    <span>Forfait :</span>
-                    <span id="summary-package">-</span>
-                  </div>
-                  <div class="summary-item">
-                    <span>Voyageurs :</span>
-                    <span id="summary-travelers">-</span>
-                  </div>
-                  <div class="summary-item">
-                    <span>Dates :</span>
-                    <span id="summary-dates">-</span>
-                  </div>
-                  <div class="summary-item">
-                    <span>Option de paiement :</span>
-                    <span id="summary-payment">-</span>
-                  </div>
-                  <div class="summary-item summary-total">
-                    <span>Total dû :</span>
-                    <span id="summary-total">0,00 $</span>
-                  </div>
+              </div>
+            </div>
+  
+            <h3>Détails du voyage</h3>
+            <div class="form-group">
+              <label for="package">Forfait ou destination souhaité(e) *</label>
+              <select id="package" name="package" required>
+                <option value="">Sélectionnez un forfait</option>
+                <option value="beach-getaway">Escapade à la plage - 1 200 $</option>
+                <option value="mountain-retreat">Retraite en montagne - 950 $</option>
+                <option value="city-explorer">Exploration urbaine - 1 100 $</option>
+                <option value="adventure-trek">Aventure Trek - 1 500 $</option>
+                <option value="custom">Destination personnalisée</option>
+              </select>
+              <div class="error-text" id="package-error">Veuillez sélectionner un forfait</div>
+            </div>
+  
+            <div class="form-group" id="custom-destination-group" style="display: none">
+              <label for="custom-destination">Destination personnalisée</label>
+              <input type="text" id="custom-destination" name="custom-destination" />
+            </div>
+  
+            <div class="form-group">
+              <label for="travelers">Nombre de voyageurs *</label>
+              <select id="travelers" name="travelers" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10+">10+</option>
+              </select>
+              <div class="error-text" id="travelers-error">Veuillez sélectionner le nombre de voyageurs</div>
+            </div>
+  
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="departure-date">Date de départ *</label>
+                  <input type="date" id="departure-date" name="departure-date" required />
+                  <div class="error-text" id="departure-date-error">Veuillez sélectionner une date de départ.</div>
                 </div>
-
-                <button type="submit" class="btn">Soumettre la réservation</button>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="return-date">Date de retour *</label>
+                  <input type="date" id="return-date" name="return-date" required />
+                  <div class="error-text" id="return-date-error">Veuillez sélectionner une date de retour.</div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="special-requests">Demandes spéciales ou remarques</label>
+              <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            </div>
+  
+            <h3>Détails du paiement</h3>
+            <div class="form-group">
+              <label for="payment-option">Option de paiement *</label>
+              <select id="payment-option" name="payment-option" required>
+                <option value="">Sélectionnez l'option de paiement</option>
+                <option value="deposit">Acompte (20 %)</option>
+                <option value="half">Demi-paiement (50 %)</option>
+                <option value="full">Paiement intégral (100 %)</option>
+              </select>
+              <div class="error-text" id="payment-option-error">Veuillez sélectionner une option de paiement.</div>
+            </div>
+  
+            <div class="booking-summary" id="booking-summary">
+              <h3>Récapitulatif de la réservation</h3>
+              <div class="summary-item"><span>Forfait :</span> <span id="summary-package">-</span></div>
+              <div class="summary-item"><span>Voyageurs :</span> <span id="summary-travelers">-</span></div>
+              <div class="summary-item"><span>Dates :</span> <span id="summary-dates">-</span></div>
+              <div class="summary-item"><span>Option de paiement :</span> <span id="summary-payment">-</span></div>
+              <div class="summary-item summary-total"><span>Total dû :</span> <span id="summary-total">0,00 $</span></div>
+            </div>
+  
+            <button type="submit" class="btn">Soumettre la réservation</button>
           </form>
         </div>
       </div>
-
+  
+      <!-- Featured Packages Section -->
       <div class="section">
         <h2>Forfaits voyage en vedette</h2>
         <div class="package-grid">
+          <!-- Package Card 1 -->
           <div class="package-card">
-            <div class="package-img" style="
-background-image: url('../assets/images/mussulo\ beach\ -\ luanda\ \(2\).jpg');
-"></div>
+            <div class="package-img" style="background-image: url('../assets/images/mussulo beach - luanda (2).jpg');"></div>
             <div class="package-content">
               <h3 class="package-title">Escapade à la plage</h3>
               <div class="package-price">1 200 $</div>
-              <p class="package-description">
-                Profitez d'une semaine de détente sur de magnifiques plages de sable fin aux eaux cristallines.
-              </p>
-              <button class="btn btn-alt select-package" data-package="beach-getaway">
-                Sélectionner un forfait
-              </button>
+              <p class="package-description">Profitez d'une semaine de détente sur de magnifiques plages de sable fin aux eaux cristallines.</p>
+              <button class="btn btn-alt select-package" data-package="beach-getaway">Sélectionner un forfait</button>
             </div>
           </div>
-
+  
+          <!-- Package Card 2 -->
           <div class="package-card">
-            <div class="package-img" style="
-  background-image: url('../assets/images/tunda_vala_volcanic.png');
-  "></div>
+            <div class="package-img" style="background-image: url('../assets/images/tunda_vala_volcanic.png');"></div>
             <div class="package-content">
               <h3 class="package-title">Retraite en montagne</h3>
               <div class="package-price">950 $</div>
-              <p class="package-description">
-                Évadez-vous dans des paysages de montagne sereins avec des sentiers de randonnée et des vues
-                imprenables.
-              </p>
-              <button class="btn btn-alt select-package" data-package="mountain-retreat">
-                Sélectionner un forfait
-              </button>
+              <p class="package-description">Évadez-vous dans des paysages de montagne sereins avec des sentiers de randonnée et des vues imprenables.</p>
+              <button class="btn btn-alt select-package" data-package="mountain-retreat">Sélectionner un forfait</button>
             </div>
           </div>
-
+  
+          <!-- Package Card 3 -->
           <div class="package-card">
-            <div class="package-img" style="
-    background-image: url('../assets/images/luanda_city.jpeg');
-    "></div>
+            <div class="package-img" style="background-image: url('../assets/images/luanda_city.jpeg');"></div>
             <div class="package-content">
               <h3 class="package-title">Explorateur de la ville</h3>
               <div class="package-price">1 100 $</div>
-              <p class="package-description">
-                Découvrez la culture vibrante de la ville avec des visites guidées et des expériences locales.
-              </p>
-              <button class="btn btn-alt select-package" data-package="city-explorer">
-                Sélectionner un forfait
-              </button>
+              <p class="package-description">Découvrez la culture vibrante de la ville avec des visites guidées et des expériences locales.</p>
+              <button class="btn btn-alt select-package" data-package="city-explorer">Sélectionner un forfait</button>
             </div>
           </div>
-
+  
+          <!-- Package Card 4 -->
           <div class="package-card">
-            <div class="package-img" style="
-      background-image: url('../assets/images/adeventure_expeditions.jpg');
-      "></div>
+            <div class="package-img" style="background-image: url('../assets/images/adeventure_expeditions.jpg');"></div>
             <div class="package-content">
               <h3 class="package-title">Randonnée aventure</h3>
               <div class="package-price">1 500 $</div>
-              <p class="package-description">
-                Amateurs de sensations fortes : randonnée, rafting et aventures en plein air vous attendent.
-              </p>
-              <button class="btn btn-alt select-package" data-package="adventure-trek">
-                Sélectionner un forfait
-              </button>
+              <p class="package-description">Amateurs de sensations fortes : randonnée, rafting et aventures en plein air vous attendent.</p>
+              <button class="btn btn-alt select-package" data-package="adventure-trek">Sélectionner un forfait</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <section class="section contact-cta">
     <div class="container">
