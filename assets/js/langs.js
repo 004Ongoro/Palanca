@@ -36,14 +36,7 @@ supportedLanguages.forEach(code => {
   option.textContent = languageNames[code] || code;
   select.appendChild(option);
 });
-
-const label = document.createElement("label");
-label.setAttribute("for", "language");
-label.textContent = "Select Language: ";
-
-const container = document.getElementById("language-container");
-container.appendChild(label);
-container.appendChild(select);
+translateContainer.appendChild(select);
 
 if (!savedLang) {
   const browserLang = navigator.language.slice(0, 2);
