@@ -54,9 +54,9 @@ module.exports = async function handler(req, res) {
       <p>We specialize in unforgettable safari adventures and tailored travel experiences in Angola and beyond. Whether you're exploring wildlife or seeking cultural immersion, we're your trusted travel partner.</p>
 
       <p style="margin-top: 20px;">
-        <a href="https://palanca-kohl.vercel.app/" style="color: #007bff; text-decoration: none;">🌐 Visit our website</a><br/>
-        <a href="https://palanca-kohl.vercel.app/about" style="color: #007bff; text-decoration: none;">📌 Learn more about us</a><br/>
-        <a href="mailto:palankasafari.andtravel@gmail.com" style="color: #007bff; text-decoration: none;">✉️ Contact Support</a>
+        <a href="https://palanca-kohl.vercel.app/" style="color: #007bff; text-decoration: none;">Visit our website</a><br/>
+        <a href="https://palanca-kohl.vercel.app/about" style="color: #007bff; text-decoration: none;"> Learn more about us</a><br/>
+        <a href="mailto:palankasafari.andtravel@gmail.com" style="color: #007bff; text-decoration: none;"> Contact Support</a>
       </p>
 
       <p style="margin-top: 2rem;">Warm regards,<br/><strong>The Palanca Safari & Travel Team</strong></p>
@@ -76,7 +76,7 @@ module.exports = async function handler(req, res) {
   try {
     await transporter.sendMail({
       from: '"Palanca Safari & Travel" <palankasafari.andtravel@gmail.com>',
-      to: 'palankasafari.andtravel@gmail.com',
+      to: 'palancasafari.andtravel@gmail.com',
       subject: `New Contact from ${name}`,
       html: adminHtml,
       replyTo: email,
