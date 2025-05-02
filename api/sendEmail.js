@@ -35,24 +35,43 @@ export default async function handler(req, res) {
 
   // Confirmation email to user
   const userHtml = `
-    <div style="font-family: Arial, sans-serif; font-size: 1.1rem; color: #333;">
-      <img src="https://palanca-kohl.vercel.app/logo.png" alt="Palanca Safari & Travel" style="width: 200px;" />
-      <h2>Thank You for Contacting Palanca Safari & Travel</h2>
+  <div style="font-family: Arial, sans-serif; font-size: 1.1rem; color: #333; background-color: #f9f9f9; padding: 40px 20px;">
+    <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img src="https://palanca-kohl.vercel.app/logo.png" alt="Palanca Safari & Travel" style="width: 180px; margin-bottom: 10px;" />
+      </div>
+
+      <h2 style="color: #005f40;">Thank You for Contacting Palanca Safari & Travel</h2>
       <p>Hi ${name},</p>
-      <p>We have received your message and our team will get back to you as soon as possible.</p>
-      <p><strong>Your Message:</strong></p>
-      <p style="white-space: pre-line;">${message}</p>
-      <hr/>
-      <h3>About Palanca Safari & Travel</h3>
-      <p>We specialize in unforgettable safari adventures and tailored travel experiences in Angola and beyond. Whether you're exploring the wild or seeking cultural immersion, Palanca Safari & Travel is your trusted guide.</p>
-      <p>
-        <a href="https://palanca-kohl.vercel.app/" style="color: #007bff;">Visit our website</a> |
-        <a href="https://palanca-kohl.vercel.app/about" style="color: #007bff;">About us</a> |
-        <a href="mailto:palankasafari.andtravel@gmail.com" style="color: #007bff;">Contact Support</a>
+      <p>Thank you for reaching out! We've received your message and a member of our team will get back to you shortly.</p>
+
+      <div style="margin: 30px 0; padding: 20px; background-color: #f1f5f9; border-left: 4px solid #007bff;">
+        <p style="margin: 0;"><strong>Your Message:</strong></p>
+        <p style="white-space: pre-line; margin-top: 8px;">${message}</p>
+      </div>
+
+      <h3 style="margin-top: 30px; color: #005f40;">About Palanca Safari & Travel</h3>
+      <p>We specialize in unforgettable safari adventures and tailored travel experiences in Angola and beyond. Whether you're exploring wildlife or seeking cultural immersion, we're your trusted travel partner.</p>
+
+      <p style="margin-top: 20px;">
+        <a href="https://palanca-kohl.vercel.app/" style="color: #007bff; text-decoration: none;">🌐 Visit our website</a><br/>
+        <a href="https://palanca-kohl.vercel.app/about" style="color: #007bff; text-decoration: none;">📌 Learn more about us</a><br/>
+        <a href="mailto:palankasafari.andtravel@gmail.com" style="color: #007bff; text-decoration: none;">✉️ Contact Support</a>
       </p>
-      <p style="margin-top: 2rem;">Warm regards,<br/>The Palanca Safari & Travel Team</p>
+
+      <p style="margin-top: 2rem;">Warm regards,<br/><strong>The Palanca Safari & Travel Team</strong></p>
     </div>
-  `;
+
+    <footer style="max-width: 600px; margin: 20px auto 0; text-align: center; color: #777; font-size: 0.9rem;">
+      <p style="margin: 0;">© ${new Date().getFullYear()} Palanca Safari & Travel. All rights reserved. <br /> This email was sent to ${email} after contacting us via our website contact page.</p>
+      
+      <p style="margin: 0;">
+        <a href="https://palanca-kohl.vercel.app/privacy" style="color: #777; text-decoration: underline;">Privacy Policy</a>
+      </p>
+    </footer>
+  </div>
+`;
+
 
   try {
     await transporter.sendMail({
