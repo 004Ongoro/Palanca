@@ -1,4 +1,4 @@
-const supportedLnaguages = ["en", "es", "pt", "fr", "it", "hi", "ar"];
+const supportedLnaguages = ["en", "es", "pt", "fr", "it", "hi", "ar", "ru", "bn", "zh"];
 
 const defaultLanguage = "en";
 
