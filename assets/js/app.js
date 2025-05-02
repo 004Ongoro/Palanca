@@ -504,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const result = await res.json();
-    console.log(result.message);
+    alert(result.message);
   }
 
   // Form validation function
