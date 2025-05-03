@@ -16,7 +16,7 @@
     <meta name="author" content="乔治·翁戈罗" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="canonical" href="https://www.palankasafari.co.ke" />
+    <link rel="canonical" href="https://www.palancasafari.com" />
 
     <meta
       name="og:title"
@@ -26,9 +26,12 @@
       name="og:description"
       content="帕兰卡野生动物园与旅行在安哥拉及全球范围内提供难忘的野生动物园之旅、海滩假日和探险旅行。今天就预订您的个性化旅行体验。"
     />
-    <meta name="og:url" content="https://www.palancasafari.co.ke" />
-    <meta name="og:type" content="website" />
-    <meta name="og:image" content="palanca-kohl.vercel.app/open-graph.png" />
+    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="palanca-kohl.vercel.app/open-graph.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="帕兰卡野生动物园与旅行" />
@@ -38,7 +41,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.palancasafari.co.ke/assets/images/jpeg.jpg"
+      content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
     <script type="application/ld+json">
@@ -46,11 +49,11 @@
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "帕兰卡野生动物园与旅行",
-        "url": "https://www.palancasafari.co.ke",
-        "logo": "https://www.palancasafari.co.ke/assets/images/jpeg.jpg",
+        "url": "https://www.palancasafari.com",
+        "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "旅游公司，在安哥拉和非洲各地提供野生动物园、海滩假日和风景探险",
         "telephone": "+254714941173",
-        "address":{
+        "address": {
           "@type": "PostalAddress",
           "streetAddress": "",
           "addressLocality": "内罗毕",
@@ -92,15 +95,17 @@
           <li><a href="../contact/">联系我们</a></li>
 
           <div class="translate-container">
-            <select name="language-select" id="langs">
-              <option value="pt">葡萄牙语</option>
-              <option value="es">西班牙语</option>
-              <option value="it">意大利语</option>
+            <select id="language" name="language">
               <option value="en">英语</option>
+              <option value="es">西班牙语</option>
+              <option value="pt">葡萄牙语</option>
               <option value="fr">法语</option>
-              <option value="zh">中文</option>
-              <option value="zh-cn">普通话</option>
+              <option value="it">意大利语</option>
+              <option value="hi">印地语</option>
               <option value="ar">阿拉伯语</option>
+              <option value="ru">俄语</option>
+              <option value="bn">孟加拉语</option>
+              <option value="zh">中文</option>
             </select>
           </div>
         </ul>
@@ -277,6 +282,7 @@
         });
     </script>
     <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/contact.js"></script>
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/langs.js"></script>
 

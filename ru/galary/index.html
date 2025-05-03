@@ -16,7 +16,7 @@
     <meta name="author" content="Джордж Онгоро" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="canonical" href="https://www.palankasafari.co.ke" />
+    <link rel="canonical" href="https://www.palancasafari.com" />
 
     <meta
       name="og:title"
@@ -26,9 +26,12 @@
       name="og:description"
       content="Palanca Safari & Travel предлагает незабываемые сафари, пляжные туры и приключенческие поездки в Анголе и по всему миру. Забронируйте свой индивидуальный тур сегодня."
     />
-    <meta name="og:url" content="https://www.palankasafari.co.ke" />
-    <meta name="og:type" content="website" />
-    <meta name="og:image" content="palanca-kohl.vercel.app/open-graph.png" />
+    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="palanca-kohl.vercel.app/open-graph.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
@@ -38,7 +41,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.palancasafari.co.ke/assets/images/jpeg.jpg"
+      content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
     <script type="application/ld+json">
@@ -46,8 +49,8 @@
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Palanca Safari & Travel",
-        "url": "https://www.palancasafari.co.ke",
-        "logo": "https://www.palancasafari.co.ke/assets/images/jpeg.jpg",
+        "url": "https://www.palancasafari.com",
+        "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "Туристическая компания, предлагающая сафари, пляжные туры и живописные приключения по Анголе и Африке",
         "telephone": "+254714941173",
         "address": {
@@ -91,7 +94,7 @@
           <li><a href="../galary/">Галерея</a></li>
           <li><a href="../contact/">Контакты</a></li>
           <div class="translate-container">
-            <select name="language-select" id="langs">
+            <select name="language" id="language">
               <option value="pt">Португальский</option>
               <option value="es">Испанский</option>
               <option value="it">Итальянский</option>
@@ -182,7 +185,10 @@
             />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/fenda_tundavala.jpg" alt="Изображение 13" />
+            <img
+              src="../../assets/images/fenda_tundavala.jpg"
+              alt="Изображение 13"
+            />
           </div>
         </div>
       </div>
@@ -192,7 +198,12 @@
       <span class="close-button" id="closeModal">&times;</span>
       <button class="nav-button prev-button" id="prevButton">&#10094;</button>
       <div class="modal-content">
-        <img src="" alt="Полноразмерное изображение" class="modal-image" id="modalImage" />
+        <img
+          src=""
+          alt="Полноразмерное изображение"
+          class="modal-image"
+          id="modalImage"
+        />
       </div>
       <button class="nav-button next-button" id="nextButton">&#10095;</button>
       <div class="image-counter" id="imageCounter">1/13</div>
@@ -203,10 +214,11 @@
         <div class="footer-column">
           <h3>Palanca Safari & Travel</h3>
           <p>
-            В Palanca Safari & Travel мы создаем путешествия, вдохновленные страстью
-            к людям, дикой природе и захватывающим дух пейзажам Анголы и мира.
-            Желаете ли вы пляжный отдых, захватывающее сафари или горное приключение,
-            мы здесь, чтобы воплотить в жизнь ваше путешествие мечты.
+            В Palanca Safari & Travel мы создаем путешествия, вдохновленные
+            страстью к людям, дикой природе и захватывающим дух пейзажам Анголы
+            и мира. Желаете ли вы пляжный отдых, захватывающее сафари или горное
+            приключение, мы здесь, чтобы воплотить в жизнь ваше путешествие
+            мечты.
           </p>
         </div>
         <div class="footer-column">
@@ -271,6 +283,7 @@
     </div>
 
     <script src="/assets/js/loader.js"></script>
+
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/langs.js"></script>
     <script src="../../assets/js/modal.js"></script>

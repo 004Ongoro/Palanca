@@ -104,66 +104,46 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("active-link");
     }
   });
+  // const footerCopyright = document.querySelector(".copyright");
+  // footerCopyright.insertAdjacentHTML(
+  //   "afterend",
+  //   "<small class='designer'>Design by <a href='https://www.ongoro.site'>George Ongoro</a></small>"
+  // );
 });
-
-// mailing
-  document.getElementById("contact-Form").addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    const res = await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, phone, message }),
-    });
-
-    const result = await res.json();
-    document.querySelector(".sbmsg").textContent = result.message;
-  });
 
 //
 
-// Infinite Slider Functionality
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 
-// Clone slides for infinite scrolling effect
 slides.forEach((slide) => {
   const clone = slide.cloneNode(true);
   slider.appendChild(clone);
 });
 
 let currentIndex = 0;
-const slideWidth = 100; // 100% width
+const slideWidth = 100;
 const totalSlides = document.querySelectorAll(".slide").length;
 let slideInterval;
 
-// Position the slider
 function setSliderPosition() {
   slider.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
 }
 
-// Move to next slide
 function nextSlide() {
   currentIndex++;
   setSliderPosition();
 
-  // If we've reached the cloned set, reset to the original set without transition
   if (currentIndex >= slides.length) {
     setTimeout(() => {
       slider.style.transition = "none";
       currentIndex = 0;
       setSliderPosition();
 
-      // Restore transition after a brief moment
       setTimeout(() => {
         slider.style.transition = "transform 0.5s ease-in-out";
       }, 50);
-    }, 500); // Wait for the transition to complete
+    }, 500);
   }
 }
 
@@ -181,12 +161,12 @@ slider.addEventListener("mouseenter", () => {
   clearInterval(slideInterval);
 });
 
-// Resume slider when mouse leaves
+// Resume slider
 slider.addEventListener("mouseleave", () => {
   startSlider();
 });
 
-// Handle window resize for responsive behavior
+// Wndow Resize
 window.addEventListener("resize", () => {
   setSliderPosition();
 });
@@ -196,27 +176,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const testimonials = [
     {
       id: 1,
-      name: "George Ongoro",
-      role: "Web Developer",
-      content: "This is testimonial 1",
-    },
-    {
-      id: 2,
-      name: "Sarah Ongoro",
-      role: "Web Developer",
-      content: "This is testimonial 2",
-    },
-    {
-      id: 3,
-      name: "Jade Doe",
-      role: "Web Developer",
-      content: "This is testimonial 3",
-    },
-    {
-      id: 4,
-      name: "George Ongoro",
-      role: "Web Developer",
-      content: "This is testimonial 4",
+      name: "Palanca Safari & Travel",
+      role: "Travel Agency",
+      content: `Going on an adventure with us soon? We'd love to hear your expectations or what your looking forward to. You can leave a revew on Facebook, Instagram, Tiktok or our website by visiting ${'<a class="link" href="https://palancasafari.com/contact/">our contact page</a>'}`,
     },
   ];
 
@@ -333,6 +295,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const departureDate = document.getElementById("departure-date");
   const returnDate = document.getElementById("return-date");
   const travelers = document.getElementById("travelers");
+  const specialRequests = document.getElementById("special-requests");
 
   // Set minimum date for departure to today
   const today = new Date();
@@ -401,13 +364,12 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById("custom-destination").value ||
           "Custom Destination";
         packageText = customDest;
-        packagePrice = 1000; // Default price for custom
+        packagePrice = 1000;
       } else {
         const selectedOption =
           packageSelect.options[packageSelect.selectedIndex];
         packageText = selectedOption.text;
 
-        // Extract price from option text (e.g. "Beach Getaway - $1,200")
         const priceMatch = selectedOption.text.match(/\$([0-9,]+)/);
         if (priceMatch) {
           packagePrice = parseFloat(priceMatch[1].replace(",", ""));
@@ -421,10 +383,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const travelersValue = travelers.value;
     summaryTravelers.textContent = travelersValue;
 
-    // Calculate total based on travelers (simplified calculation)
     let totalPrice = packagePrice;
     if (travelersValue > 1 && packagePrice > 0) {
-      // Add 80% of base price for each additional traveler
       totalPrice =
         packagePrice + packagePrice * 0.8 * (parseInt(travelersValue) - 1);
       dataForm.TotalDue = totalPrice;
@@ -464,9 +424,9 @@ document.addEventListener("DOMContentLoaded", function () {
       paymentText = selectedPayment;
 
       if (paymentOption.value === "deposit") {
-        paymentPercentage = 0.2; // 20%
+        paymentPercentage = 0.2;
       } else if (paymentOption.value === "half") {
-        paymentPercentage = 0.5; // 50%
+        paymentPercentage = 0.5;
       }
     }
     summaryPayment.textContent = paymentText;
@@ -481,10 +441,9 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
 
     if (validateForm()) {
-      // Form is valid, show success message and reset
+      // Form is valid,
       formSuccess.style.display = "block";
       formError.style.display = "none";
-      console.log(dataForm);
       submitBooking(dataForm);
 
       // Reset form after successful submission
@@ -529,6 +488,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function validateForm() {
     let isValid = true;
     dataForm.Travelers = travelers.value;
+
+    dataForm.Notes = specialRequests.value.trim();
 
     // First name validation
     const firstName = document.getElementById("first-name");

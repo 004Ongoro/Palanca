@@ -6,8 +6,6 @@ document.body.insertAdjacentHTML(
   </div>`
 );
 
-console.log("Hello from loader");
-
 const style = document.createElement("style");
 
 style.textContent = `

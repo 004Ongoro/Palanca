@@ -16,7 +16,7 @@
     <meta name="author" content="Джордж Онгоро" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="canonical" href="https://www.palankasafari.co.ke" />
+    <link rel="canonical" href="https://www.palancasafari.com" />
 
     <meta
       name="og:title"
@@ -26,9 +26,12 @@
       name="og:description"
       content="Palanca Safari & Travel предлагает незабываемые сафари, пляжные туры и приключенческие поездки в Анголе и по всему миру. Забронируйте свой индивидуальный тур сегодня."
     />
-    <meta name="og:url" content="https://www.palancasafari.co.ke" />
-    <meta name="og:type" content="website" />
-    <meta name="og:image" content="palanca-kohl.vercel.app/open-graph.png" />
+    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="palanca-kohl.vercel.app/open-graph.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
@@ -38,7 +41,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.palancasafari.co.ke/assets/images/jpeg.jpg"
+      content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
     <script type="application/ld+json">
@@ -46,8 +49,8 @@
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Palanca Safari & Travel",
-        "url": "https://www.palancasafari.co.ke",
-        "logo": "https://www.palancasafari.co.ke/assets/images/jpeg.jpg",
+        "url": "https://www.palancasafari.com",
+        "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "Туристическая компания, предлагающая сафари, пляжные туры и живописные приключения по Анголе и Африке",
         "telephone": "+254714941173",
         "address": {
@@ -91,16 +94,17 @@
           <li><a href="../galary/">Галерея</a></li>
           <li><a href="../contact/">Контакты</a></li>
           <div class="translate-container">
-            <select name="language-select" id="langs">
-              <option value="pt">Португальский</option>
-              <option value="es">Испанский</option>
-              <option value="it">Итальянский</option>
+            <select id="language" name="language">
               <option value="en">Английский</option>
+              <option value="es">Испанский</option>
+              <option value="pt">Португальский</option>
               <option value="fr">Французский</option>
-              <option value="zh">Китайский</option>
-              <option value="zh-cn">Мандаринский</option>
+              <option value="it">Итальянский</option>
+              <option value="hi">Хинди</option>
               <option value="ar">Арабский</option>
-              <option value="ru" selected>Русский</option>
+              <option value="ru">Русский</option>
+              <option value="bn">Бенгальский</option>
+              <option value="zh">Китайский</option>
             </select>
           </div>
         </ul>
@@ -127,15 +131,17 @@
         />
         <button id="search_destinations_btn">Поиск направлений</button>
       </div>
-      <p id="results-text">Показаны результаты для Анголы (Найдено 6 элементов)</p>
+      <p id="results-text">
+        Показаны результаты для Анголы (Найдено 6 элементов)
+      </p>
     </section>
 
     <main class="main-content">
       <h2 class="section-title">Популярные направления</h2>
       <div class="destinations-grid" id="dest-grid">
         <p class="error-message">
-          Ничего не найдено. Попробуйте: <br />Проверить наличие опечатки. <br />Другое
-          ключевое слово
+          Ничего не найдено. Попробуйте: <br />Проверить наличие опечатки.
+          <br />Другое ключевое слово
         </p>
       </div>
     </main>
@@ -143,7 +149,10 @@
     <section class="cta-section">
       <div class="cta-container">
         <h2>Готовы к вашему следующему приключению?</h2>
-        <p>Свяжитесь с нами, чтобы начать планировать путешествие вашей мечты уже сегодня.</p>
+        <p>
+          Свяжитесь с нами, чтобы начать планировать путешествие вашей мечты уже
+          сегодня.
+        </p>
         <a href="../contact/" class="btn btn-outline">Связаться с нами</a>
       </div>
     </section>
@@ -154,9 +163,10 @@
           <h3>Palanca Safari & Travel</h3>
           <p>
             В Palanca Safari & Travel мы создаем путешествия, вдохновленные
-            страстью - к людям, дикой природе и захватывающим дух пейзажам Анголы
-            и мира. Желаете ли вы пляжный отдых, захватывающее сафари или горное
-            приключение, мы здесь, чтобы воплотить в жизнь ваше путешествие мечты.
+            страстью - к людям, дикой природе и захватывающим дух пейзажам
+            Анголы и мира. Желаете ли вы пляжный отдых, захватывающее сафари или
+            горное приключение, мы здесь, чтобы воплотить в жизнь ваше
+            путешествие мечты.
           </p>
         </div>
         <div class="footer-column">
@@ -222,6 +232,7 @@
 
     <script src="../../assets/js/destinations.js"></script>
     <script src="/assets/js/loader.js"></script>
+
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/langs.js"></script>
 

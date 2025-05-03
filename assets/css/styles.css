@@ -82,6 +82,31 @@
   transform: translateY(0);
 }
 
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-primary);
+  bottom: -2px;
+  left: 0;
+}
+
+.link:hover {
+  color: var(--color-secondary);
+}
+
+.link:hover::after {
+  background-color: var(--color-secondary);
+  bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -432,6 +457,15 @@ footer {
   padding-top: 1.5rem;
   border-top: 1px solid #34495e;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .designer {
+    color: #021622;
+    text-align: center;
+  }
 }
 
 #theme-select {

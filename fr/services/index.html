@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palanca Safari & Travel - Our Services</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palanca Safari & Travel - Our Services</title>
+    <meta
+      name="description"
+      content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
+    />
+    <meta
+      name="keywords"
+      content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola"
+    />
+    <meta name="author" content="George Ongoro" />
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
 
-  <meta name="description"
-    content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today." />
-  <meta name="keywords"
-    content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola" />
-  <meta name="author" content="George Ongoro" />
-  <!-- Robots -->
-  <meta name="robots" content="index, follow" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.palancasafari.com" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.palankasafari.co.ke" />
+    <!-- Open Graph -->
+    <meta
+      name="og:title"
+      content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours"
+    />
+    <meta
+      name="og:description"
+      content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
+    />
+    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="palanca-kohl.vercel.app/open-graph.png"
+    />
 
-  <!-- Open Graph -->
-  <meta name="og:title" content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours" />
-  <meta name="og:description"
-    content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today." />
-  <meta name="og:url" content="https://www.palancasafari.co.ke" />
-  <meta name="og:type" content="website" />
-  <meta name="og:image" content="palanca-kohl.vercel.app/open-graph.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Palanca Safari and Travel" />
+    <meta
+      name="twitter:description"
+      content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.palancasafari.com/assets/images/jpeg.jpg"
+    />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Palanca Safari and Travel" />
-  <meta name="twitter:description"
-    content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences." />
-  <meta name="twitter:image" content="https://www.palancasafari.co.ke/assets/images/jpeg.jpg" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Palanca Safari & Travel",
-        "url": "https://www.palancasafari.co.ke",
-        "logo": "https://www.palancasafari.co.ke/assets/images/jpeg.jpg",
+        "url": "https://www.palancasafari.com",
+        "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "Tour and Travel company offering safaris, beach holidays, and scenic adventures across Angola and Africa",
         "telephone": "+254714941173",
         "address":{
@@ -55,435 +71,527 @@
         ]
       }
     </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
 
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
-</head>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
+  </head>
 
-<body class="services-page">
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-        <img src="../../logo.png" alt="logo" />
-        <h2>
-          Palanca Safari <br />
-          & Travel
-        </h2>
+  <body class="services-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="../../logo.png" alt="logo" />
+          <h2>
+            Palanca Safari <br />
+            & Travel
+          </h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../">Accueil</a></li>
+          <li><a href="../about/">À propos</a></li>
+          <li><a href="../services/">Services</a></li>
+          <li><a href="../destinations/">Destinations</a></li>
+          <li><a href="../galary/">Galerie</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <div class="translate-container">
+            <select id="language" name="language">
+              <option value="en">Anglais</option>
+              <option value="es">Espagnol</option>
+              <option value="pt">Portugais</option>
+              <option value="fr">Français</option>
+              <option value="it">Italien</option>
+              <option value="hi">Hindi</option>
+              <option value="ar">Arabe</option>
+              <option value="ru">Russe</option>
+              <option value="bn">Bengali</option>
+              <option value="zh">Chinois</option>
+            </select>
+          </div>
+        </ul>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../services/">Services</a></li>
-        <li><a href="../destinations/">Destinations</a></li>
-        <li><a href="../galary/">Gallery</a></li>
-        <li><a href="../contact/">Contact</a></li>
-        <div class="translate-container">
-          <select name="language-select" id="langs">
-            <option value="pt">Portuguese</option>
-            <option value="es">Espanol</option>
-            <option value="it">Italiano</option>
-            <option value="en">English</option>
-            <option value="fr">Francais</option>
-            <option value="zh">Zhongwen</option>
-            <option value="zh-cn">Putonghua</option>
-            <option value="ar">AI-Arabiyya</option>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Nos services de voyage</h1>
+      <p>
+        Découvrez le monde grâce à notre gamme complète de services de voyage
+        conçus pour créer des voyages inoubliables, adaptés à vos préférences.
+      </p>
+      <a href="#contact" class="btn">Commencez à planifier dès aujourd'hui</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title reveal">
+          Services de voyage que nous proposons
+        </h2>
+        <p class="section-description reveal">
+          Notre équipe de spécialistes du voyage expérimentés se consacre à la
+          création d'expériences de voyage personnalisées qui dépassent vos
+          attentes. Découvrez notre gamme de services ci-dessous.
+        </p>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/dallys\ resort\ -\ mussulo\ in\ luanda.png');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">
+                Planification de voyage personnalisée
+              </h3>
+              <p class="service-description">
+                Nos conseillers en voyages experts travaillent individuellement
+                avec vous pour créer des itinéraires personnalisés, adaptés à
+                vos préférences, à votre budget et à votre style de voyage.
+              </p>
+              <div class="service-features">
+                <h4>Ce que nous offrons :</h4>
+                <ul>
+                  <li>
+                    Consultation initiale pour comprendre vos objectifs de
+                    voyage
+                  </li>
+                  <li>Élaboration d'itinéraires personnalisés</li>
+                  <li>Recommandations d'hébergement pour tous les budgets</li>
+                  <li>Suggestions d'activités et d'excursions</li>
+                  <li>Organisation des transports</li>
+                  <li>Assistance 24h/24 et 7j/7 pendant vos voyages</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/luxury_vacation_maldives.jpg');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Vacances de luxe</h3>
+              <p class="service-description">
+                Offrez-vous des expériences extraordinaires grâce à nos services
+                de voyage haut de gamme. Nos forfaits vacances de luxe
+                comprennent un hébergement exclusif, des transferts privés et un
+                accès VIP.
+              </p>
+              <div class="service-features">
+                <h4>Expériences de luxe exclusives :</h4>
+                <ul>
+                  <li>
+                    Hébergement cinq étoiles dans des destinations de renommée
+                    mondiale
+                  </li>
+                  <li>Visites guidées privées avec des experts locaux</li>
+                  <li>Réservations exclusives dans des restaurants renommés</li>
+                  <li>
+                    Transferts en hélicoptère et location de yachts privés
+                  </li>
+                  <li>
+                    Services VIP à l'aéroport et enregistrement prioritaire
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/adeventure_expeditions.jpg');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Expéditions aventure</h3>
+              <p class="service-description">
+                Repoussez vos limites et créez des souvenirs inoubliables avec
+                nos forfaits de voyage aventure. Des activités riches en
+                adrénaline aux destinations hors des sentiers battus.
+              </p>
+              <div class="service-features">
+                <h4>Options d'aventure populaires :</h4>
+                <ul>
+                  <li>Safaris animaliers en Afrique</li>
+                  <li>Randonnées dans l'Himalaya</li>
+                  <li>
+                    Plongée sous-marine dans des récifs coralliens immaculés
+                  </li>
+                  <li>Aventures de rafting en eaux vives</li>
+                  <li>Camping dans le désert sous les étoiles</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/family_vacation.jpg');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Vacances en famille</h3>
+              <p class="service-description">
+                Créez de précieux souvenirs en famille grâce à nos forfaits
+                vacances spécialement conçus. Nous nous occupons de tous les
+                détails pour que vous puissiez vous concentrer sur des moments
+                de qualité.
+              </p>
+              <div class="service-features">
+                <h4>Caractéristiques pour les familles :</h4>
+                <ul>
+                  <li>
+                    Hébergements adaptés aux enfants avec chambres communicantes
+                  </li>
+                  <li>Activités et divertissements adaptés à leur âge</li>
+                  <li>Visites guidées familiales</li>
+                  <li>Options de repas pratiques pour les plus difficiles</li>
+                  <li>Expériences éducatives pour les enfants</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/romantic_honey_moon.png');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Forfaits Lune de miel et Romance</h3>
+              <p class="service-description">
+                Célébrez votre histoire d'amour avec nos escapades romantiques
+                conçues spécialement pour les couples. Des escapades isolées sur
+                une plage aux escapades citadines enchanteresses.
+              </p>
+              <div class="service-features">
+                <h4>Inclusions romantiques :</h4>
+                <ul>
+                  <li>Hébergements intimes avec vue imprenable</li>
+                  <li>Dîners privés dans des cadres pittoresques</li>
+                  <li>Soins spa pour couples</li>
+                  <li>Croisières au coucher du soleil et vols panoramiques</li>
+                  <li>
+                    Séances photo pour immortaliser vos moments privilégiés
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/group_travel_management.png');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Gestion des voyages de groupe</h3>
+              <p class="service-description">
+                Que vous planifiez un séminaire d'entreprise, une réunion de
+                famille ou une escapade entre amis, nos spécialistes des voyages
+                de groupe assurent une coordination optimale pour tous les
+                participants.
+              </p>
+              <div class="service-features">
+                <h4>Services de groupe :</h4>
+                <ul>
+                  <li>Sélection du lieu et réservation d'hébergement</li>
+                  <li>Transport et logistique de groupe</li>
+                  <li>
+                    Activités personnalisées et exercices de team building
+                  </li>
+                  <li>Organisation des repas de groupe</li>
+                  <li>Tarifs et réductions spéciaux pour les groupes</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+          <!-- Service 7 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/cruise_packages.png');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Forfaits croisières</h3>
+              <p class="service-description">
+                Explorez les plus belles côtes et voies navigables du monde avec
+                nos forfaits croisières sur mesure. Des paquebots de luxe aux
+                croisières fluviales intimes.
+              </p>
+              <div class="service-features">
+                <h4>Options de croisière :</h4>
+                <ul>
+                  <li>
+                    Croisières océaniques vers des destinations emblématiques
+                  </li>
+                  <li>
+                    Croisières fluviales sur des voies navigables historiques
+                  </li>
+                  <li>
+                    Croisières d'expédition vers des destinations reculées
+                  </li>
+                  <li>Forfaits croisières de luxe tout compris</li>
+                  <li>Sélections de croisières pour les familles</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 8 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/famouse_destination_wedding.png');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Mariages à destination</h3>
+              <p class="service-description">
+                Faites de votre mariage de rêve une réalité grâce à nos services
+                d'organisation de mariages à destination. Nous coordonnons tous
+                les aspects de votre journée spéciale dans des lieux à couper le
+                souffle.
+              </p>
+              <div class="service-features">
+                <h4>Services d'organisation de mariage :</h4>
+                <ul>
+                  <li>Sélection et réservation du lieu</li>
+                  <li>Coordination des prestataires locaux</li>
+                  <li>Organisation de l'hébergement des invités</li>
+                  <li>
+                    Logistique de voyage pour le cortège nuptial et les invités
+                  </li>
+                  <li>Assistance juridique</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+
+          <!-- Service 9 -->
+          <div class="service-card reveal">
+            <div
+              class="service-image"
+              style="
+                background-image: url('../../assets/images/business_travel.jpg');
+              "
+            ></div>
+            <div class="service-content">
+              <h3 class="service-title">Solutions de voyages d'affaires</h3>
+              <p class="service-description">
+                Nos services de voyages d'affaires offrent des solutions
+                efficaces et économiques aux voyageurs d'affaires. Nous
+                garantissons le bon déroulement des opérations tout en
+                respectant les politiques de votre entreprise.
+              </p>
+              <div class="service-features">
+                <h4>Fonctionnalités voyages d'affaires :</h4>
+                <ul>
+                  <li>Négociation des tarifs d'entreprise</li>
+                  <li>Mise en œuvre complète de la politique voyages</li>
+                  <li>Suivi et reporting des dépenses</li>
+                  <li>
+                    Assistance voyage 24h/24 et 7j/7 pour les voyageurs
+                    d'affaires
+                  </li>
+                  <li>Organisation de réunions et de conférences</li>
+                </ul>
+              </div>
+              <a href="#" class="service-link">En savoir plus →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Process Section -->
+    <section class="booking-process" id="booking">
+      <div class="container">
+        <h2 class="section-title reval">Comment réserver nos services</h2>
+        <p class="section-description reveal">
+          Nous avons simplifié notre processus de réservation pour que la
+          planification de votre voyage de rêve soit la plus fluide possible.
+        </p>
+
+        <div class="steps-container">
+          <div class="step reveal">
+            <div class="step-number">1</div>
+            <h3>Consultation initiale</h3>
+            <p>
+              Planifiez une consultation gratuite avec l'un de nos experts
+              voyages via notre formulaire en ligne, par téléphone ou par appel
+              vidéo.
+            </p>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-number">2</div>
+            <h3>Élaboration d'une proposition</h3>
+            <p>
+              En fonction de vos préférences et de vos exigences, nous créerons
+              une proposition de voyage détaillée comprenant l'itinéraire et les
+              options tarifaires.
+            </p>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-number">3</div>
+            <h3>Personnalisation</h3>
+            <p>
+              Nous affinerons la proposition en fonction de vos commentaires
+              jusqu'à ce qu'elle corresponde parfaitement à votre vision.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Confirmation de réservation</h3>
+            <p>
+              Une fois que vous êtes satisfait du programme, nous confirmerons
+              toutes les réservations et vous fournirons les documents de voyage
+              détaillés.
+            </p>
+          </div>
+
+          <div class="step reveal">
+            <div class="step-number">5</div>
+            <h3>Assistance voyage</h3>
+            <p>
+              Tout au long de votre voyage, notre équipe reste disponible pour
+              répondre à toutes vos questions ou faire face à des situations
+              inattendues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Palanca Safari & Travel</h3>
+          <p>
+            Chez Palanca Safari & Travel, nous créons des voyages inspirés par
+            la passion : pour les gens, la faune et les paysages époustouflants
+            de l’Angola et du monde. Que vous ayez envie de vacances à la plage,
+            d’un safari palpitant ou d’une aventure en montagne, nous sommes là
+            pour faire de votre voyage de rêve une réalité.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Forfaits</a></li>
+            <li><a href="#">Nous contacter</a></li>
+            <li><a href="#">À propos de nous</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Mentions légales</h3>
+          <ul>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Politique de remboursement</a></li>
+          </ul>
+          <h3>Changer de thème</h3>
+          <select name="theme-select" id="theme-select">
+            <option value="dark">Sombre</option>
+            <option value="light">Clair</option>
+            <option value="auto">Auto</option>
           </select>
         </div>
-      </ul>
-      <div class="hamburger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Nos services de voyage</h1>
-    <p>
-      Découvrez le monde grâce à notre gamme complète de services de voyage
-      conçus pour créer des voyages inoubliables, adaptés à vos préférences.
-    </p>
-    <a href="#contact" class="btn">Commencez à planifier dès aujourd'hui</a>
-  </section>
-
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <h2 class="section-title reveal">Services de voyage que nous proposons</h2>
-      <p class="section-description reveal">
-        Notre équipe de spécialistes du voyage expérimentés se consacre à la création d'expériences de voyage
-        personnalisées qui dépassent vos attentes.
-        Découvrez notre gamme de services ci-dessous.
-      </p>
-
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-background-image: url('../../assets/images/dallys\ resort\ -\ mussulo\ in\ luanda.png');
-"></div>
-          <div class="service-content">
-            <h3 class="service-title">Planification de voyage personnalisée</h3>
-            <p class="service-description">
-              Nos conseillers en voyages experts travaillent individuellement avec vous pour créer des itinéraires
-              personnalisés, adaptés à vos préférences, à votre budget et à votre style de voyage.
-            </p>
-            <div class="service-features">
-              <h4>Ce que nous offrons :</h4>
-              <ul>
-                <li>Consultation initiale pour comprendre vos objectifs de voyage</li>
-                <li>Élaboration d'itinéraires personnalisés</li>
-                <li>Recommandations d'hébergement pour tous les budgets</li>
-                <li>Suggestions d'activités et d'excursions</li>
-                <li>Organisation des transports</li>
-                <li>Assistance 24h/24 et 7j/7 pendant vos voyages</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-background-image: url('../../assets/images/luxury_vacation_maldives.jpg');
-"></div>
-          <div class="service-content">
-            <h3 class="service-title">Vacances de luxe</h3>
-            <p class="service-description">
-              Offrez-vous des expériences extraordinaires grâce à nos services de voyage haut de gamme. Nos forfaits
-              vacances de luxe comprennent un hébergement exclusif, des transferts privés et un accès VIP.
-            </p>
-            <div class="service-features">
-              <h4>Expériences de luxe exclusives :</h4>
-              <ul>
-                <li>Hébergement cinq étoiles dans des destinations de renommée mondiale</li>
-                <li>Visites guidées privées avec des experts locaux</li>
-                <li>Réservations exclusives dans des restaurants renommés</li>
-                <li>Transferts en hélicoptère et location de yachts privés</li>
-                <li>Services VIP à l'aéroport et enregistrement prioritaire</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-background-image: url('../../assets/images/adeventure_expeditions.jpg');
-"></div>
-          <div class="service-content">
-            <h3 class="service-title">Expéditions aventure</h3>
-            <p class="service-description">
-              Repoussez vos limites et créez des souvenirs inoubliables avec nos forfaits de voyage aventure. Des
-              activités riches en adrénaline aux destinations hors des sentiers battus.
-            </p>
-            <div class="service-features">
-              <h4>Options d'aventure populaires :</h4>
-              <ul>
-                <li>Safaris animaliers en Afrique</li>
-                <li>Randonnées dans l'Himalaya</li>
-                <li>Plongée sous-marine dans des récifs coralliens immaculés</li>
-                <li>Aventures de rafting en eaux vives</li>
-                <li>Camping dans le désert sous les étoiles</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-            background-image: url('../../assets/images/family_vacation.jpg');
-            "></div>
-          <div class="service-content">
-            <h3 class="service-title">Vacances en famille</h3>
-            <p class="service-description">
-              Créez de précieux souvenirs en famille grâce à nos forfaits vacances spécialement conçus. Nous nous
-              occupons de tous les détails pour que vous puissiez vous concentrer sur des moments de qualité.
-            </p>
-            <div class="service-features">
-              <h4>Caractéristiques pour les familles :</h4>
-              <ul>
-                <li>Hébergements adaptés aux enfants avec chambres communicantes</li>
-                <li>Activités et divertissements adaptés à leur âge</li>
-                <li>Visites guidées familiales</li>
-                <li>Options de repas pratiques pour les plus difficiles</li>
-                <li>Expériences éducatives pour les enfants</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-            background-image: url('../../assets/images/romantic_honey_moon.png');
-            "></div>
-          <div class="service-content">
-            <h3 class="service-title">Forfaits Lune de miel et Romance</h3>
-            <p class="service-description">
-              Célébrez votre histoire d'amour avec nos escapades romantiques conçues spécialement pour les couples. Des
-              escapades isolées sur une plage aux escapades citadines enchanteresses.
-            </p>
-            <div class="service-features">
-              <h4>Inclusions romantiques :</h4>
-              <ul>
-                <li>Hébergements intimes avec vue imprenable</li>
-                <li>Dîners privés dans des cadres pittoresques</li>
-                <li>Soins spa pour couples</li>
-                <li>Croisières au coucher du soleil et vols panoramiques</li>
-                <li>Séances photo pour immortaliser vos moments privilégiés</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-            background-image: url('../../assets/images/group_travel_management.png');
-            "></div>
-          <div class="service-content">
-            <h3 class="service-title">Gestion des voyages de groupe</h3>
-            <p class="service-description">
-              Que vous planifiez un séminaire d'entreprise, une réunion de famille ou une escapade entre amis, nos
-              spécialistes des voyages de groupe assurent une coordination optimale pour tous les participants.
-            </p>
-            <div class="service-features">
-              <h4>Services de groupe :</h4>
-              <ul>
-                <li>Sélection du lieu et réservation d'hébergement</li>
-                <li>Transport et logistique de groupe</li>
-                <li>Activités personnalisées et exercices de team building</li>
-                <li>Organisation des repas de groupe</li>
-                <li>Tarifs et réductions spéciaux pour les groupes</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-        <!-- Service 7 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-            background-image: url('../../assets/images/cruise_packages.png');
-            "></div>
-          <div class="service-content">
-            <h3 class="service-title">Forfaits croisières</h3>
-            <p class="service-description">
-              Explorez les plus belles côtes et voies navigables du monde avec nos forfaits croisières sur mesure. Des
-              paquebots de luxe aux croisières fluviales intimes.
-            </p>
-            <div class="service-features">
-              <h4>Options de croisière :</h4>
-              <ul>
-                <li>Croisières océaniques vers des destinations emblématiques</li>
-                <li>Croisières fluviales sur des voies navigables historiques</li>
-                <li>Croisières d'expédition vers des destinations reculées</li>
-                <li>Forfaits croisières de luxe tout compris</li>
-                <li>Sélections de croisières pour les familles</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 8 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-            background-image: url('../../assets/images/famouse_destination_wedding.png');
-            "></div>
-          <div class="service-content">
-            <h3 class="service-title">Mariages à destination</h3>
-            <p class="service-description">
-              Faites de votre mariage de rêve une réalité grâce à nos services d'organisation de mariages à destination.
-              Nous coordonnons tous les aspects de votre journée spéciale dans des lieux à couper le souffle. </p>
-            <div class="service-features">
-              <h4>Services d'organisation de mariage :</h4>
-              <ul>
-                <li>Sélection et réservation du lieu</li>
-                <li>Coordination des prestataires locaux</li>
-                <li>Organisation de l'hébergement des invités</li>
-                <li>Logistique de voyage pour le cortège nuptial et les invités</li>
-                <li>Assistance juridique</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-
-        <!-- Service 9 -->
-        <div class="service-card reveal">
-          <div class="service-image" style="
-            background-image: url('../../assets/images/business_travel.jpg');
-            "></div>
-          <div class="service-content">
-            <h3 class="service-title">Solutions de voyages d'affaires</h3>
-            <p class="service-description">
-              Nos services de voyages d'affaires offrent des solutions efficaces et économiques aux voyageurs
-              d'affaires. Nous garantissons le bon déroulement des opérations tout en respectant les politiques de votre
-              entreprise.
-            </p>
-            <div class="service-features">
-              <h4>Fonctionnalités voyages d'affaires :</h4>
-              <ul>
-                <li>Négociation des tarifs d'entreprise</li>
-                <li>Mise en œuvre complète de la politique voyages</li>
-                <li>Suivi et reporting des dépenses</li>
-                <li>Assistance voyage 24h/24 et 7j/7 pour les voyageurs d'affaires</li>
-                <li>Organisation de réunions et de conférences</li>
-              </ul>
-            </div>
-            <a href="#" class="service-link">En savoir plus →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Booking Process Section -->
-  <section class="booking-process" id="booking">
-    <div class="container">
-      <h2 class="section-title reval">Comment réserver nos services</h2>
-      <p class="section-description reveal">
-        Nous avons simplifié notre processus de réservation pour que la planification de votre voyage de rêve soit la
-        plus fluide possible.
-      </p>
-
-      <div class="steps-container">
-        <div class="step reveal">
-          <div class="step-number">1</div>
-          <h3>Consultation initiale</h3>
+        <div class="footer-column">
+          <h3>Nous contacter</h3>
           <p>
-            Planifiez une consultation gratuite avec l'un de nos experts voyages via notre formulaire en ligne, par
-            téléphone ou par appel vidéo.
+            Viana<br />Luanda, Angola<br />Téléphone : (244) 924-200397<br />Courriel :
+            reservations@palancasafari.com <br />
+            palancasafari.andtravel@gmail.com
           </p>
-        </div>
-
-        <div class="step reveal">
-          <div class="step-number">2</div>
-          <h3>Élaboration d'une proposition</h3>
-          <p>
-            En fonction de vos préférences et de vos exigences, nous créerons une proposition de voyage détaillée
-            comprenant l'itinéraire et les options tarifaires.
-          </p>
-        </div>
-
-        <div class="step reveal">
-          <div class="step-number">3</div>
-          <h3>Personnalisation</h3>
-          <p>
-            Nous affinerons la proposition en fonction de vos commentaires jusqu'à ce qu'elle corresponde parfaitement à
-            votre vision.
-          </p>
-        </div>
-
-        <div class="step">
-          <div class="step-number">4</div>
-          <h3>Confirmation de réservation</h3>
-          <p>
-            Une fois que vous êtes satisfait du programme, nous confirmerons toutes les réservations et vous fournirons
-            les documents de voyage détaillés.
-          </p>
-        </div>
-
-        <div class="step reveal">
-          <div class="step-number">5</div>
-          <h3>Assistance voyage</h3>
-          <p>
-            Tout au long de votre voyage, notre équipe reste disponible pour répondre à toutes vos questions ou faire
-            face à des situations inattendues.
-          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61554952583256"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/palancasafari"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/+244924200397"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://tiktok.com/@palanca.safari.travel"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
         </div>
       </div>
+      <div class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Palanca Safari & Travel. Tous droits réservés.
+      </div>
+    </footer>
+    <!-- scroll to top -->
+    <div class="scroll-up">
+      <a href="#" class="circular-btn blinking">
+        <i class="fas fa-arrow-up jumping"></i>
+      </a>
+      <div class="blinking-border"></div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>Palanca Safari & Travel</h3>
-        <p>
-          Chez Palanca Safari & Travel, nous créons des voyages inspirés par la passion :
-          pour les gens, la faune et les paysages époustouflants de l’Angola et du monde. Que vous ayez envie de
-          vacances à la plage, d’un safari palpitant ou d’une aventure en montagne, nous sommes là pour faire de votre
-          voyage de rêve une réalité.
-        </p>
-      </div>
-      <div class="footer-column">
-        <h3>Liens rapides</h3>
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Forfaits</a></li>
-          <li><a href="#">Nous contacter</a></li>
-          <li><a href="#">À propos de nous</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Mentions légales</h3>
-        <ul>
-          <li><a href="#">Conditions d'utilisation</a></li>
-          <li><a href="#">Politique de remboursement</a></li>
-        </ul>
-        <h3>Changer de thème</h3>
-        <select name="theme-select" id="theme-select">
-          <option value="dark">Sombre</option>
-          <option value="light">Clair</option>
-          <option value="auto">Auto</option>
-        </select>
-      </div>
-      <div class="footer-column">
-        <h3>Nous contacter</h3>
-        <p>
-          Viana<br />Luanda, Angola<br />Téléphone : (244) 924-200397<br />Courriel :
-          reservations@palancasafari.com <br />
-          palancasafari.andtravel@gmail.com
-        </p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61554952583256"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/palancasafari"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/+244924200397"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://tiktok.com/@palanca.safari.travel"><i class="fab fa-tiktok"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="copyright">
-      &copy;
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-      Palanca Safari & Travel. Tous droits réservés.
-    </div>
-  </footer>
-  <!-- scroll to top -->
-  <div class="scroll-up">
-    <a href="#" class="circular-btn blinking">
-      <i class="fas fa-arrow-up jumping"></i>
-    </a>
-    <div class="blinking-border"></div>
-  </div>
+    <!-- js -->
+    <script src="/assets/js/loader.js"></script>
 
-  <!-- js -->
-  <script src="/assets/js/loader.js"></script>
-  <script src="../../assets/js/app.js"></script>
-  <script src="../../assets/js/langs.js"></script>
+    <script src="../../assets/js/app.js"></script>
+    <script src="../../assets/js/langs.js"></script>
 
-  <!-- fontawesome -->
-  <script src="../../assets/fa_web/js/all.min.js"></script>
-</body>
-
+    <!-- fontawesome -->
+    <script src="../../assets/fa_web/js/all.min.js"></script>
+  </body>
 </html>

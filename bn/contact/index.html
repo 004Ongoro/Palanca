@@ -16,7 +16,7 @@
     <meta name="author" content="George Ongoro" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="canonical" href="https://www.palankasafari.co.ke" />
+    <link rel="canonical" href="https://www.palancasafari.com" />
 
     <meta
       name="og:title"
@@ -26,9 +26,12 @@
       name="og:description"
       content="Palanca Safari & Travel অ্যাঙ্গোলা এবং বিশ্বজুড়ে অবিস্মরণীয় সাফারি, সৈকত ছুটি এবং অ্যাডভেঞ্চার ট্যুর অফার করে। আজই আপনার ব্যক্তিগতকৃত ভ্রমণ অভিজ্ঞতা বুক করুন।"
     />
-    <meta name="og:url" content="https://www.palancasafari.co.ke" />
-    <meta name="og:type" content="website" />
-    <meta name="og:image" content="palanca-kohl.vercel.app/open-graph.png" />
+    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="palanca-kohl.vercel.app/open-graph.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
@@ -38,7 +41,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.palancasafari.co.ke/assets/images/jpeg.jpg"
+      content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
     <script type="application/ld+json">
@@ -46,11 +49,11 @@
         "@context": "https://schema.org",
         "@type": "TravelAgency",
         "name": "Palanca Safari & Travel",
-        "url": "https://www.palancasafari.co.ke",
-        "logo": "https://www.palancasafari.co.ke/assets/images/jpeg.jpg",
+        "url": "https://www.palancasafari.com",
+        "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "ট্যুর এবং ট্র্যাভেল কোম্পানি অ্যাঙ্গোলা এবং আফ্রিকা জুড়ে সাফারি, সৈকত ছুটি এবং মনোরম অ্যাডভেঞ্চার অফার করে",
         "telephone": "+254714941173",
-        "address":{
+        "address": {
           "@type": "PostalAddress",
           "streetAddress": "",
           "addressLocality": "Nairobi",
@@ -62,39 +65,6 @@
           "https://www.x.com/"
         ]
       }
-    </script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "ue9cGsLtxU8zHNmeU",
-        });
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contactForm")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // আগের ধাপগুলো থেকে আইডি
-            emailjs
-              .sendForm("service_uyly99c", "template_lv13fp2", this)
-              .then(
-                () => {
-                  document.querySelector(".sbm").textContent = "ইমেইল পাঠানো হয়েছে";
-                },
-                (error) => {
-                  document.querySelector(".sbm").textContent =
-                    "ব্যর্থ: একটি ত্রুটি ঘটেছে";
-                }
-              );
-          });
-      };
     </script>
     <link
       rel="stylesheet"
@@ -125,15 +95,17 @@
           <li><a href="../contact/">যোগাযোগ</a></li>
 
           <div class="translate-container">
-            <select name="language-select" id="langs">
-              <option value="pt">পর্তুগিজ</option>
-              <option value="es">স্প্যানিশ</option>
-              <option value="it">ইতালিয়ান</option>
+            <select id="language" name="language">
               <option value="en">ইংরেজি</option>
+              <option value="es">স্প্যানিশ</option>
+              <option value="pt">পর্তুগিজ</option>
               <option value="fr">ফরাসি</option>
-              <option value="zh">চীনা</option>
-              <option value="zh-cn">মান্দারিন</option>
+              <option value="it">ইতালিয়ান</option>
+              <option value="hi">হিন্দি</option>
               <option value="ar">আরবি</option>
+              <option value="ru">রাশিয়ান</option>
+              <option value="bn">বাংলা</option>
+              <option value="zh">চীনা</option>
             </select>
           </div>
         </ul>
@@ -158,8 +130,7 @@
             </p>
             <h2>আমাদেরকে সামাজিক মাধ্যমে খুঁজুন</h2>
             <div class="social-icons">
-              <a
-                href="https://www.facebook.com/profile.php?id=61554952583256"
+              <a href="https://www.facebook.com/profile.php?id=61554952583256"
                 ><i class="fab fa-facebook"></i
               ></a>
               <a href="https://www.instagram.com/palancasafari"
@@ -237,10 +208,11 @@
         <div class="footer-column">
           <h3>Palanca Safari & Travel</h3>
           <p>
-            Palanca Safari & Travel-এ, আমরা আবেগ দ্বারা অনুপ্রাণিত ভ্রমণ তৈরি করি -
-            মানুষ, বন্যপ্রাণী এবং অ্যাঙ্গোলা ও বিশ্বের শ্বাসরুদ্ধকর প্রাকৃতিক দৃশ্যের জন্য।
-            আপনি সৈকত ছুটি, রোমাঞ্চকর সাফারি, বা পর্বত অভিযান কামনা করুন না কেন,
-            আমরা আপনার স্বপ্নের ভ্রমণকে সত্যি করতে এখানে আছি।
+            Palanca Safari & Travel-এ, আমরা আবেগ দ্বারা অনুপ্রাণিত ভ্রমণ তৈরি
+            করি - মানুষ, বন্যপ্রাণী এবং অ্যাঙ্গোলা ও বিশ্বের শ্বাসরুদ্ধকর
+            প্রাকৃতিক দৃশ্যের জন্য। আপনি সৈকত ছুটি, রোমাঞ্চকর সাফারি, বা পর্বত
+            অভিযান কামনা করুন না কেন, আমরা আপনার স্বপ্নের ভ্রমণকে সত্যি করতে
+            এখানে আছি।
           </p>
         </div>
         <div class="footer-column">
@@ -274,8 +246,7 @@
             palancasafari.andtravel@gmail.com
           </p>
           <div class="social-icons">
-            <a
-              href="https://www.facebook.com/profile.php?id=61554952583256"
+            <a href="https://www.facebook.com/profile.php?id=61554952583256"
               ><i class="fab fa-facebook"></i
             ></a>
             <a href="https://www.instagram.com/palancasafari"
@@ -306,6 +277,7 @@
     </div>
 
     <script src="/assets/js/loader.js"></script>
+    <script src="/assets/js/contact.js"></script>
     <script src="../../assets/js/app.js"></script>
     <script src="../../assets/js/langs.js"></script>
 
