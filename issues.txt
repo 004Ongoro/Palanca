@@ -1,6 +1,4 @@
 Known issues
 Translation issues:
-1: pt/contact
-2: es/destinations
-3: es/gallery
+1: pt/contact 
 4: bn/about
