@@ -1,44 +1,242 @@
 [
   {
-    "country": "Angola",
+    "country": {
+      "en": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "ar": "أنغولا",
+      "bn": "অ্যাঙ্গোলা",
+      "zh": "安哥拉",
+      "ru": "Ангола",
+      "pt": "Angola",
+      "hi": "अंगोला",
+      "it": "Angola"
+    },
     "tags": "Angola",
-    "title": "Luanda City - Angola",
-    "description": "Experience the culture, and the people of Luanda city of Angola",
+    "title": {
+      "en": "Luanda City - Angola",
+      "fr": "Ville de Luanda - Angola",
+      "es": "Ciudad de Luanda - Angola",
+      "ar": "مدينة لواندا - أنغولا",
+      "bn": "লুয়ান্ডা শহর - অ্যাঙ্গোলা",
+      "zh": "罗安达市 - 安哥拉",
+      "ru": "Город Луанда - Ангола",
+      "pt": "Cidade de Luanda - Angola",
+      "hi": "लुआंडा शहर - अंगोला",
+      "it": "Città di Luanda - Angola"
+    },
+    "description": {
+      "en": "Experience the culture, and the people of Luanda city of Angola",
+      "fr": "Découvrez la culture et les habitants de la ville de Luanda en Angola",
+      "es": "Experimenta la cultura y la gente de la ciudad de Luanda en Angola",
+      "ar": "اختبر ثقافة وشعب مدينة لواندا في أنغولا",
+      "bn": "অ্যাঙ্গোলার লুয়ান্ডা শহরের সংস্কৃতি এবং মানুষের অভিজ্ঞতা নিন",
+      "zh": "体验安哥拉罗安达市的文化和人民",
+      "ru": "Познакомьтесь с культурой и жителями города Луанда в Анголе",
+      "pt": "Experimente a cultura e o povo da cidade de Luanda, em Angola",
+      "hi": "अंगोला के लुआंडा शहर की संस्कृति और लोगों का अनुभव करें",
+      "it": "Scopri la cultura e la gente della città di Luanda in Angola"
+    },
     "image": "/assets/images/luanda_city.jpeg"
   },
   {
-    "country": "Angola",
+    "country": {
+      "en": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "ar": "أنغولا",
+      "bn": "অ্যাঙ্গোলা",
+      "zh": "安哥拉",
+      "ru": "Ангола",
+      "pt": "Angola",
+      "hi": "अंगोला",
+      "it": "Angola"
+    },
     "tags": "Angola",
-    "title": "Pungo Andongo Black Stones",
-    "description": "Explore pungo adongo black stones; The Angola's geological rock formations.",
+    "title": {
+      "en": "Pungo Andongo Black Stones",
+      "fr": "Pierres Noires de Pungo Andongo",
+      "es": "Piedras Negras de Pungo Andongo",
+      "ar": "أحجار بونغو أندونغو السوداء",
+      "bn": "পুঙ্গো অ্যান্ডোঙ্গোর কালো পাথর",
+      "zh": "蓬戈安东戈黑石",
+      "ru": "Черные камни Пунго-Андонго",
+      "pt": "Pedras Negras de Pungo Andongo",
+      "hi": "पुंगो अंडोंगो के काले पत्थर",
+      "it": "Pietre Nere di Pungo Andongo"
+    },
+    "description": {
+      "en": "Explore pungo adongo black stones; The Angola's geological rock formations.",
+      "fr": "Explorez les pierres noires de Pungo Andongo; les formations rocheuses géologiques de l'Angola.",
+      "es": "Explora las piedras negras de Pungo Andongo; las formaciones rocosas geológicas de Angola.",
+      "ar": "استكشف أحجار بونغو أندونغو السوداء؛ التكوينات الصخرية الجيولوجية في أنغولا.",
+      "bn": "পুঙ্গো অ্যান্ডোঙ্গোর কালো পাথর ঘুরে দেখুন; অ্যাঙ্গোলার ভূতাত্ত্বিক শিলা গঠন।",
+      "zh": "探索蓬戈安东戈黑石；安哥拉的地质岩层。",
+      "ru": "Исследуйте черные камни Пунго-Андонго; геологические скальные образования Анголы.",
+      "pt": "Explore as pedras negras de Pungo Andongo; as formações rochosas geológicas de Angola.",
+      "hi": "पुंगो अंडोंगो के काले पत्थरों का अन्वेषण करें; अंगोला के भूवैज्ञानिक शैल संरचनाएँ।",
+      "it": "Esplora le pietre nere di Pungo Andongo; le formazioni rocciose geologiche dell'Angola."
+    },
     "image": "/assets/images/pungo andongo black stones.jpg"
   },
   {
-    "country": "Angola",
+    "country": {
+      "en": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "ar": "أنغولا",
+      "bn": "অ্যাঙ্গোলা",
+      "zh": "安哥拉",
+      "ru": "Ангола",
+      "pt": "Angola",
+      "hi": "अंगोला",
+      "it": "Angola"
+    },
     "tags": "Angola, beach, enjoy, luanda, mussulo",
-    "title": "Mussulo Beach",
-    "description": "Visit Mussulo Beach for an outstanding beach experience",
+    "title": {
+      "en": "Mussulo Beach",
+      "fr": "Plage de Mussulo",
+      "es": "Playa de Mussulo",
+      "ar": "شاطئ موسولو",
+      "bn": "মুসুলো সৈকত",
+      "zh": "穆苏卢海滩",
+      "ru": "Пляж Муссуло",
+      "pt": "Praia do Mussulo",
+      "hi": "मुस्सुलो बीच",
+      "it": "Spiaggia di Mussulo"
+    },
+    "description": {
+      "en": "Visit Mussulo Beach for an outstanding beach experience",
+      "fr": "Visitez la plage de Mussulo pour une expérience balnéaire exceptionnelle",
+      "es": "Visita la playa de Mussulo para una experiencia de playa excepcional",
+      "ar": "قم بزيارة شاطئ موسولو لتجربة شاطئية رائعة",
+      "bn": "একটি অসাধারণ সৈকত অভিজ্ঞতার জন্য মুসুলো সৈকত দেখুন",
+      "zh": "参观穆苏卢海滩，享受卓越的海滩体验",
+      "ru": "Посетите пляж Муссуло для незабываемого пляжного отдыха",
+      "pt": "Visite a Praia do Mussulo para uma experiência de praia extraordinária",
+      "hi": "एक उत्कृष्ट समुद्र तट अनुभव के लिए मुस्सुलो बीच पर जाएँ",
+      "it": "Visita la spiaggia di Mussulo per un'esperienza balneare eccezionale"
+    },
     "image": "/assets/images/mussulo beach - luanda (2).jpg"
   },
   {
-    "country": "Angola",
+    "country": {
+      "en": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "ar": "أنغولا",
+      "bn": "অ্যাঙ্গোলা",
+      "zh": "安哥拉",
+      "ru": "Ангола",
+      "pt": "Angola",
+      "hi": "अंगोला",
+      "it": "Angola"
+    },
     "tags": "Angola, wel, mira, billis, bilis",
-    "title": "Welwitschia Mirrabilis",
-    "description": "Explore the oldest plant that can survive years without water in the Namib",
-    "image": "/assets/images/welwitschia mirrabilis never die.jpg"
+    "title": {
+      "en": "Welwitschia Mirrabilis",
+      "fr": "Welwitschia Mirabilis",
+      "es": "Welwitschia Mirabilis",
+      "ar": "ويلويتشيا ميرابيليس",
+      "bn": "ওয়েলউইটসিয়া মিরাবিলিস",
+      "zh": "百岁兰",
+      "ru": "Вельвичия удивительная",
+      "pt": "Welwitschia Mirabilis",
+      "hi": "वेल्विट्सचिया मिराबिलिस",
+      "it": "Welwitschia Mirabilis"
+    },
+    "description": {
+      "en": "Explore the oldest plant that can survive years without water in the Namib",
+      "fr": "Explorez la plus vieille plante qui peut survivre des années sans eau dans le Namib",
+      "es": "Explora la planta más antigua que puede sobrevivir años sin agua en el Namib",
+      "ar": "استكشف أقدم نبات يمكنه البقاء على قيد الحياة لسنوات دون ماء في ناميب",
+      "bn": "নামিবে জল ছাড়াই বহু বছর বেঁচে থাকতে পারে এমন প্রাচীনতম উদ্ভিদটি ঘুরে দেখুন",
+      "zh": "探索纳米布沙漠中最古老的植物，它可以在没有水的情况下存活多年",
+      "ru": "Исследуйте старейшее растение, которое может выживать годами без воды в Намибе",
+      "pt": "Explore a planta mais antiga que consegue sobreviver anos sem água no Namibe",
+      "hi": "नामीब में सबसे पुराने पौधे का अन्वेषण करें जो बिना पानी के वर्षों तक जीवित रह सकता है",
+      "it": "Esplora la pianta più antica che può sopravvivere anni senza acqua nel Namib"
+    },
+    "image": "/assets/images/welwitschia mirabilis never die.jpg"
   },
   {
-    "country": "Angola",
+    "country": {
+      "en": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "ar": "أنغولا",
+      "bn": "অ্যাঙ্গোলা",
+      "zh": "安哥拉",
+      "ru": "Ангола",
+      "pt": "Angola",
+      "hi": "अंगोला",
+      "it": "Angola"
+    },
     "tags": "Angola",
-    "title": "Dallys Resort",
-    "description": "Spend your quality time in the best resort; Dallys resort in Luanda",
+    "title": {
+      "en": "Dallys Resort",
+      "fr": "Dallys Resort",
+      "es": "Dallys Resort",
+      "ar": "منتجع داليز",
+      "bn": "ড্যালিস রিসোর্ট",
+      "zh": "达利斯度假村",
+      "ru": "Курорт Даллис",
+      "pt": "Dallys Resort",
+      "hi": "डैलिस रिज़ॉर्ट",
+      "it": "Dallys Resort"
+    },
+    "description": {
+      "en": "Spend your quality time in the best resort; Dallys resort in Luanda",
+      "fr": "Passez du bon temps dans le meilleur complexe hôtelier ; le Dallys Resort à Luanda",
+      "es": "Pasa tiempo de calidad en el mejor resort; Dallys Resort en Luanda",
+      "ar": "اقضِ وقتًا ممتعًا في أفضل منتجع؛ منتجع داليز في لواندا",
+      "bn": "সেরা রিসোর্টে আপনার মূল্যবান সময় কাটান; লুয়ান্ডার ড্যালিস রিসোর্ট",
+      "zh": "在最好的度假村度过您的美好时光；罗安达的达利斯度假村",
+      "ru": "Проведите время с пользой в лучшем курортном отеле; Курорт Даллис в Луанде",
+      "pt": "Passe momentos de qualidade no melhor resort; Dallys Resort em Luanda",
+      "hi": "सर्वोत्तम रिज़ॉर्ट में अपना गुणवत्ता समय बिताएँ; लुआंडा में डैलिस रिज़ॉर्ट",
+      "it": "Trascorri del tempo di qualità nel miglior resort; Dallys Resort a Luanda"
+    },
     "image": "/assets/images/dallys resort - mussulo in luanda.png"
   },
   {
-    "country": "Angola",
+    "country": {
+      "en": "Angola",
+      "fr": "Angola",
+      "es": "Angola",
+      "ar": "أنغولا",
+      "bn": "অ্যাঙ্গোলা",
+      "zh": "安哥拉",
+      "ru": "Ангола",
+      "pt": "Angola",
+      "hi": "अंगोला",
+      "it": "Angola"
+    },
     "tags": "Angola",
-    "title": "Palanca Negra",
-    "description": "Experience Angola's outstanding wildlife",
+    "title": {
+      "en": "Palanca Negra",
+      "fr": "Palanca Negra",
+      "es": "Palanca Negra",
+      "ar": "بالانكا نيغرا",
+      "bn": "পালাঙ্কা নেগ্রা",
+      "zh": "黑剑羚",
+      "ru": "Черная паланка",
+      "pt": "Palanca Negra",
+      "hi": "पालांका नेग्रा",
+      "it": "Palanca Negra"
+    },
+    "description": {
+      "en": "Experience Angola's outstanding wildlife",
+      "fr": "Découvrez la faune exceptionnelle de l'Angola",
+      "es": "Experimenta la destacada vida salvaje de Angola",
+      "ar": "اختبر الحياة البرية المتميزة في أنغولا",
+      "bn": "অ্যাঙ্গোলার অসামান্য বন্যপ্রাণীর অভিজ্ঞতা নিন",
+      "zh": "体验安哥拉杰出的野生动物",
+      "ru": "Познакомьтесь с выдающейся дикой природой Анголы",
+      "pt": "Experimente a vida selvagem extraordinária de Angola",
+      "hi": "अंगोला के उत्कृष्ट वन्यजीवों का अनुभव करें",
+      "it": "Scopri la straordinaria fauna selvatica dell'Angola"
+    },
     "image": "/assets/images/palanca negra of angola.jpg"
   }
 ]
