@@ -1,4 +1,3 @@
-// mailing
 document
   .getElementById("contact-Form")
   .addEventListener("submit", async function (e) {
