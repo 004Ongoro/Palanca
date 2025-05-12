@@ -474,7 +474,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   async function submitBooking(data) {
-    const res = await fetch("https://palanca-kohl.vercel.app/api/book", {
+    const res = await fetch("/api/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
