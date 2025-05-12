@@ -8,7 +8,7 @@ document
     const phone = document.getElementById("phone").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    const res = await fetch("/api/sendEmail", {
+    const res = await fetch("https://palancasafari.com/api/sendEmail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, phone, message }),
