@@ -8,10 +8,12 @@ module.exports = async function handler(req, res) {
   const { name, email, phone, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.zoho.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: "palancasafari.andtravel@gmail.com",
-      pass: process.env.GMAIL_APP_PASSWORD,
+      user: "reservations@palancasafari.com",
+      pass: process.env.ZOHO_RES_PASSWORD,
     },
   });
 
@@ -66,7 +68,7 @@ module.exports = async function handler(req, res) {
       <p style="margin: 0;">© ${new Date().getFullYear()} Palanca Safari & Travel. All rights reserved. <br /> This email was sent to ${email} after contacting us via our website contact page.</p>
       
       <p style="margin: 0;">
-        <a href="https://palancasafari.com/privacy" style="color: #777; text-decoration: underline;">Privacy Policy</a>
+        <a href="https://palancasafari.com/legal/privacy-policy/" style="color: #777; text-decoration: underline;">Privacy Policy</a>
       </p>
     </footer>
   </div>
@@ -74,15 +76,15 @@ module.exports = async function handler(req, res) {
 
   try {
     await transporter.sendMail({
-      from: '"Palanca Safari & Travel" <palancasafari.andtravel@gmail.com>',
-      to: "palancasafari.andtravel@gmail.com",
+      from: '"Palanca Safari & Travel" <reservations@palancasafari.com>',
+      to: "reservations@palancasafari.com",
       subject: `New Contact from ${name}`,
       html: adminHtml,
       replyTo: email,
     });
 
     await transporter.sendMail({
-      from: '"Palanca Safari & Travel" <palancasafari.andtravel@gmail.com>',
+      from: '"Palanca Safari & Travel" <reservations@palancasafari.com>',
       to: email,
       subject: "We received your message!",
       html: userHtml,
