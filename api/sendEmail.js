@@ -12,8 +12,8 @@ module.exports = async function handler(req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: "reservations@palancasafari.com",
-      pass: process.env.ZOHO_RES_PASSWORD,
+      user: "info@palancasafari.com",
+      pass: process.env.ZOHO_INFO_PASSWORD,
     },
   });
 
@@ -76,15 +76,15 @@ module.exports = async function handler(req, res) {
 
   try {
     await transporter.sendMail({
-      from: '"Palanca Safari & Travel" <reservations@palancasafari.com>',
-      to: "reservations@palancasafari.com",
+      from: '"Palanca Safari & Travel" <info@palancasafari.com>',
+      to: "info@palancasafari.com",
       subject: `New Contact from ${name}`,
       html: adminHtml,
       replyTo: email,
     });
 
     await transporter.sendMail({
-      from: '"Palanca Safari & Travel" <reservations@palancasafari.com>',
+      from: '"Palanca Safari & Travel" <info@palancasafari.com>',
       to: email,
       subject: "We received your message!",
       html: userHtml,
