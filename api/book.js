@@ -5,9 +5,8 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  console.log("Incoming Request Body:", req.body);
 
-  const bookingReceiver = "palancasafari.andtravel@gmail.com";
+  const bookingReceiver = "reservations@palancasafari.com";
 
   const name = req.body.Name;
   const email = req.body.Email;
@@ -41,10 +40,12 @@ module.exports = async function handler(req, res) {
   const packageSlug = destPackage.toLowerCase().replace(/\s+/g, "-");
 
   const transporter = nodemailer.createTransport({
-    service: "Gmail",
+    host: "smtp.zoho.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: bookingReceiver,
-      pass: process.env.GMAIL_APP_PASSWORD,
+      user: "reservations@palancasafari.com",
+      pass: process.env.ZOHO_RES_PASSWORD,
     },
   });
 
@@ -143,7 +144,7 @@ module.exports = async function handler(req, res) {
             </ul>
 
             <div style="margin-top: 30px; text-align: center;">
-              <a href="https://palancasafari.com/packages/${packageSlug}" style="background: #D4AF37; color: white; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold;">View Package Details</a>
+              <a href="https://palancasafari.com" style="background: #D4AF37; color: white; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold;">Continue Browsing</a>
             </div>
 
             <h2 style="margin-top: 40px; font-size: 20px; color: #D4AF37;">Need Help?</h2>
