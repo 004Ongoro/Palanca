@@ -18,7 +18,7 @@ module.exports = async function handler(req, res) {
   // HTML email to palanca
   const adminHtml = `
     <div style="font-family: Arial, sans-serif; font-size: 1.1rem; color: #333;">
-      <img src="https://palanca-kohl.vercel.app/logo.png" alt="Palanca Safari & Travel" style="width: 200px;" />
+      <img src="https://palancasafari.com/logo.png" alt="Palanca Safari & Travel" style="width: 200px;" />
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
@@ -38,7 +38,7 @@ module.exports = async function handler(req, res) {
   <div style="font-family: Arial, sans-serif; font-size: 1.1rem; color: #333; background-color: #f9f9f9; padding: 40px 20px;">
     <div style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
       <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://palanca-kohl.vercel.app/logo.png" alt="Palanca Safari & Travel" style="width: 180px; margin-bottom: 10px;" />
+        <img src="https://palancasafari.com/logo.png" alt="Palanca Safari & Travel" style="width: 180px; margin-bottom: 10px;" />
       </div>
 
       <h2 style="color: #005f40;">Thank You for Contacting Palanca Safari & Travel</h2>
@@ -66,7 +66,7 @@ module.exports = async function handler(req, res) {
       <p style="margin: 0;">© ${new Date().getFullYear()} Palanca Safari & Travel. All rights reserved. <br /> This email was sent to ${email} after contacting us via our website contact page.</p>
       
       <p style="margin: 0;">
-        <a href="https://palanca-kohl.vercel.app/privacy" style="color: #777; text-decoration: underline;">Privacy Policy</a>
+        <a href="https://palancasafari.com/privacy" style="color: #777; text-decoration: underline;">Privacy Policy</a>
       </p>
     </footer>
   </div>

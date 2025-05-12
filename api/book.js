@@ -57,7 +57,7 @@ module.exports = async function handler(req, res) {
       <div style="font-family: 'Segoe UI', sans-serif; background-color: #fefefe; padding: 20px; color: #333;">
         <div style="max-width: 600px; margin: 0 auto; border-radius: 10px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); overflow: hidden;">
           <div style="background: #e3f4f4; padding: 20px; text-align: center;">
-            <img src="https://palanca-kohl.vercel.app/logo.png" alt="Palanca Safari & Travel" style="width: 120px; margin-bottom: 10px;" />
+            <img src="https://palancasafari.com/logo.png" alt="Palanca Safari & Travel" style="width: 120px; margin-bottom: 10px;" />
             <h2 style="margin: 0; color: #2c3e50;">New Booking Notification</h2>
             <p style="margin-top: 5px; color: #555;">Palanca Safari & Travel</p>
           </div>
@@ -105,7 +105,7 @@ module.exports = async function handler(req, res) {
       <div style="font-family: 'Segoe UI', sans-serif; background-color: #f9fdfd; padding: 40px; color: #333;">
         <div style="max-width: 640px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
           <div style="background: #f2f4f5; padding: 30px; text-align: center;">
-            <img src="https://palanca-kohl.vercel.app/logo.png" alt="Palanca Safari & Travel" style="height: 60px;" />
+            <img src="https://palancasafari.com/logo.png" alt="Palanca Safari & Travel" style="height: 60px;" />
             <h1 style="margin: 15px 0 5px; color: #333; font-size: 24px;">Booking Confirmation</h1>
             <p style="margin: 0; color: #555; font-size: 17px;">Thank you for choosing Palanca Safari & Travel!</p>
           </div>
@@ -143,7 +143,7 @@ module.exports = async function handler(req, res) {
             </ul>
 
             <div style="margin-top: 30px; text-align: center;">
-              <a href="https://palanca-kohl.vercel.app/packages/${packageSlug}" style="background: #D4AF37; color: white; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold;">View Package Details</a>
+              <a href="https://palancasafari.com/packages/${packageSlug}" style="background: #D4AF37; color: white; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold;">View Package Details</a>
             </div>
 
             <h2 style="margin-top: 40px; font-size: 20px; color: #D4AF37;">Need Help?</h2>
