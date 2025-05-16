@@ -60,7 +60,7 @@ export default async function handler(req, res) {
       <p style="margin-top: 20px;">
         <a href="https://www.palancasafari.com/" style="color: #007bff; text-decoration: none;">Visit our website</a><br/>
         <a href="https://www.palancasafari.com/about/" style="color: #007bff; text-decoration: none;"> Learn more about us</a><br/>
-        <a href="mailto:palancasafari.andtravel@gmail.com" style="color: #007bff; text-decoration: none;"> Contact Support</a>
+        <a href="mailto:info@palancasafari.com" style="color: #007bff; text-decoration: none;"> Contact Support</a>
       </p>
 
       <p style="margin-top: 2rem;">Warm regards,<br/><strong>The Palanca Safari & Travel Team</strong></p>
