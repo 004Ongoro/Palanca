@@ -119,9 +119,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   if (buttons.length >= 2) {
-    buttons[0].href = "./destinations/"; 
-    buttons[1].href = "#packages";
-  }
+    scrollButton = buttons[1]
+    buttons[0].href = "./destinations/";
+    
+    scrollButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      
+      const targetSection = document.querySelector(".package-grid");
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+  })}
 
 });
 
