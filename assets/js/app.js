@@ -113,6 +113,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //
 
+document.addEventListener("DOMContentLoaded", function () {
+  
+  const buttons = document.querySelectorAll(".hero-buttons a");
+
+  
+  if (buttons.length >= 2) {
+    buttons[0].href = "./destinations/"; 
+    buttons[1].href = "#packages";
+  }
+
+});
+
 const slider = document.querySelector(".slider");
 const slides = document.querySelectorAll(".slide");
 
