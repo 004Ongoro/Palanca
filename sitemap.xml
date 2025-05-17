@@ -9,192 +9,37 @@
 
 <url>
   <loc>https://www.palancasafari.com/</loc>
-  <lastmod>2025-05-12T14:05:58+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.palancasafari.com/en/destinations/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.palancasafari.com/en/contact/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.palancasafari.com/en/about/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.palancasafari.com/en/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.palancasafari.com/en/services/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.palancasafari.com/en/galary/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<!-- fr -->
-<url>
-  <loc>https://www.palancasafari.com/fr/destinations/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/fr/contact/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/fr/about/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/fr/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/fr/services/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/fr/galary/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<!-- es -->
-<url>
-  <loc>https://www.palancasafari.com/es/destinations/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/es/contact/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/es/about/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/es/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/es/services/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/es/galary/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<!-- it -->
-<url>
-  <loc>https://www.palancasafari.com/it/destinations/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/it/contact/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/it/about/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/it/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/it/services/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/it/galary/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<!-- zh -->
-<url>
-  <loc>https://www.palancasafari.com/zh/destinations/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/zh/contact/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/zh/about/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/zh/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/zh/services/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/zh/galary/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<!-- hi -->
-<url>
-  <loc>https://www.palancasafari.com/hi/destinations/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/hi/contact/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/hi/about/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/hi/</loc>
-  <lastmod>2025-05-12T14:05:59+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/hi/services/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.palancasafari.com/hi/galary/</loc>
-  <lastmod>2025-05-12T14:06:00+00:00</lastmod>
+  <lastmod>2025-05-17T19:18:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
