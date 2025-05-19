@@ -238,5 +238,126 @@
       "it": "Scopri la straordinaria fauna selvatica dell'Angola"
     },
     "image": "/assets/images/palanca negra of angola.jpg"
-  }
+  },
+    {
+      "country": {
+        "en": "Angola",
+        "fr": "Angola",
+        "es": "Angola",
+        "ar": "أنغولا",
+        "bn": "অ্যাঙ্গোলা",
+        "zh": "安哥拉",
+        "ru": "Ангола",
+        "pt": "Angola",
+        "hi": "अंगोला",
+        "it": "Angola"
+      },
+      "tags": "Angola, National Park, Wildlife",
+      "title": {
+        "en": "Quiçama National Park",
+        "fr": "Parc National de Quiçama",
+        "es": "Parque Nacional de Quiçama",
+        "ar": "منتزه كيساما الوطني",
+        "bn": "কুইসামা জাতীয় উদ্যান",
+        "zh": "奎萨马国家公园",
+        "ru": "Национальный парк Кисама",
+        "pt": "Parque Nacional de Quiçama",
+        "hi": "कुइकामा राष्ट्रीय उद्यान",
+        "it": "Parco Nazionale di Quiçama"
+      },
+      "description": {
+        "en": "Discover the diverse wildlife of Quiçama National Park, Angola.",
+        "fr": "Découvrez la faune diversifiée du parc national de Quiçama, en Angola.",
+        "es": "Descubre la diversa vida salvaje del Parque Nacional de Quiçama, Angola.",
+        "ar": "اكتشف الحياة البرية المتنوعة في منتزه كيساما الوطني ، أنغولا.",
+        "bn": "অ্যাঙ্গোলার কুইসামা জাতীয় উদ্যানে বিভিন্ন ধরণের বন্যপ্রাণী আবিষ্কার করুন।",
+        "zh": "探索安哥拉奎萨马国家公园多样化的野生动物。",
+        "ru": "Откройте для себя разнообразную дикую природу национального парка Кисама, Ангола.",
+        "pt": "Descubra a diversidade da vida selvagem do Parque Nacional de Quiçama, Angola.",
+        "hi": "अंगोला के कुइकामा राष्ट्रीय उद्यान के विविध वन्यजीवों की खोज करें।",
+        "it": "Scopri la diversificata fauna selvatica del Parco Nazionale di Quiçama, Angola."
+      },
+      "image": "/assets/images/wildlife1.png"
+    },
+    {
+      "country": {
+        "en": "Angola",
+        "fr": "Angola",
+        "es": "Angola",
+        "ar": "أنغولا",
+        "bn": "অ্যাঙ্গোলা",
+        "zh": "安哥拉",
+        "ru": "Ангола",
+        "pt": "Angola",
+        "hi": "अंगोला",
+        "it": "Angola"
+      },
+      "tags": "Angola, National Park, Palanca Negra",
+      "title": {
+        "en": "Cangandala National Park",
+        "fr": "Parc National de Cangandala",
+        "es": "Parque Nacional de Cangandala",
+        "ar": "منتزه كانغاندالا الوطني",
+        "bn": "কানগান্দালা জাতীয় উদ্যান",
+        "zh": "坎甘达拉国家公园",
+        "ru": "Национальный парк Кангандела",
+        "pt": "Parque Nacional de Cangandala",
+        "hi": "कंगंडाला राष्ट्रीय उद्यान",
+        "it": "Parco Nazionale di Cangandala"
+      },
+      "description": {
+        "en": "Visit Cangandala National Park, home to the Giant Sable Antelope.",
+        "fr": "Visitez le parc national de Cangandala, qui abrite l'antilope géante Sable.",
+        "es": "Visite el Parque Nacional de Cangandala, hogar del antílope Sable Gigante.",
+        "ar": "قم بزيارة منتزه كانغاندالا الوطني ، موطن الظبي العملاق.",
+        "bn": "জায়ান্ট সেবল অ্যান্টিলোপের আবাস কানগান্দালা জাতীয় উদ্যান পরিদর্শন করুন।",
+        "zh": "参观坎甘达拉国家公园，这里是安哥拉巨型黑貂羚的家园。",
+        "ru": "Посетите Национальный парк Кангандела, где обитает гигантская черная антилопа.",
+        "pt": "Visite o Parque Nacional de Cangandala, lar da Palanca Negra Gigante.",
+        "hi": "विशालकाय सेबल मृग का घर, कंगंडाला राष्ट्रीय उद्यान की यात्रा करें।",
+        "it": "Visita il Parco Nazionale di Cangandala, sede dell'antilope Sable gigante."
+      },
+      "image": "/assets/images/wildlife3.png"
+    },
+    {
+       "country": {
+        "en": "Angola",
+        "fr": "Angola",
+        "es": "Angola",
+        "ar": "أنغولا",
+        "bn": "অ্যাঙ্গোলা",
+        "zh": "安哥拉",
+        "ru": "Ангола",
+        "pt": "Angola",
+        "hi": "अंगोला",
+        "it": "Angola"
+      },
+      "tags": "Angola, Lodge, Sangano",
+      "title": {
+        "en": "Boutique Lodge Sangano",
+        "fr": "Boutique Lodge Sangano",
+        "es": "Boutique Lodge Sangano",
+        "ar": "بوتيك لودج سانغانو",
+        "bn": "বুটিক লজ সানগানো",
+        "zh": "桑加诺精品旅馆",
+        "ru": "Бутик Лодж Сангано",
+        "pt": "Boutique Lodge Sangano",
+        "hi": "बुटीक लॉज सांगानो",
+        "it": "Boutique Lodge Sangano"
+      },
+      "description": {
+        "en": "Experience the beauty of Sangano at Boutique Lodge Sangano.",
+        "fr": "Découvrez la beauté de Sangano au Boutique Lodge Sangano.",
+        "es": "Experimenta la belleza de Sangano en Boutique Lodge Sangano.",
+        "ar": "استمتع بجمال سانغانو في بوتيك لودج سانغانو.",
+        "bn": "বুটিক লজ সানগানোতে সানগানোর সৌন্দর্যের অভিজ্ঞতা নিন।",
+        "zh": "在桑加诺精品旅馆体验桑加诺之美。",
+        "ru": "Откройте для себя красоту Сангано в Boutique Lodge Sangano.",
+        "pt": "Experimente a beleza de Sangano no Boutique Lodge Sangano.",
+        "hi": "बुटीक लॉज सांगानो में सांगानो की सुंदरता का अनुभव करें।",
+        "it": "Scopri la bellezza di Sangano al Boutique Lodge Sangano."
+      },
+      "image": "/assets/images/boutique_logdge_sangano.png"
+    }
+  
 ]
