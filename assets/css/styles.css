@@ -1995,6 +1995,122 @@ textarea.form-input {
   }
 }
 
+/* Certifications Section Styling */
+.certifications-section {
+  padding: 60px 0; 
+  text-align: center;
+  background-color: var(--color-bg-light); 
+  border-top: 1px solid #eee;
+}
+
+.certifications-section .container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.certifications-section h2 {
+  font-size: 2.8em; 
+  color: #2c3e50; 
+  margin-bottom: 50px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.certifications-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px; 
+  height: 4px; 
+  background-color: #e67e22;
+  border-radius: 2px;
+}
+
+.certification-item {
+  display: inline-block; 
+  vertical-align: top; 
+  margin: 0 20px 40px; 
+  padding: 30px;
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-bg-light);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+  max-width: 350px; 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.certification-item img {
+  max-width: 100%; 
+  height: auto;
+  border: 1px solid #eee; 
+  border-radius: 5px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.certification-item h3 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.certification-item p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.view-cert-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #e67e22; 
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-cert-button:hover {
+  background-color: #d35400; 
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .certifications-section h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+  }
+  .certification-item {
+      width: 90%; 
+      margin: 0 auto 30px; 
+      display: block; 
+      max-width: none; 
+  }
+  .certifications-section .container {
+      padding: 0 15px;
+  }
+  .certification-item p {
+      font-size: 1em;
+  }
+  .view-cert-button {
+      font-size: 1em;
+      padding: 10px 20px;
+  }
+}
+
 .active-link {
   color: var(--color-secondary);
   background-color: transparent;
