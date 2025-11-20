@@ -138,14 +138,14 @@ async function setLanguage(lang) {
 
   // 4. Update the language attribute on the <html> tag
   document.documentElement.lang = lang;
+  if (lang === "ar") {
+    document.documentElement.dir = "rtl";
+  } else {
+    document.documentElement.dir = "ltr";
+  }
 }
 
-document.documentElement.lang = lang;
-if (lang === "ar") {
-  document.documentElement.dir = "rtl";
-} else {
-  document.documentElement.dir = "ltr";
-}
+
 
 // --- Initialization & Event Handlers ---
 
