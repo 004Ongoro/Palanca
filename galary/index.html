@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palanca Safari & Travel - Our Gallery</title>
+    <title data-i18n="galary_page_title">
+      Palanca Safari & Travel - Our Gallery
+    </title>
 
     <meta
       name="description"
+      data-i18n="meta_description"
       content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
     <meta
@@ -14,30 +17,29 @@
       content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola"
     />
     <meta name="author" content="George Ongoro" />
-    <!-- Robots -->
     <meta name="robots" content="index, follow" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.palancasafari.com" />
+    <link rel="canonical" href="https://www.palancasafari.com/galary/" />
 
-    <!-- Open Graph -->
     <meta
       name="og:title"
+      data-i18n="galary_page_title"
       content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours"
     />
     <meta
       name="og:description"
+      data-i18n="meta_description"
       content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
-    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:url" content="https://www.palancasafari.com/galary/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="palancasafari.com/open-graph.png" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
     <meta
       name="twitter:description"
+      data-i18n="twitter_description"
       content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences."
     />
     <meta
@@ -45,7 +47,6 @@
       content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,15 +56,15 @@
         "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "Tour and Travel company offering safaris, beach holidays, and scenic adventures across Angola and Africa",
         "telephone": "+254714941173",
-        "address":{
+        "address": {
           "@type": "PostalAddress",
-          "streetAddress": ""
-          "addressLocality": "Nairobi"
+          "streetAddress": "",
+          "addressLocality": "Nairobi",
           "addressCountry": "KE"
         },
         "sameAs": [
-          "https://www.facebook.com/"
-          "https://www.instagram.com/"
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
           "https://www.x.com/"
         ]
       }
@@ -72,15 +73,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/fa_web/css/all.min.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
   </head>
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
@@ -94,37 +92,39 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
   <body class="galary-page">
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="logo">
-          <img src="../../logo.png" alt="logo" />
+          <img src="../logo.png" alt="logo" />
           <h2>
             Palanca Safari <br />
             & Travel
           </h2>
         </div>
         <ul class="nav-links">
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../services/">Services</a></li>
-          <li><a href="../destinations/">Destinations</a></li>
-          <li><a href="../galary/">Gallery</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="/" data-i18n="nav_home">Home</a></li>
+          <li><a href="/about/" data-i18n="nav_about">About</a></li>
+          <li><a href="/services/" data-i18n="nav_services">Services</a></li>
+          <li>
+            <a href="/destinations/" data-i18n="nav_destinations"
+              >Destinations</a
+            >
+          </li>
+          <li><a href="/galary/" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="/contact/" data-i18n="nav_contact">Contact</a></li>
           <div class="translate-container">
             <select name="language" id="language">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="pt">Portuguese</option>
-              <option value="fr">French</option>
-              <option value="it">Italian</option>
-              <option value="hi">Hindi</option>
-              <option value="ar">Arabic</option>
-              <option value="ru">Russian</option>
-              <option value="bn">Bengali</option>
-              <option value="zh">Chinese</option>
+              <option value="en" data-i18n="lang_en">English</option>
+              <option value="es" data-i18n="lang_es">Spanish</option>
+              <option value="pt" data-i18n="lang_pt">Portuguese</option>
+              <option value="fr" data-i18n="lang_fr">French</option>
+              <option value="it" data-i18n="lang_it">Italian</option>
+              <option value="hi" data-i18n="lang_hi">Hindi</option>
+              <option value="ar" data-i18n="lang_ar">Arabic</option>
+              <option value="ru" data-i18n="lang_ru">Russian</option>
+              <option value="bn" data-i18n="lang_bn">Bengali</option>
+              <option value="zh" data-i18n="lang_zh">Chinese</option>
             </select>
           </div>
         </ul>
@@ -138,101 +138,101 @@
 
     <section class="section galary">
       <div class="container">
-        <h2 class="section-title">Our Gallery</h2>
+        <h2 class="section-title" data-i18n="galary_section_title">
+          Our Gallery
+        </h2>
         <div class="gallery" id="gallery">
           <div class="gallery-item">
             <img
-              src="../../assets/images/diving_excursions_benguela.jpg"
+              src="../assets/images/diving_excursions_benguela.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/mussulo_flamingo_bay_resort.jpg"
+              src="../assets/images/mussulo_flamingo_bay_resort.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/dallys resort - mussulo in luanda.png"
+              src="../assets/images/dallys resort - mussulo in luanda.png"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/mussulo beach - luanda.jpg"
+              src="../assets/images/mussulo beach - luanda.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/palanca negra of angola.jpg"
+              src="../assets/images/palanca negra of angola.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/pungo andongo black stones.jpg"
+              src="../assets/images/pungo andongo black stones.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/roca das mangueiras - mussulo in luanda.png"
+              src="../assets/images/roca das mangueiras - mussulo in luanda.png"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/welwitschia mirrabilis never die.jpg"
+              src="../assets/images/welwitschia mirrabilis never die.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/angola-1.jpg" alt="Image 6" />
+            <img src="../assets/images/angola-1.jpg" alt="Image 6" />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/angola-2.jpg" alt="Image 6" />
+            <img src="../assets/images/angola-2.jpg" alt="Image 6" />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/cape dien - cabo ledo.jpg"
+              src="../assets/images/cape dien - cabo ledo.jpg"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/fenda_da_tundavala_na_hailu.jpg"
+              src="../assets/images/fenda_da_tundavala_na_hailu.jpg"
               alt="Image 6"
             />
           </div>
-          <!-- New Images -->
           <div class="gallery-item">
-            <img src="../../assets/images/wildlife1.png" alt="Image 6" />
+            <img src="../assets/images/wildlife1.png" alt="Image 6" />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/wildlife2.png" alt="Image 6" />
+            <img src="../assets/images/wildlife2.png" alt="Image 6" />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/wildlife3.png" alt="Image 6" />
+            <img src="../assets/images/wildlife3.png" alt="Image 6" />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/wildlife4.png" alt="Image 6" />
+            <img src="../assets/images/wildlife4.png" alt="Image 6" />
           </div>
           <div class="gallery-item">
             <img
-              src="../../assets/images/boutique_logdge_sangano.png"
+              src="../assets/images/boutique_logdge_sangano.png"
               alt="Image 6"
             />
           </div>
           <div class="gallery-item">
-            <img src="../../assets/images/mapa_de_angola.png" alt="Image 6" />
+            <img src="../assets/images/mapa_de_angola.png" alt="Image 6" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Modal -->
     <div class="modal" id="imageModal">
       <span class="close-button" id="closeModal">&times;</span>
       <button class="nav-button prev-button" id="prevButton">&#10094;</button>
@@ -240,15 +240,20 @@
         <img src="" alt="Full-size Image" class="modal-image" id="modalImage" />
       </div>
       <button class="nav-button next-button" id="nextButton">&#10095;</button>
-      <div class="image-counter" id="imageCounter">1/6</div>
+      <div
+        class="image-counter"
+        id="imageCounter"
+        data-i18n="galary_modal_counter_text"
+      >
+        1/6
+      </div>
     </div>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-column">
-          <h3>Palanca Safari & Travel</h3>
-          <p>
+          <h3 data-i18n="footer_h3">Palanca Safari & Travel</h3>
+          <p data-i18n="footer_p">
             At Palanca Safari & Travel, we create journeys inspired by passion -
             for people, wildlife, and the breathtaking landscapes of Angola and
             the world. Whether you're craving a beach holiday, thrilling safari,
@@ -256,36 +261,36 @@
           </p>
         </div>
         <div class="footer-column">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="footer_links_h3">Quick Links</h3>
           <ul>
-            <li><a href="https://www.palancasafari.com">Home</a></li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
             <li>
-              <a href="https://www.palancasafari.com/en/destinations/"
+              <a href="/destinations/" data-i18n="nav_destinations"
                 >Destinations</a
               >
             </li>
             <li>
-              <a href="https://www.palancasafari.com#packages">Packages</a>
+              <a href="/#packages" data-i18n="footer_packages_link">Packages</a>
             </li>
             <li>
-              <a href="https://www.palancasafari.com/en/contact/">Packages</a>
+              <a href="/contact/" data-i18n="footer_contact_link">Contact</a>
             </li>
             <li>
-              <a href="https://www.palancasafari.com/en/about/">About Us</a>
+              <a href="/about/" data-i18n="footer_about_link">About Us</a>
             </li>
           </ul>
         </div>
         <div class="footer-column">
-          <h3>Legal</h3>
+          <h3 data-i18n="footer_legal_h3">Legal</h3>
           <ul>
             <li>
-              <a href="https://www.palancasafari.com/legal/privacy-policy/"
+              <a href="/legal/privacy-policy/" data-i18n="footer_policy"
                 >Privacy Policy</a
               >
             </li>
-            <li><a href="#">Refund policy</a></li>
+            <li><a href="#" data-i18n="footer_refund">Refund policy</a></li>
           </ul>
-          <h3>Change Theme</h3>
+          <h3 data-i18n="footer_theme">Change Theme</h3>
           <select name="theme-select" id="theme-select">
             <option value="dark">Dark</option>
             <option value="light">Light</option>
@@ -293,10 +298,11 @@
           </select>
         </div>
         <div class="footer-column">
-          <h3>Contact Us</h3>
+          <h3 data-i18n="footer_contact_h3">Contact Us</h3>
           <p>
-            Viana<br />Luanda, Angola<br />Phone: +(244) 924-200397 | +(244)
-            951-000108 | +(244) 976-204118<br />Email:
+            <span data-i18n="contact_viana">Viana</span><br />
+            <span data-i18n="contact_luanda">Luanda, Angola</span><br />Phone:
+            +(244) 924-200397 | +(244) 951-000108 | +(244) 976-204118<br />Email:
             reservations@palancasafari.com <br />
             info@palancasafari.com <br />
             palancasafari.andtravel@gmail.com
@@ -322,10 +328,11 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        Palanca Safari & Travel. All Rights Reserved.
+        <span data-i18n="copyright"
+          >Palanca Safari & Travel. All Rights Reserved.</span
+        >
       </div>
     </footer>
-    <!-- scroll to top -->
     <div class="scroll-up">
       <a href="#" class="circular-btn blinking">
         <i class="fas fa-arrow-up jumping"></i>
@@ -333,15 +340,10 @@
       <div class="blinking-border"></div>
     </div>
 
-    <!-- js -->
     <script src="/assets/js/loader.js"></script>
-
-    <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/langs.js"></script>
-    <script src="../../assets/js/modal.js"></script>
-
-    <!-- fontawesome -->
-    <script src="../../assets/fa_web/js/all.min.js"></script>
-    <!-- tawk.to script -->
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/langs.js"></script>
+    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/fa_web/js/all.min.js"></script>
   </body>
 </html>

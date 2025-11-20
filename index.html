@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
+  <title data-i18n="page_title">
     Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours
   </title>
-  <meta name="description"
+  <meta name="description" data-i18n="meta_description"
     content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today." />
   <meta name="keywords"
     content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola" />
@@ -16,8 +16,8 @@
 
   <link rel="canonical" href="https://www.palancasafari.com" />
 
-  <meta name="og:title" content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours" />
-  <meta name="og:description"
+  <meta name="og:title" data-i18n="page_title" content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours" />
+  <meta name="og:description" data-i18n="meta_description"
     content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today." />
   <meta property="og:url" content="https://www.palancasafari.com" />
   <meta property="og:type" content="website" />
@@ -25,7 +25,7 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Palanca Safari and Travel" />
-  <meta name="twitter:description"
+  <meta name="twitter:description" data-i18n="twitter_description"
     content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences." />
   <meta name="twitter:image" content="https://www.palancasafari.com/assets/images/jpeg.jpg" />
 
@@ -36,28 +36,27 @@
         "name": "Palanca Safari & Travel",
         "url": "https://www.palancasafari.com",
         "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
-        "description": "Tour and Travel company offering safaris, beach holidays, and scenic adventures across Angola and Africa",
+        "description": "Tour and Travel company offeringsafaris, beach holidays, and scenic adventures across Angola and Africa",
         "telephone": "+254714941173",
         "address":{
           "@type": "PostalAddress",
-          "streetAddress": ""
-          "addressLocality": "Nairobi"
+          "streetAddress": "",
+          "addressLocality": "Nairobi",
           "addressCountry": "KE"
         },
         "sameAs": [
-          "https://www.facebook.com/"
-          "https://www.instagram.com/"
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
           "https://www.x.com/"
         ]
       }
     </script>
 
-  <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-
-  <link rel="stylesheet" href="../assets/fa_web/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/fa_web/css/all.min.css" />
 </head>
 <script type="text/javascript">
   var Tawk_API = Tawk_API || {},
@@ -72,35 +71,36 @@
     s0.parentNode.insertBefore(s1, s0);
   })();
 </script>
+
 <body>
   <nav class="navbar">
     <div class="navbar-container">
       <div class="logo">
-        <img src="../logo.png" alt="logo" />
+        <img src="./logo.png" alt="logo" />
         <h2>
           Palanca Safari <br />
           & Travel
         </h2>
       </div>
       <ul class="nav-links">
-        <li><a href="./en/">Home</a></li>
-        <li><a href="./en/about/">About</a></li>
-        <li><a href="./en/services/">Services</a></li>
-        <li><a href="./en/destinations/">Destinations</a></li>
-        <li><a href="./en/galary/">Gallery</a></li>
-        <li><a href="./en/contact/">Contact</a></li>
+        <li><a href="/" data-i18n="nav_home">Home</a></li>
+        <li><a href="/about/" data-i18n="nav_about">About</a></li>
+        <li><a href="/services/" data-i18n="nav_services">Services</a></li>
+        <li><a href="/destinations/" data-i18n="nav_destinations">Destinations</a></li>
+        <li><a href="/galary/" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="/contact/" data-i18n="nav_contact">Contact</a></li>
         <div class="translate-container">
           <select id="language" name="language">
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="pt">Portuguese</option>
-            <option value="fr">French</option>
-            <option value="it">Italian</option>
-            <option value="hi">Hindi</option>
-            <option value="ar">Arabic</option>
-            <option value="ru">Russian</option>
-            <option value="bn">Bengali</option>
-            <option value="zh">Chinese</option>
+            <option value="en" data-i18n="lang_en">English</option>
+            <option value="es" data-i18n="lang_es">Spanish</option>
+            <option value="pt" data-i18n="lang_pt">Portuguese</option>
+            <option value="fr" data-i18n="lang_fr">French</option>
+            <option value="it" data-i18n="lang_it">Italian</option>
+            <option value="hi" data-i18n="lang_hi">Hindi</option>
+            <option value="ar" data-i18n="lang_ar">Arabic</option>
+            <option value="ru" data-i18n="lang_ru">Russian</option>
+            <option value="bn" data-i18n="lang_bn">Bengali</option>
+            <option value="zh" data-i18n="lang_zh">Chinese</option>
           </select>
         </div>
       </ul>
@@ -121,20 +121,20 @@
                     rgba(0, 0, 0, 0.4),
                     rgba(0, 0, 0, 0.4)
                   ),
-                  url('../assets/images/angola-2.jpg');
+                  url('./assets/images/angola-2.jpg');
               ">
             <div class="hero-content">
-              <h1>
+              <h1 data-i18n="hero_h1_1">
                 Explore Angola & Beyond - Tailor-Made Adventures,
                 Unforgettable Moments
               </h1>
-              <p>
+              <p data-i18n="hero_p_1">
                 Safaris, Beach Holidays, and Scenic Escapes Crafted with
                 Passion
               </p>
               <div class="hero-buttons">
-                <a href="#" class="btn">Explore Destinations</a>
-                <a href="#" class="btn btn-outline">View Packages</a>
+                <a href="#" class="btn" data-i18n="btn_explore">Explore Destinations</a>
+                <a href="#" class="btn btn-outline" data-i18n="btn_view_packages">View Packages</a>
               </div>
             </div>
           </div>
@@ -143,20 +143,20 @@
                     rgba(0, 0, 0, 0.4),
                     rgba(0, 0, 0, 0.4)
                   ),
-                  url('../assets/images/Luanda-Angola.webp');
+                  url('./assets/images/Luanda-Angola.webp');
               ">
             <div class="hero-content">
-              <h1>
+              <h1 data-i18n="hero_h1_1">
                 Explore Angola & Beyond - Tailor-Made Adventures,
                 Unforgettable Moments
               </h1>
-              <p>
+              <p data-i18n="hero_p_1">
                 Safaris, Beach Holidays, and Scenic Escapes Crafted with
                 Passion
               </p>
               <div class="hero-buttons">
-                <a href="#" class="btn">Explore Destinations</a>
-                <a href="#" class="btn btn-outline">View Packages</a>
+                <a href="#" class="btn" data-i18n="btn_explore">Explore Destinations</a>
+                <a href="#" class="btn btn-outline" data-i18n="btn_view_packages">View Packages</a>
               </div>
             </div>
           </div>
@@ -165,20 +165,42 @@
                     rgba(0, 0, 0, 0.4),
                     rgba(0, 0, 0, 0.4)
                   ),
-                  url('../assets/images/slider.jpg');
+                  url('./assets/images/slider.jpg');
               ">
             <div class="hero-content">
-              <h1>
+              <h1 data-i18n="hero_h1_1">
                 Explore Angola & Beyond - Tailor-Made Adventures,
                 Unforgettable Moments
               </h1>
-              <p>
+              <p data-i18n="hero_p_1">
                 Safaris, Beach Holidays, and Scenic Escapes Crafted with
                 Passion
               </p>
               <div class="hero-buttons">
-                <a href="#" class="btn">Explore Destinations</a>
-                <a href="#" class="btn btn-outline">View Packages</a>
+                <a href="#" class="btn" data-i18n="btn_explore">Explore Destinations</a>
+                <a href="#" class="btn btn-outline" data-i18n="btn_view_packages">View Packages</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" style="
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('./assets/flyers/Flyer LAD-NBO-LAD with TAAG.jpg');
+    background-size: cover;
+    background-position: center;
+">
+            <div class="hero-content">
+              <h1 data-i18n="hero_h1_2">
+                Fly with TAAG to Kenya - Special Discounts!
+              </h1>
+              <p data-i18n="hero_p_2">
+                Hurry and book your ticket until December 20th.
+              </p>
+              <div class="hero-buttons">
+                <a href="./contact/" class="btn" data-i18n="btn_book_now">Book Now</a>
               </div>
             </div>
           </div>
@@ -189,8 +211,8 @@
 
   <section class="section intro">
     <div class="container">
-      <h2 class="section-title">Welcome to Palanca Safari & Travel</h2>
-      <p class="intro-text">
+      <h2 class="section-title" data-i18n="welcome_title">Welcome to Palanca Safari & Travel</h2>
+      <p class="intro-text" data-i18n="welcome_text">
         At Palanca Safari & Travel, we create journeys inspired by passion -
         for people, wildlife, and the breathtaking landscapes of Angola and
         the world. Whether you're craving a beach holiday, thrilling safari,
@@ -199,15 +221,15 @@
       <div class="highlights">
         <div class="highlight-item">
           <i class="fas fa-calendar-check"></i>
-          <h3>Trusted Tour Operator Since 2024</h3>
+          <h3 data-i18n="highlight_1_title">Trusted Tour Operator Since 2024</h3>
         </div>
         <div class="highlight-item">
           <i class="fas fa-map-marked-alt"></i>
-          <h3>Handpicked Destinations</h3>
+          <h3 data-i18n="highlight_2_title">Handpicked Destinations</h3>
         </div>
         <div class="highlight-item">
           <i class="fas fa-user-tie"></i>
-          <h3>Personalized Service</h3>
+          <h3 data-i18n="highlight_3_title">Personalized Service</h3>
         </div>
       </div>
     </div>
@@ -215,29 +237,29 @@
 
   <section class="section destinations reveal">
     <div class="container">
-      <h2 class="section-title reveal">Top Destinations You'll Like</h2>
+      <h2 class="section-title reveal" data-i18n="destinations_title">Top Destinations You'll Like</h2>
       <div class="destination-grid">
         <div class="destination-card reveal">
-          <img src="../assets/images/cabo ledo - complexo turistico doce mar.png" alt="Cabo ledo"
+          <img src="./assets/images/cabo ledo - complexo turistico doce mar.png" alt="Cabo ledo"
             class="destination-img" />
           <div class="destination-info">
-            <h3>Cabo Ledo</h3>
-            <a href="#" class="btn">View More</a>
+            <h3 data-i18n="cabo_ledo">Cabo Ledo</h3>
+            <a href="#" class="btn" data-i18n="card_view_more">View More</a>
           </div>
         </div>
         <div class="destination-card reveal">
-          <img src="../assets/images/dallys resort - mussulo in luanda.png" alt="dallys resort"
+          <img src="./assets/images/dallys resort - mussulo in luanda.png" alt="dallys resort"
             class="destination-img" />
           <div class="destination-info">
-            <h3>Dallys Resort</h3>
-            <a href="../en/destinations/" class="btn">View More</a>
+            <h3 data-i18n="dallys_resort">Dallys Resort</h3>
+            <a href="./destinations/" class="btn" data-i18n="card_view_more">View More</a>
           </div>
         </div>
         <div class="destination-card reveal">
-          <img src="../assets/images/Luanda-Angola.webp" alt="luanda - angola" class="destination-img" />
+          <img src="./assets/images/Luanda-Angola.webp" alt="luanda - angola" class="destination-img" />
           <div class="destination-info">
-            <h3>Luanda - Angola</h3>
-            <a href="../en/destinations/" class="btn">View More</a>
+            <h3 data-i18n="luanda_angola">Luanda - Angola</h3>
+            <a href="./destinations/" class="btn" data-i18n="card_view_more">View More</a>
           </div>
         </div>
       </div>
@@ -246,37 +268,37 @@
 
   <section class="section usps reveal">
     <div class="container">
-      <h2 class="section-title">Why Choose Palanca Safari & Travel?</h2>
+      <h2 class="section-title" data-i18n="why_choose_title">Why Choose Palanca Safari & Travel?</h2>
       <div class="usp-grid">
         <div class="usp-item reveal">
           <i class="fas fa-route icon"></i>
-          <h3>Personalized Itineraries</h3>
-          <p>Tailor-made holidays designed around your preferences.</p>
+          <h3 data-i18n="usp_1_h3">Personalized Itineraries</h3>
+          <p data-i18n="usp_1_p">Tailor-made holidays designed around your preferences.</p>
         </div>
         <div class="usp-item reveal">
           <i class="fas fa-user-friends icon"></i>
-          <h3>Experienced Local Guides</h3>
-          <p>Knowledgeable guides who know Angola's hidden gems.</p>
+          <h3 data-i18n="usp_2_h3">Experienced Local Guides</h3>
+          <p data-i18n="usp_2_p">Knowledgeable guides who know Angola's hidden gems.</p>
         </div>
         <div class="usp-item reveal">
           <i class="fas fa-leaf icon"></i>
-          <h3>Eco-Friendly Travel</h3>
-          <p>Supporting conservation efforts and sustainable tourism.</p>
+          <h3 data-i18n="usp_3_h3">Eco-Friendly Travel</h3>
+          <p data-i18n="usp_3_p">Supporting conservation efforts and sustainable tourism.</p>
         </div>
         <div class="usp-item reveal">
           <i class="fas fa-shuttle-van icon"></i>
-          <h3>Airport Pickups & Drops</h3>
-          <p>Hassle-free transfers for all international packages.</p>
+          <h3 data-i18n="usp_4_h3">Airport Pickups & Drops</h3>
+          <p data-i18n="usp_4_p">Hassle-free transfers for all international packages.</p>
         </div>
         <div class="usp-item reveal">
           <i class="fas fa-headset icon"></i>
-          <h3>24/7 Customer Support</h3>
-          <p>Always available to assist with any questions or concerns.</p>
+          <h3 data-i18n="usp_5_h3">24/7 Customer Support</h3>
+          <p data-i18n="usp_5_p">Always available to assist with any questions or concerns.</p>
         </div>
         <div class="usp-item reveal">
           <i class="fas fa-paw icon"></i>
-          <h3>Passion for Wildlife & Culture</h3>
-          <p>Dedicated to showcasing Angola's natural beauty and heritage.</p>
+          <h3 data-i18n="usp_6_h3">Passion for Wildlife & Culture</h3>
+          <p data-i18n="usp_6_p">Dedicated to showcasing Angola's natural beauty and heritage.</p>
         </div>
       </div>
     </div>
@@ -284,7 +306,7 @@
 
   <section class="section testimonials">
     <div class="container">
-      <h2 class="section-title reveal">
+      <h2 class="section-title reveal" data-i18n="testimonials_title">
         What Our Happy Travelers Are Saying
       </h2>
       <div class="testimonial-slider">
@@ -300,7 +322,7 @@
 
   <section class="section faqs">
     <div class="container container-inner">
-      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <h2 class="section-title reveal" data-i18n="faqs_title">Frequently Asked Questions</h2>
       <div class="faq-list"></div>
     </div>
   </section>
@@ -308,50 +330,50 @@
   <section class="section booking">
     <div class="container">
       <div class="section">
-        <h2>Book Your Travel Package</h2>
+        <h2 data-i18n="booking_title">Book Your Travel Package</h2>
 
         <div class="steps">
           <div class="step active">
             <div class="step-circle">1</div>
-            <div class="step-name">Details</div>
+            <div class="step-name" data-i18n="step_1">Details</div>
           </div>
           <div class="step">
             <div class="step-circle">2</div>
-            <div class="step-name">Review</div>
+            <div class="step-name" data-i18n="step_2">Review</div>
           </div>
           <div class="step">
             <div class="step-circle">3</div>
-            <div class="step-name">Payment</div>
+            <div class="step-name" data-i18n="step_3">Payment</div>
           </div>
         </div>
 
         <div id="booking-form-container">
-          <div class="alert alert-success" id="form-success">
+          <div class="alert alert-success" id="form-success" data-i18n="form_success">
             Your booking has been submitted successfully! We'll contact you
             shortly.
           </div>
-          <div class="alert alert-error" id="form-error">
+          <div class="alert alert-error" id="form-error" data-i18n="form_error">
             There was an error submitting your booking. Please check your
             information and try again.
           </div>
 
           <form id="booking-form">
-            <h3>Personal Information</h3>
+            <h3 data-i18n="personal_info">Personal Information</h3>
             <div class="form-row">
               <div class="form-col">
                 <div class="form-group">
-                  <label for="first-name">First Name *</label>
+                  <label for="first-name" data-i18n="first_name_label">First Name *</label>
                   <input type="text" id="first-name" name="first-name" required />
-                  <div class="error-text" id="first-name-error">
+                  <div class="error-text" id="first-name-error" data-i18n="first_name_error">
                     Please enter your first name
                   </div>
                 </div>
               </div>
               <div class="form-col">
                 <div class="form-group">
-                  <label for="last-name">Last Name *</label>
+                  <label for="last-name" data-i18n="last_name_label">Last Name *</label>
                   <input type="text" id="last-name" name="last-name" required />
-                  <div class="error-text" id="last-name-error">
+                  <div class="error-text" id="last-name-error" data-i18n="last_name_error">
                     Please enter your last name
                   </div>
                 </div>
@@ -361,58 +383,58 @@
             <div class="form-row">
               <div class="form-col">
                 <div class="form-group">
-                  <label for="email">Email Address *</label>
+                  <label for="email" data-i18n="email_label">Email Address *</label>
                   <input type="email" id="email" name="email" required />
-                  <div class="error-text" id="email-error">
+                  <div class="error-text" id="email-error" data-i18n="email_error">
                     Please enter a valid email address
                   </div>
                 </div>
               </div>
               <div class="form-col">
                 <div class="form-group">
-                  <label for="phone">Phone Number *</label>
+                  <label for="phone" data-i18n="phone_label">Phone Number *</label>
                   <input type="tel" id="phone" name="phone" required />
-                  <div class="error-text" id="phone-error">
+                  <div class="error-text" id="phone-error" data-i18n="phone_error">
                     Please enter a valid phone number
                   </div>
                 </div>
               </div>
             </div>
 
-            <h3>Trip Details</h3>
+            <h3 data-i18n="trip_details">Trip Details</h3>
             <div class="form-group">
-              <label for="package">Preferred Package or Destination *</label>
+              <label for="package" data-i18n="package_label">Preferred Package or Destination *</label>
               <select id="package" name="package" required>
-                <option value="">Select a package</option>
-                <optgroup label="Johannesburg, South Africa">
-                  <option value="jhb-garde-court-1250">Johannesburg: Garde Court Milpark (3 Star) - $1,250</option>
-                  <option value="jhb-parktonian-1555">Johannesburg: The Parktonian (4 Star) - $1,555</option>
-                  <option value="jhb-centurion-1575">Johannesburg: The Centurion Hotel (4 Star) - $1,575</option>
+                <option value="" data-i18n="select_package">Select a package</option>
+                <optgroup data-i18n="group_jhb" label="Johannesburg, South Africa">
+                  <option value="jhb-garde-court-1250" data-i18n="opt_jhb_1">Johannesburg: Garde Court Milpark (3 Star) - $1,250</option>
+                  <option value="jhb-parktonian-1555" data-i18n="opt_jhb_2">Johannesburg: The Parktonian (4 Star) - $1,555</option>
+                  <option value="jhb-centurion-1575" data-i18n="opt_jhb_3">Johannesburg: The Centurion Hotel (4 Star) - $1,575</option>
                 </optgroup>
-                <optgroup label="Cape Town, South Africa">
-                  <option value="cpt-onomo-1370">Cape Town: Onomo Hotel Inn On The Square (4 Star) - $1,370</option>
-                  <option value="cpt-easy-five-1490">Cape Town: Easy FIVE (4 Star) - $1,490</option>
-                  <option value="cpt-sun-square-1525">Cape Town: Sun Square Gardens (3 Star) - $1,525</option>
+                <optgroup data-i18n="group_cpt" label="Cape Town, South Africa">
+                  <option value="cpt-onomo-1370" data-i18n="opt_cpt_1">Cape Town: Onomo Hotel Inn On The Square (4 Star) - $1,370</option>
+                  <option value="cpt-easy-five-1490" data-i18n="opt_cpt_2">Cape Town: Easy FIVE (4 Star) - $1,490</option>
+                  <option value="cpt-sun-square-1525" data-i18n="opt_cpt_3">Cape Town: Sun Square Gardens (3 Star) - $1,525</option>
                 </optgroup>
-                <optgroup label="São Tomé">
-                  <option value="sao-tome-porcelana-925">São Tomé: Albergaria Porcelana (3 Star) - $925</option>
-                  <option value="sao-tome-praia-1780">São Tomé: Hotel Praia (3 Star) - $1,780</option>
-                  <option value="sao-tome-miramar-1795">São Tomé: Miramar By Pestana (4 Star) - $1,795</option>
+                <optgroup data-i18n="group_sao" label="São Tomé">
+                  <option value="sao-tome-porcelana-925" data-i18n="opt_sao_1">São Tomé: Albergaria Porcelana (3 Star) - $925</option>
+                  <option value="sao-tome-praia-1780" data-i18n="opt_sao_2">São Tomé: Hotel Praia (3 Star) - $1,780</option>
+                  <option value="sao-tome-miramar-1795" data-i18n="opt_sao_3">São Tomé: Miramar By Pestana (4 Star) - $1,795</option>
                 </optgroup>
-                <option value="custom">Custom Destination</option>
+                <option value="custom" data-i18n="opt_custom">Custom Destination</option>
               </select>
-              <div class="error-text" id="package-error">
+              <div class="error-text" id="package-error" data-i18n="package_error">
                 Please select a package
               </div>
             </div>
 
             <div class="form-group" id="custom-destination-group" style="display: none">
-              <label for="custom-destination">Custom Destination</label>
+              <label for="custom-destination" data-i18n="custom_dest_label">Custom Destination</label>
               <input type="text" id="custom-destination" name="custom-destination" />
             </div>
 
             <div class="form-group">
-              <label for="travelers">Number of Travelers *</label>
+              <label for="travelers" data-i18n="travelers_label">Number of Travelers *</label>
               <select id="travelers" name="travelers" required>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -425,7 +447,7 @@
                 <option value="9">9</option>
                 <option value="10+">10+</option>
               </select>
-              <div class="error-text" id="travelers-error">
+              <div class="error-text" id="travelers-error" data-i18n="travelers_error">
                 Please select number of travelers
               </div>
             </div>
@@ -433,18 +455,18 @@
             <div class="form-row">
               <div class="form-col">
                 <div class="form-group">
-                  <label for="departure-date">Departure Date *</label>
+                  <label for="departure-date" data-i18n="departure_label">Departure Date *</label>
                   <input type="date" id="departure-date" name="departure-date" required />
-                  <div class="error-text" id="departure-date-error">
+                  <div class="error-text" id="departure-date-error" data-i18n="departure_date_error">
                     Please select a departure date
                   </div>
                 </div>
               </div>
               <div class="form-col">
                 <div class="form-group">
-                  <label for="return-date">Return Date *</label>
+                  <label for="return-date" data-i18n="return_label">Return Date *</label>
                   <input type="date" id="return-date" name="return-date" required />
-                  <div class="error-text" id="return-date-error">
+                  <div class="error-text" id="return-date-error" data-i18n="return_date_error">
                     Please select a return date
                   </div>
                 </div>
@@ -452,171 +474,176 @@
             </div>
 
             <div class="form-group">
-              <label for="special-requests">Special Requests or Notes</label>
+              <label for="special-requests" data-i18n="requests_label">Special Requests or Notes</label>
               <textarea id="special-requests" name="special-requests" rows="4"></textarea>
             </div>
 
-            <h3>Payment Details</h3>
+            <h3 data-i18n="payment_details">Payment Details</h3>
             <div class="form-group">
-              <label for="payment-option">Payment Option *</label>
+              <label for="payment-option" data-i18n="payment_option_label">Payment Option *</label>
               <select id="payment-option" name="payment-option" required>
-                <option value="">Select payment option</option>
-                <option value="deposit">Deposit (20%)</option>
-                <option value="half">Half Payment (50%)</option>
-                <option value="full">Full Payment (100%)</option>
+                <option value="" data-i18n="select_payment">Select payment option</option>
+                <option value="deposit" data-i18n="opt_deposit">Deposit (20%)</option>
+                <option value="half" data-i18n="opt_half">Half Payment (50%)</option>
+                <option value="full" data-i18n="opt_full">Full Payment (100%)</option>
               </select>
-              <div class="error-text" id="payment-option-error">
+              <div class="error-text" id="payment-option-error" data-i18n="payment_option_error">
                 Please select a payment option
               </div>
             </div>
 
             <div class="booking-summary" id="booking-summary">
-              <h3>Booking Summary</h3>
+              <h3 data-i18n="summary_title">Booking Summary</h3>
               <div class="summary-item">
-                <span>Package:</span>
+                <span data-i18n="summary_package">Package:</span>
                 <span id="summary-package">-</span>
               </div>
               <div class="summary-item">
-                <span>Travelers:</span>
+                <span data-i18n="summary_travelers">Travelers:</span>
                 <span id="summary-travelers">-</span>
               </div>
               <div class="summary-item">
-                <span>Dates:</span>
+                <span data-i18n="summary_dates">Dates:</span>
                 <span id="summary-dates">-</span>
               </div>
               <div class="summary-item">
-                <span>Payment Option:</span>
+                <span data-i18n="summary-payment">Payment Option:</span>
                 <span id="summary-payment">-</span>
               </div>
               <div class="summary-item summary-total">
-                <span>Total Due Now:</span>
+                <span data-i18n="summary_total">Total Due Now:</span>
                 <span id="summary-total">$0.00</span>
               </div>
             </div>
 
-            <button type="submit" class="btn">Submit Booking</button>
+            <button type="submit" class="btn" data-i18n="btn_submit">Submit Booking</button>
           </form>
         </div>
       </div>
 
       <div class="section">
-        <h2>Featured Travel Packages</h2>
+        <h2 data-i18n="featured_packages">Featured Travel Packages</h2>
         <div class="package-grid">
           <div class="package-card">
-            <div class="package-img" style="background-image: url('../assets/images/johannesburg.jpg');"></div>
+            <div class="package-img" style="background-image: url('./assets/images/joh.jpg');"></div>
             <div class="package-content">
-              <h3 class="package-title">Johannesburg: Garde Court Milpark</h3>
+              <h3 class="package-title" data-i18n="package_jhb_1_title">Johannesburg: Garde Court Milpark</h3>
               <div class="package-price">$1,250</div>
-              <p class="package-description">
-                Explore vibrant Johannesburg with a 6-night stay at this 3-star hotel. Includes flights, breakfast, and transfers.
+              <p class="package-description" data-i18n="package_jhb_1_desc">
+                Explore vibrant Johannesburg with a 6-night stay at this 3-star hotel. Includes flights, breakfast, and
+                transfers.
               </p>
-              <button class="btn btn-alt select-package" data-package="jhb-garde-court-1250">
+              <button class="btn btn-alt select-package" data-package="jhb-garde-court-1250" data-i18n="btn_select_package">
                 Select Package
               </button>
             </div>
           </div>
           <div class="package-card">
-            <div class="package-img" style="background-image: url('../assets/images/johannesburg-2.jpg');"></div>
+            <div class="package-img" style="background-image: url('./assets/images/joh.jpg');"></div>
             <div class="package-content">
-              <h3 class="package-title">Johannesburg: The Parktonian</h3>
+              <h3 class="package-title" data-i18n="package_jhb_2_title">Johannesburg: The Parktonian</h3>
               <div class="package-price">$1,555</div>
-              <p class="package-description">
-                Discover South Africa's largest city with a 6-night stay at this 4-star all-suite hotel. Package includes all essentials.
+              <p class="package-description" data-i18n="package_jhb_2_desc">
+                Discover South Africa's largest city with a 6-night stay at this 4-star all-suite hotel. Package
+                includes all essentials.
               </p>
-              <button class="btn btn-alt select-package" data-package="jhb-parktonian-1555">
+              <button class="btn btn-alt select-package" data-package="jhb-parktonian-1555" data-i18n="btn_select_package">
                 Select Package
               </button>
             </div>
           </div>
 
           <div class="package-card">
-            <div class="package-img" style="background-image: url('../assets/images/cape-town.jpg');"></div>
+            <div class="package-img" style="background-image: url('./assets/images/cap.jpg');"></div>
             <div class="package-content">
-              <h3 class="package-title">Cape Town: Onomo Hotel</h3>
+              <h3 class="package-title" data-i18n="package_cpt_1_title">Cape Town: Onomo Hotel</h3>
               <div class="package-price">$1,370</div>
-              <p class="package-description">
-                Experience beautiful Cape Town with a 6-night stay at this 4-star hotel. Includes flights, breakfast, and transfers.
+              <p class="package-description" data-i18n="package_cpt_1_desc">
+                Experience beautiful Cape Town with a 6-night stay at this 4-star hotel. Includes flights, breakfast,
+                and transfers.
               </p>
-              <button class="btn btn-alt select-package" data-package="cpt-onomo-1370">
+              <button class="btn btn-alt select-package" data-package="cpt-onomo-1370" data-i18n="btn_select_package">
                 Select Package
               </button>
             </div>
           </div>
           <div class="package-card">
-            <div class="package-img" style="background-image: url('../assets/images/cape-town-2.jpg');"></div>
+            <div class="package-img" style="background-image: url('./assets/images/cap.jpg');"></div>
             <div class="package-content">
-              <h3 class="package-title">Cape Town: Sun Square Gardens</h3>
+              <h3 class="package-title" data-i18n="package_cpt_2_title">Cape Town: Sun Square Gardens</h3>
               <div class="package-price">$1,525</div>
-              <p class="package-description">
+              <p class="package-description" data-i18n="package_cpt_2_desc">
                 Enjoy a 6-night getaway in stunning Cape Town at this 3-star hotel, complete with all travel essentials.
               </p>
-              <button class="btn btn-alt select-package" data-package="cpt-sun-square-1525">
+              <button class="btn btn-alt select-package" data-package="cpt-sun-square-1525" data-i18n="btn_select_package">
                 Select Package
               </button>
             </div>
           </div>
-          
+
           <div class="package-card">
-            <div class="package-img" style="background-image: url('../assets/images/sao-tome.jpg');"></div>
+            <div class="package-img" style="background-image: url('./assets/images/sao.jpg');"></div>
             <div class="package-content">
-              <h3 class="package-title">São Tomé: Albergaria Porcelana</h3>
+              <h3 class="package-title" data-i18n="package_sao_1_title">São Tomé: Albergaria Porcelana</h3>
               <div class="package-price">$925</div>
-              <p class="package-description">
-                Escape to the paradise of São Tomé for 6 nights at this cozy 3-star hotel. Includes flights, breakfast, and transfers.
+              <p class="package-description" data-i18n="package_sao_1_desc">
+                Escape to the paradise of São Tomé for 6 nights at this cozy 3-star hotel. Includes flights, breakfast,
+                and transfers.
               </p>
-              <button class="btn btn-alt select-package" data-package="sao-tome-porcelana-925">
+              <button class="btn btn-alt select-package" data-package="sao-tome-porcelana-925" data-i18n="btn_select_package">
                 Select Package
               </button>
             </div>
           </div>
           <div class="package-card">
-            <div class="package-img" style="background-image: url('../assets/images/sao-tome-2.jpg');"></div>
+            <div class="package-img" style="background-image: url('./assets/images/sao.jpg');"></div>
             <div class="package-content">
-              <h3 class="package-title">São Tomé: Miramar By Pestana</h3>
+              <h3 class="package-title" data-i18n="package_sao_2_title">São Tomé: Miramar By Pestana</h3>
               <div class="package-price">$1,795</div>
-              <p class="package-description">
-                Indulge in a 4-star, 6-night experience in tropical São Tomé. Your perfect island getaway awaits, all inclusive.
+              <p class="package-description" data-i18n="package_sao_2_desc">
+                Indulge in a 4-star, 6-night experience in tropical São Tomé. Your perfect island getaway awaits, all
+                inclusive.
               </p>
-              <button class="btn btn-alt select-package" data-package="sao-tome-miramar-1795">
+              <button class="btn btn-alt select-package" data-package="sao-tome-miramar-1795" data-i18n="btn_select_package">
                 Select Package
               </button>
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   </section>
 
   <section class="section contact-cta">
     <div class="container">
-      <h2 class="section-title reveal">Ready to Plan Your Next Adventure?</h2>
-      <p class="reveal">
+      <h2 class="section-title reveal" data-i18n="ready_cta_title">Ready to Plan Your Next Adventure?</h2>
+      <p class="reveal" data-i18n="ready_cta_p">
         Whether you are dreaming of a beach escape, a thrilling safari, or a
         scenic tour through Angola's hidden gems, we are here to make it
         happen. Contact us today and lets start planning your unforgettable
         journey.
       </p>
-      <a href="../en/contact/" class="btn-link reveal">Contact Us Now</a>
+      <a href="./contact/" class="btn-link reveal" data-i18n="cta_btn_link">Contact Us Now</a>
     </div>
   </section>
 
   <section class="certifications-section">
     <div class="container">
-      <h2>Our Certifications & Accreditations</h2>
+      <h2 data-i18n="certifications_title">Our Certifications & Accreditations</h2>
 
       <div class="certification-item">
         <a href="https://www.palancasafari.com/assets/documets/apg-cert.pdf" target="_blank" rel="noopener noreferrer">
           <img src="https://www.palancasafari.com/assets/documets/apg-cert-thumb.jpg"
             alt="African Professional Guides (APG) Certificate" title="Click to view the full APG Certificate">
         </a>
-        <h3>Air Promotion Group (APG)</h3>
-        <p>
+        <h3 data-i18n="apg_h3">Air Promotion Group (APG)</h3>
+        <p data-i18n="apg_p">
           Palanca Safari is proud to be certified by the Air Promotion Group (APG).
           This certification assures that our safari guides meet the highest professional
           standards in guiding, safety, and wildlife knowledge, providing you with an unparalleled safari experience.
         </p>
         <a href="https://www.palancasafari.com/assets/documets/apg-cert.pdf" target="_blank" rel="noopener noreferrer"
-          class="view-cert-button">
+          class="view-cert-button" data-i18n="apg_btn">
           View Full APG Certificate (PDF)
         </a>
       </div>
@@ -627,8 +654,8 @@
   <footer>
     <div class="footer-container">
       <div class="footer-column">
-        <h3>Palanca Safari & Travel</h3>
-        <p>
+        <h3 data-i18n="footer_h3">Palanca Safari & Travel</h3>
+        <p data-i18n="footer_p">
           At Palanca Safari & Travel, we create journeys inspired by passion -
           for people, wildlife, and the breathtaking landscapes of Angola and
           the world. Whether you're craving a beach holiday, thrilling safari,
@@ -636,32 +663,32 @@
         </p>
       </div>
       <div class="footer-column">
-        <h3>Quick Links</h3>
+        <h3 data-i18n="footer_links_h3">Quick Links</h3>
         <ul>
-          <li><a href="https://www.palancasafari.com">Home</a></li>
+          <li><a href="/" data-i18n="nav_home">Home</a></li>
           <li>
-            <a href="https://www.palancasafari.com/en/destinations/">Destinations</a>
+            <a href="/destinations/" data-i18n="nav_destinations">Destinations</a>
           </li>
           <li>
-            <a href="https://www.palancasafari.com#packages">Packages</a>
+            <a href="#packages" data-i18n="footer_packages_link">Packages</a>
           </li>
           <li>
-            <a href="https://www.palancasafari.com/en/contact/">Packages</a>
+            <a href="/contact/" data-i18n="footer_contact_link">Packages</a>
           </li>
           <li>
-            <a href="https://www.palancasafari.com/en/about/">About Us</a>
+            <a href="/about/" data-i18n="footer_about_link">About Us</a>
           </li>
         </ul>
       </div>
       <div class="footer-column">
-        <h3>Legal</h3>
+        <h3 data-i18n="footer_legal_h3">Legal</h3>
         <ul>
           <li>
-            <a href="https://www.palancasafari.com/legal/privacy-policy/">Privacy Policy</a>
+            <a href="/legal/privacy-policy/" data-i18n="footer_policy">Privacy Policy</a>
           </li>
-          <li><a href="#">Refund policy</a></li>
+          <li><a href="#" data-i18n="footer_refund">Refund policy</a></li>
         </ul>
-        <h3>Change Theme</h3>
+        <h3 data-i18n="footer_theme">Change Theme</h3>
         <select name="theme-select" id="theme-select">
           <option value="dark">Dark</option>
           <option value="light">Light</option>
@@ -669,9 +696,11 @@
         </select>
       </div>
       <div class="footer-column">
-        <h3>Contact Us</h3>
+        <h3 data-i18n="footer_contact_h3">Contact Us</h3>
         <p>
-          Viana<br />Luanda, Angola<br />Phone: +(244) 924-200397 | +(244)
+          <span data-i18n="contact_viana">Viana</span><br />
+          <span data-i18n="contact_luanda">Luanda, Angola</span><br />
+          Phone: +(244) 924-200397 | +(244)
           951-000108 | +(244) 976-204118<br />Email:
           reservations@palancasafari.com <br />
           info@palancasafari.com <br />
@@ -690,7 +719,7 @@
       <script>
         document.write(new Date().getFullYear());
       </script>
-      Palanca Safari & Travel. All Rights Reserved.
+      <span data-i18n="copyright">Palanca Safari & Travel. All Rights Reserved.</span>
     </div>
   </footer>
   <div class="scroll-up">
@@ -702,11 +731,11 @@
 
   <script src="/assets/js/loader.js"></script>
 
-  <script src="../assets/js/app.js"></script>
-  <script src="../assets/js/langs.js"></script>
-  <script src="../assets/js/ui.js" type="module"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/langs.js"></script>
+  <script src="./assets/js/ui.js" type="module"></script>
 
-  <script src="../assets/fa_web/js/all.min.js"></script>
-  </body>
+  <script src="./assets/fa_web/js/all.min.js"></script>
+</body>
 
 </html>

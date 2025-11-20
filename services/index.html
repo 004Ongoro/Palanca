@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palanca Safari & Travel - Our Services</title>
+    <title data-i18n="services_page_title">
+      Palanca Safari & Travel - Our Services
+    </title>
 
     <meta
       name="description"
+      data-i18n="meta_description"
       content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
     <meta
@@ -14,30 +17,29 @@
       content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola"
     />
     <meta name="author" content="George Ongoro" />
-    <!-- Robots -->
     <meta name="robots" content="index, follow" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.palancasafari.com" />
+    <link rel="canonical" href="https://www.palancasafari.com/services/" />
 
-    <!-- Open Graph -->
     <meta
       name="og:title"
+      data-i18n="services_page_title"
       content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours"
     />
     <meta
       name="og:description"
+      data-i18n="meta_description"
       content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
-    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:url" content="https://www.palancasafari.com/services/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="palancasafari.com/open-graph.png" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
     <meta
       name="twitter:description"
+      data-i18n="twitter_description"
       content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences."
     />
     <meta
@@ -45,7 +47,6 @@
       content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,15 +56,15 @@
         "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "Tour and Travel company offering safaris, beach holidays, and scenic adventures across Angola and Africa",
         "telephone": "+254714941173",
-        "address":{
+        "address": {
           "@type": "PostalAddress",
-          "streetAddress": ""
-          "addressLocality": "Nairobi"
+          "streetAddress": "",
+          "addressLocality": "Nairobi",
           "addressCountry": "KE"
         },
         "sameAs": [
-          "https://www.facebook.com/"
-          "https://www.instagram.com/"
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
           "https://www.x.com/"
         ]
       }
@@ -72,15 +73,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/fa_web/css/all.min.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
   </head>
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
@@ -94,37 +92,39 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
   <body class="services-page">
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="logo">
-          <img src="../../logo.png" alt="logo" />
+          <img src="../logo.png" alt="logo" />
           <h2>
             Palanca Safari <br />
             & Travel
           </h2>
         </div>
         <ul class="nav-links">
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../services/">Services</a></li>
-          <li><a href="../destinations/">Destinations</a></li>
-          <li><a href="../galary/">Gallery</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="/" data-i18n="nav_home">Home</a></li>
+          <li><a href="/about/" data-i18n="nav_about">About</a></li>
+          <li><a href="/services/" data-i18n="nav_services">Services</a></li>
+          <li>
+            <a href="/destinations/" data-i18n="nav_destinations"
+              >Destinations</a
+            >
+          </li>
+          <li><a href="/galary/" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="/contact/" data-i18n="nav_contact">Contact</a></li>
           <div class="translate-container">
             <select name="language" id="language">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="pt">Portuguese</option>
-              <option value="fr">French</option>
-              <option value="it">Italian</option>
-              <option value="hi">Hindi</option>
-              <option value="ar">Arabic</option>
-              <option value="ru">Russian</option>
-              <option value="bn">Bengali</option>
-              <option value="zh">Chinese</option>
+              <option value="en" data-i18n="lang_en">English</option>
+              <option value="es" data-i18n="lang_es">Spanish</option>
+              <option value="pt" data-i18n="lang_pt">Portuguese</option>
+              <option value="fr" data-i18n="lang_fr">French</option>
+              <option value="it" data-i18n="lang_it">Italian</option>
+              <option value="hi" data-i18n="lang_hi">Hindi</option>
+              <option value="ar" data-i18n="lang_ar">Arabic</option>
+              <option value="ru" data-i18n="lang_ru">Russian</option>
+              <option value="bn" data-i18n="lang_bn">Bengali</option>
+              <option value="zh" data-i18n="lang_zh">Chinese</option>
             </select>
           </div>
         </ul>
@@ -136,298 +136,428 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
-      <h1>Our Travel Services</h1>
-      <p>
+      <h1 data-i18n="services_hero_h1">Our Travel Services</h1>
+      <p data-i18n="services_hero_p">
         Experience the world with our comprehensive range of travel services
         designed to create unforgettable journeys tailored to your unique
         preferences.
       </p>
-      <a href="#contact" class="btn">Start Planning Today</a>
+      <a href="#contact" class="btn" data-i18n="services_hero_btn"
+        >Start Planning Today</a
+      >
     </section>
 
-    <!-- Services Section -->
     <section class="services" id="services">
       <div class="container">
-        <h2 class="section-title reveal">Travel Services We Offer</h2>
-        <p class="section-description reveal">
+        <h2 class="section-title reveal" data-i18n="services_list_title">
+          Travel Services We Offer
+        </h2>
+        <p class="section-description reveal" data-i18n="services_list_p">
           Our team of experienced travel specialists is dedicated to creating
           personalized travel experiences that exceed your expectations.
           Discover our range of services below.
         </p>
 
         <div class="services-grid">
-          <!-- Service 1 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/dallys\ resort\ -\ mussulo\ in\ luanda.png');
+                background-image: url('../assets/images/dallys resort - mussulo in luanda.png');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Personalized Travel Planning</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_1_h3">
+                Personalized Travel Planning
+              </h3>
+              <p class="service-description" data-i18n="serv_card_1_p">
                 Our expert travel consultants work one-on-one with you to create
                 custom itineraries tailored to your preferences, budget, and
                 travel style.
               </p>
               <div class="service-features">
-                <h4>What we offer:</h4>
+                <h4 data-i18n="serv_card_1_list_h4">What we offer:</h4>
                 <ul>
-                  <li>Initial consultation to understand your travel goals</li>
-                  <li>Customized itinerary development</li>
-                  <li>Accommodation recommendations across all budgets</li>
-                  <li>Activity and excursion suggestions</li>
-                  <li>Transportation arrangements</li>
-                  <li>24/7 support during your travels</li>
+                  <li data-i18n="serv_card_1_li_1">
+                    Initial consultation to understand your travel goals
+                  </li>
+                  <li data-i18n="serv_card_1_li_2">
+                    Customized itinerary development
+                  </li>
+                  <li data-i18n="serv_card_1_li_3">
+                    Accommodation recommendations across all budgets
+                  </li>
+                  <li data-i18n="serv_card_1_li_4">
+                    Activity and excursion suggestions
+                  </li>
+                  <li data-i18n="serv_card_1_li_5">
+                    Transportation arrangements
+                  </li>
+                  <li data-i18n="serv_card_1_li_6">
+                    24/7 support during your travels
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 2 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/luxury_vacation_maldives.jpg');
+                background-image: url('../assets/images/luxury_vacation_maldives.jpg');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Luxury Vacations</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_2_h3">
+                Luxury Vacations
+              </h3>
+              <p class="service-description" data-i18n="serv_card_2_p">
                 Indulge in extraordinary experiences with our premium travel
                 services. Our luxury vacation packages include exclusive
                 accommodations, private transfers, and VIP access.
               </p>
               <div class="service-features">
-                <h4>Signature luxury experiences:</h4>
+                <h4 data-i18n="serv_card_2_list_h4">
+                  Signature luxury experiences:
+                </h4>
                 <ul>
-                  <li>Five-star accommodations in world-class destinations</li>
-                  <li>Private guided tours with local experts</li>
-                  <li>Exclusive dining reservations at renowned restaurants</li>
-                  <li>Helicopter transfers and private yacht charters</li>
-                  <li>VIP airport services and priority check-in</li>
+                  <li data-i18n="serv_card_list_5star">
+                    Five-star accommodations in world-class destinations
+                  </li>
+                  <li data-i18n="serv_card_list_private_guides">
+                    Private guided tours with local experts
+                  </li>
+                  <li data-i18n="serv_card_list_dining">
+                    Exclusive dining reservations at renowned restaurants
+                  </li>
+                  <li data-i18n="serv_card_list_charters">
+                    Helicopter transfers and private yacht charters
+                  </li>
+                  <li data-i18n="serv_card_list_vip">
+                    VIP airport services and priority check-in
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 3 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/adeventure_expeditions.jpg');
+                background-image: url('../assets/images/adeventure_expeditions.jpg');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Adventure Expeditions</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_3_h3">
+                Adventure Expeditions
+              </h3>
+              <p class="service-description" data-i18n="serv_card_3_p">
                 Push your boundaries and create lasting memories with our
                 adventure travel packages. From adrenaline-pumping activities to
                 off-the-beaten-path destinations.
               </p>
               <div class="service-features">
-                <h4>Popular adventure options:</h4>
+                <h4 data-i18n="serv_card_3_list_h4">
+                  Popular adventure options:
+                </h4>
                 <ul>
-                  <li>Wildlife safaris in Africa</li>
-                  <li>Hiking expeditions in the Himalayas</li>
-                  <li>Scuba diving in pristine coral reefs</li>
-                  <li>Whitewater rafting adventures</li>
-                  <li>Desert camping under the stars</li>
+                  <li data-i18n="serv_card_list_safaris">
+                    Wildlife safaris in Africa
+                  </li>
+                  <li data-i18n="serv_card_list_himalayas">
+                    Hiking expeditions in the Himalayas
+                  </li>
+                  <li data-i18n="serv_card_list_scuba">
+                    Scuba diving in pristine coral reefs
+                  </li>
+                  <li data-i18n="serv_card_list_rafting">
+                    Whitewater rafting adventures
+                  </li>
+                  <li data-i18n="serv_card_list_camping">
+                    Desert camping under the stars
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 4 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/family_vacation.jpg');
+                background-image: url('../assets/images/family_vacation.jpg');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Family-Friendly Vacations</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_4_h3">
+                Family-Friendly Vacations
+              </h3>
+              <p class="service-description" data-i18n="serv_card_4_p">
                 Create precious family memories with our specially designed
                 family vacation packages. We take care of all the details so you
                 can focus on enjoying quality time.
               </p>
               <div class="service-features">
-                <h4>Family-focused features:</h4>
+                <h4 data-i18n="serv_card_4_list_h4">
+                  Family-focused features:
+                </h4>
                 <ul>
-                  <li>Child-friendly accommodations with connecting rooms</li>
-                  <li>Age-appropriate activities and entertainment</li>
-                  <li>Family-oriented guided tours</li>
-                  <li>Convenient meal options for picky eaters</li>
-                  <li>Educational experiences for children</li>
+                  <li data-i18n="serv_card_list_child_accomm">
+                    Child-friendly accommodations with connecting rooms
+                  </li>
+                  <li data-i18n="serv_card_list_age_activities">
+                    Age-appropriate activities and entertainment
+                  </li>
+                  <li data-i18n="serv_card_list_family_tours">
+                    Family-oriented guided tours
+                  </li>
+                  <li data-i18n="serv_card_list_meal_options">
+                    Convenient meal options for picky eaters
+                  </li>
+                  <li data-i18n="serv_card_list_educational">
+                    Educational experiences for children
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 5 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/romantic_honey_moon.png');
+                background-image: url('../assets/images/romantic_honey_moon.png');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Honeymoon & Romance Packages</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_5_h3">
+                Honeymoon & Romance Packages
+              </h3>
+              <p class="service-description" data-i18n="serv_card_5_p">
                 Celebrate your love story with our romantic getaways designed
                 specifically for couples. From secluded beach retreats to
                 enchanting city escapes.
               </p>
               <div class="service-features">
-                <h4>Romantic inclusions:</h4>
+                <h4 data-i18n="serv_card_5_list_h4">Romantic inclusions:</h4>
                 <ul>
-                  <li>Intimate accommodations with stunning views</li>
-                  <li>Private dinners in picturesque settings</li>
-                  <li>Couples spa treatments</li>
-                  <li>Sunset cruises and scenic flights</li>
-                  <li>Photography sessions to capture your special moments</li>
+                  <li data-i18n="serv_card_list_intimate_accomm">
+                    Intimate accommodations with stunning views
+                  </li>
+                  <li data-i18n="serv_card_list_private_dinners">
+                    Private dinners in picturesque settings
+                  </li>
+                  <li data-i18n="serv_card_list_spa">Couples spa treatments</li>
+                  <li data-i18n="serv_card_list_cruises">
+                    Sunset cruises and scenic flights
+                  </li>
+                  <li data-i18n="serv_card_list_photography">
+                    Photography sessions to capture your special moments
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 6 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/group_travel_management.png');
+                background-image: url('../assets/images/group_travel_management.png');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Group Travel Management</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_6_h3">
+                Group Travel Management
+              </h3>
+              <p class="service-description" data-i18n="serv_card_6_p">
                 Whether planning a corporate retreat, family reunion, or friend
                 getaway, our group travel specialists ensure seamless
                 coordination for all participants.
               </p>
               <div class="service-features">
-                <h4>Group services:</h4>
+                <h4 data-i18n="serv_card_6_list_h4">Group services:</h4>
                 <ul>
-                  <li>Venue selection and accommodation blocking</li>
-                  <li>Group transportation and logistics</li>
-                  <li>Custom activities and team-building exercises</li>
-                  <li>Group dining arrangements</li>
-                  <li>Special group rates and discounts</li>
+                  <li data-i18n="serv_card_list_venue">
+                    Venue selection and accommodation blocking
+                  </li>
+                  <li data-i18n="serv_card_list_group_trans">
+                    Group transportation and logistics
+                  </li>
+                  <li data-i18n="serv_card_list_team_building">
+                    Custom activities and team-building exercises
+                  </li>
+                  <li data-i18n="serv_card_list_group_dining">
+                    Group dining arrangements
+                  </li>
+                  <li data-i18n="serv_card_list_group_rates">
+                    Special group rates and discounts
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 7 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/cruise_packages.png');
+                background-image: url('../assets/images/cruise_packages.png');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Cruise Packages</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_7_h3">
+                Cruise Packages
+              </h3>
+              <p class="service-description" data-i18n="serv_card_7_p">
                 Explore the world's most beautiful coastlines and waterways with
                 our curated cruise packages. From luxury ocean liners to
                 intimate river cruises.
               </p>
               <div class="service-features">
-                <h4>Cruise options:</h4>
+                <h4 data-i18n="serv_card_7_list_h4">Cruise options:</h4>
                 <ul>
-                  <li>Ocean cruises to iconic destinations</li>
-                  <li>River cruises through historic waterways</li>
-                  <li>Expedition cruises to remote locations</li>
-                  <li>All-inclusive luxury cruise packages</li>
-                  <li>Family-friendly cruise selections</li>
+                  <li data-i18n="serv_card_list_ocean_cruises">
+                    Ocean cruises to iconic destinations
+                  </li>
+                  <li data-i18n="serv_card_list_river_cruises">
+                    River cruises through historic waterways
+                  </li>
+                  <li data-i18n="serv_card_list_expedition_cruises">
+                    Expedition cruises to remote locations
+                  </li>
+                  <li data-i18n="serv_card_list_all_inclusive">
+                    All-inclusive luxury cruise packages
+                  </li>
+                  <li data-i18n="serv_card_list_family_cruise">
+                    Family-friendly cruise selections
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 8 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/famouse_destination_wedding.png');
+                background-image: url('../assets/images/famouse_destination_wedding.png');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Destination Weddings</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_8_h3">
+                Destination Weddings
+              </h3>
+              <p class="service-description" data-i18n="serv_card_8_p">
                 Turn your dream wedding into reality with our destination
                 wedding planning services. We coordinate all aspects of your
                 special day in breathtaking locations.
               </p>
               <div class="service-features">
-                <h4>Wedding planning services:</h4>
+                <h4 data-i18n="serv_card_8_list_h4">
+                  Wedding planning services:
+                </h4>
                 <ul>
-                  <li>Venue selection and booking</li>
-                  <li>Local vendor coordination</li>
-                  <li>Guest accommodation arrangements</li>
-                  <li>Travel logistics for wedding party and guests</li>
-                  <li>Legal requirements assistance</li>
+                  <li data-i18n="serv_card_list_venue_select">
+                    Venue selection and booking
+                  </li>
+                  <li data-i18n="serv_card_list_vendor_coord">
+                    Local vendor coordination
+                  </li>
+                  <li data-i18n="serv_card_list_guest_accomm">
+                    Guest accommodation arrangements
+                  </li>
+                  <li data-i18n="serv_card_list_travel_logistics">
+                    Travel logistics for wedding party and guests
+                  </li>
+                  <li data-i18n="serv_card_list_legal">
+                    Legal requirements assistance
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
 
-          <!-- Service 9 -->
           <div class="service-card reveal">
             <div
               class="service-image"
               style="
-                background-image: url('../../assets/images/business_travel.jpg');
+                background-image: url('../assets/images/business_travel.jpg');
               "
             ></div>
             <div class="service-content">
-              <h3 class="service-title">Business Travel Solutions</h3>
-              <p class="service-description">
+              <h3 class="service-title" data-i18n="serv_card_9_h3">
+                Business Travel Solutions
+              </h3>
+              <p class="service-description" data-i18n="serv_card_9_p">
                 Our corporate travel services provide efficient and
                 cost-effective solutions for business travelers. We ensure
                 smooth operations while adhering to your company's policies.
               </p>
               <div class="service-features">
-                <h4>Business travel features:</h4>
+                <h4 data-i18n="serv_card_9_list_h4">
+                  Business travel features:
+                </h4>
                 <ul>
-                  <li>Corporate rate negotiations</li>
-                  <li>Comprehensive travel policy implementation</li>
-                  <li>Expense tracking and reporting</li>
-                  <li>24/7 travel support for business travelers</li>
-                  <li>Meeting and conference arrangements</li>
+                  <li data-i18n="serv_card_list_corp_rates">
+                    Corporate rate negotiations
+                  </li>
+                  <li data-i18n="serv_card_list_policy">
+                    Comprehensive travel policy implementation
+                  </li>
+                  <li data-i18n="serv_card_list_expense">
+                    Expense tracking and reporting
+                  </li>
+                  <li data-i18n="serv_card_list_247_support">
+                    24/7 travel support for business travelers
+                  </li>
+                  <li data-i18n="serv_card_list_meetings">
+                    Meeting and conference arrangements
+                  </li>
                 </ul>
               </div>
-              <a href="#" class="service-link">Learn More →</a>
+              <a href="#" class="service-link" data-i18n="serv_card_learn_more"
+                >Learn More →</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Booking Process Section -->
     <section class="booking-process" id="booking">
       <div class="container">
-        <h2 class="section-title reval">How to Book Our Services</h2>
-        <p class="section-description reveal">
+        <h2 class="section-title reval" data-i18n="book_process_title">
+          How to Book Our Services
+        </h2>
+        <p class="section-description reveal" data-i18n="book_process_p">
           We've simplified our booking process to make planning your dream
           journey as seamless as possible.
         </p>
@@ -435,8 +565,8 @@
         <div class="steps-container">
           <div class="step reveal">
             <div class="step-number">1</div>
-            <h3>Initial Consultation</h3>
-            <p>
+            <h3 data-i18n="step_1_title">Initial Consultation</h3>
+            <p data-i18n="step_1_p">
               Schedule a free consultation with one of our travel experts
               through our online form, by phone, or via video call.
             </p>
@@ -444,8 +574,8 @@
 
           <div class="step reveal">
             <div class="step-number">2</div>
-            <h3>Proposal Development</h3>
-            <p>
+            <h3 data-i18n="step_2_title">Proposal Development</h3>
+            <p data-i18n="step_2_p">
               Based on your preferences and requirements, we'll create a
               detailed travel proposal including itinerary and pricing options.
             </p>
@@ -453,8 +583,8 @@
 
           <div class="step reveal">
             <div class="step-number">3</div>
-            <h3>Customization</h3>
-            <p>
+            <h3 data-i18n="step_3_title">Customization</h3>
+            <p data-i18n="step_3_p">
               We'll refine the proposal based on your feedback until it
               perfectly matches your vision.
             </p>
@@ -462,8 +592,8 @@
 
           <div class="step">
             <div class="step-number">4</div>
-            <h3>Booking Confirmation</h3>
-            <p>
+            <h3 data-i18n="step_4_title">Booking Confirmation</h3>
+            <p data-i18n="step_4_p">
               Once you're satisfied with the plan, we'll confirm all
               reservations and provide you with detailed travel documents.
             </p>
@@ -471,8 +601,8 @@
 
           <div class="step reveal">
             <div class="step-number">5</div>
-            <h3>Travel Support</h3>
-            <p>
+            <h3 data-i18n="step_5_title">Travel Support</h3>
+            <p data-i18n="step_5_p">
               Throughout your journey, our team remains available to assist with
               any questions or unexpected situations.
             </p>
@@ -481,50 +611,48 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-column">
-          <h3>Palanca Safari & Travel</h3>
-          <p>
-            En Palanca Safari & Travel, creamos viajes inspirados en la pasión
-            por las personas, la vida silvestre y los impresionantes paisajes de
-            Angola y del mundo. Ya sea que desee unas vacaciones en la playa, un
-            emocionante safari o una aventura en la montaña, estamos aquí para
-            hacer realidad el viaje de sus sueños.
+          <h3 data-i18n="footer_h3">Palanca Safari & Travel</h3>
+          <p data-i18n="footer_p">
+            At Palanca Safari & Travel, we create journeys inspired by passion -
+            for people, wildlife, and the breathtaking landscapes of Angola and
+            the world. Whether you're craving a beach holiday, thrilling safari,
+            or mountain adventure, we're here to make your dream trip come true.
           </p>
         </div>
         <div class="footer-column">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="footer_links_h3">Quick Links</h3>
           <ul>
-            <li><a href="https://www.palancasafari.com">Home</a></li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
             <li>
-              <a href="https://www.palancasafari.com/en/destinations/"
+              <a href="/destinations/" data-i18n="nav_destinations"
                 >Destinations</a
               >
             </li>
             <li>
-              <a href="https://www.palancasafari.com#packages">Packages</a>
+              <a href="/#packages" data-i18n="footer_packages_link">Packages</a>
             </li>
             <li>
-              <a href="https://www.palancasafari.com/en/contact/">Packages</a>
+              <a href="/contact/" data-i18n="footer_contact_link">Contact</a>
             </li>
             <li>
-              <a href="https://www.palancasafari.com/en/about/">About Us</a>
+              <a href="/about/" data-i18n="footer_about_link">About Us</a>
             </li>
           </ul>
         </div>
         <div class="footer-column">
-          <h3>Legal</h3>
+          <h3 data-i18n="footer_legal_h3">Legal</h3>
           <ul>
             <li>
-              <a href="https://www.palancasafari.com/legal/privacy-policy/"
+              <a href="/legal/privacy-policy/" data-i18n="footer_policy"
                 >Privacy Policy</a
               >
             </li>
-            <li><a href="#">Refund policy</a></li>
+            <li><a href="#" data-i18n="footer_refund">Refund policy</a></li>
           </ul>
-          <h3>Change Theme</h3>
+          <h3 data-i18n="footer_theme">Change Theme</h3>
           <select name="theme-select" id="theme-select">
             <option value="dark">Dark</option>
             <option value="light">Light</option>
@@ -532,11 +660,13 @@
           </select>
         </div>
         <div class="footer-column">
-          <h3>Contact Us</h3>
+          <h3 data-i18n="footer_contact_h3">Contact Us</h3>
           <p>
-            Viana<br />Luanda, Angola<br />Phone: +(244) 924-200397 | +(244) 951-000108 | +(244) 976-204118<br />Email:
+            <span data-i18n="contact_viana">Viana</span><br />
+            <span data-i18n="contact_luanda">Luanda, Angola</span><br />
+            Phone: +(244) 924-200397 | +(244) 951-000108 | +(244) 976-204118<br />Email:
             reservations@palancasafari.com <br />
-            info@palancasafari.com <br/>
+            info@palancasafari.com <br />
             palancasafari.andtravel@gmail.com
           </p>
           <div class="social-icons">
@@ -560,10 +690,11 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        Palanca Safari & Travel. All Rights Reserved.
+        <span data-i18n="copyright"
+          >Palanca Safari & Travel. All Rights Reserved.</span
+        >
       </div>
     </footer>
-    <!-- scroll to top -->
     <div class="scroll-up">
       <a href="#" class="circular-btn blinking">
         <i class="fas fa-arrow-up jumping"></i>
@@ -571,14 +702,9 @@
       <div class="blinking-border"></div>
     </div>
 
-    <!-- js -->
     <script src="/assets/js/loader.js"></script>
-
-    <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/langs.js"></script>
-
-    <!-- fontawesome -->
-    <script src="../../assets/fa_web/js/all.min.js"></script>
-    <!-- tawk.to script -->
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/langs.js"></script>
+    <script src="../assets/fa_web/js/all.min.js"></script>
   </body>
 </html>

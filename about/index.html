@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Palanca Safari and Travel</title>
+    <title data-i18n="about_title">About Palanca Safari and Travel</title>
 
     <meta
       name="description"
+      data-i18n="meta_description"
       content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
     <meta
@@ -14,30 +15,29 @@
       content="Palanca Safari, Angola tours, Angola safaris, travel Angola, beach holidays Angola, African wildlife tours, Angola, adventure travel, travel, tours, customised safaris, travel agency Angola"
     />
     <meta name="author" content="George Ongoro" />
-    <!-- Robots -->
     <meta name="robots" content="index, follow" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.palancasafari.com" />
+    <link rel="canonical" href="https://www.palancasafari.com/about/" />
 
-    <!-- Open Graph -->
     <meta
       name="og:title"
+      data-i18n="about_title"
       content="Palanca Safari & Travel - Explore Angola & Beyond with Tailor-Made Tours"
     />
     <meta
       name="og:description"
+      data-i18n="meta_description"
       content="Palanca Safari & Travel offers unforgettable safaris, beach holidays, and adventure tours in Angola and across the globe. Book your personalized travel experience today."
     />
-    <meta property="og:url" content="https://www.palancasafari.com" />
+    <meta property="og:url" content="https://www.palancasafari.com/about/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="palancasafari.com/open-graph.png" />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Palanca Safari and Travel" />
     <meta
       name="twitter:description"
+      data-i18n="twitter_description"
       content="Explore Angola and beyond with custom safaris, beach getaways, and unforgettable travel experiences."
     />
     <meta
@@ -45,7 +45,6 @@
       content="https://www.palancasafari.com/assets/images/jpeg.jpg"
     />
 
-    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,32 +54,29 @@
         "logo": "https://www.palancasafari.com/assets/images/jpeg.jpg",
         "description": "Tour and Travel company offering safaris, beach holidays, and scenic adventures across Angola and Africa",
         "telephone": "+254714941173",
-        "address":{
+        "address": {
           "@type": "PostalAddress",
-          "streetAddress": ""
-          "addressLocality": "Nairobi"
+          "streetAddress": "",
+          "addressLocality": "Nairobi",
           "addressCountry": "KE"
         },
         "sameAs": [
-          "https://www.facebook.com/"
-          "https://www.instagram.com/"
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
           "https://www.x.com/"
         ]
       }
     </script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../../logo.png" type="image/x-icon" />
-
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="../../assets/fa_web/css/all.min.css" />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/fa_web/css/all.min.css" />
   </head>
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
@@ -94,37 +90,39 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
   <body class="about-page">
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <div class="logo">
-          <img src="../../logo.png" alt="logo" />
+          <img src="../logo.png" alt="logo" />
           <h2>
             Palanca Safari <br />
             & Travel
           </h2>
         </div>
         <ul class="nav-links">
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../services/">Services</a></li>
-          <li><a href="../destinations/">Destinations</a></li>
-          <li><a href="../galary/">Gallery</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="/" data-i18n="nav_home">Home</a></li>
+          <li><a href="/about/" data-i18n="nav_about">About</a></li>
+          <li><a href="/services/" data-i18n="nav_services">Services</a></li>
+          <li>
+            <a href="/destinations/" data-i18n="nav_destinations"
+              >Destinations</a
+            >
+          </li>
+          <li><a href="/galary/" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="/contact/" data-i18n="nav_contact">Contact</a></li>
           <div class="translate-container">
             <select name="language" id="language">
-              <option value="en">English</option>
-              <option value="es">Spanish</option>
-              <option value="pt">Portuguese</option>
-              <option value="fr">French</option>
-              <option value="it">Italian</option>
-              <option value="hi">Hindi</option>
-              <option value="ar">Arabic</option>
-              <option value="ru">Russian</option>
-              <option value="bn">Bengali</option>
-              <option value="zh">Chinese</option>
+              <option value="en" data-i18n="lang_en">English</option>
+              <option value="es" data-i18n="lang_es">Spanish</option>
+              <option value="pt" data-i18n="lang_pt">Portuguese</option>
+              <option value="fr" data-i18n="lang_fr">French</option>
+              <option value="it" data-i18n="lang_it">Italian</option>
+              <option value="hi" data-i18n="lang_hi">Hindi</option>
+              <option value="ar" data-i18n="lang_ar">Arabic</option>
+              <option value="ru" data-i18n="lang_ru">Russian</option>
+              <option value="bn" data-i18n="lang_bn">Bengali</option>
+              <option value="zh" data-i18n="lang_zh">Chinese</option>
             </select>
           </div>
         </ul>
@@ -138,15 +136,15 @@
 
     <section class="section who-we-are">
       <div class="container">
-        <h1 class="section-title reveal">Our Story</h1>
-        <p class="reveal">
+        <h1 class="section-title reveal" data-i18n="story_title">Our Story</h1>
+        <p class="reveal" data-i18n="story_p1">
           Welcome to <span>Palanca Safari & Travel,</span> where adventure meets
           passion. Founded in 2024 and proudly based in Angola, we are more than
           just a travel company; we are storytellers, experience-makers, and
           proud ambassadors of Africa's breathtaking beauty.
         </p>
 
-        <p class="reveal">
+        <p class="reveal" data-i18n="story_p2">
           Born out of deep love for wildlife, culture, and the raw landscapes of
           Angola and beyond, <span>Palanca Safari & Travel</span> was created to
           offer travellerssomething trully special: tailor-made journeys that
@@ -157,8 +155,10 @@
 
     <section class="section usps">
       <div class="container">
-        <h1 class="section-title reveal">Our Mission</h1>
-        <p class="reveal">
+        <h1 class="section-title reveal" data-i18n="mission_title">
+          Our Mission
+        </h1>
+        <p class="reveal" data-i18n="mission_p">
           To deliver <span>authentic, unforgettable</span> travel
           experiencesthat celebrate the beauty of Angola, Africa and the world;
           while promoting environmental conservation, cultural appreciation, and
@@ -169,38 +169,52 @@
 
     <section class="section usps">
       <div class="container">
-        <h1 class="section-title reveal">Why We Exist</h1>
+        <h1 class="section-title reveal" data-i18n="why_exist_title">
+          Why We Exist
+        </h1>
 
         <div class="usp-grid">
           <div class="usp-item reveal">
             <i class="fas fa-route icon"></i>
-            <h3>Personalized Itineraries</h3>
-            <p>Tailor-made holidays designed around your preferences.</p>
+            <h3 data-i18n="usp_1_h3">Personalized Itineraries</h3>
+            <p data-i18n="usp_1_p">
+              Tailor-made holidays designed around your preferences.
+            </p>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-user-friends icon"></i>
-            <h3>Experienced Local Guides</h3>
-            <p>Knowledgeable guides who know Angola's hidden gems.</p>
+            <h3 data-i18n="usp_2_h3">Experienced Local Guides</h3>
+            <p data-i18n="usp_2_p">
+              Knowledgeable guides who know Angola's hidden gems.
+            </p>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-leaf icon"></i>
-            <h3>Eco-Friendly Travel</h3>
-            <p>Supporting conservation efforts and sustainable tourism.</p>
+            <h3 data-i18n="usp_3_h3">Eco-Friendly Travel</h3>
+            <p data-i18n="usp_3_p">
+              Supporting conservation efforts and sustainable tourism.
+            </p>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-shuttle-van icon"></i>
-            <h3>Airport Pickups & Drops</h3>
-            <p>Hassle-free transfers for all international packages.</p>
+            <h3 data-i18n="usp_4_h3">Airport Pickups & Drops</h3>
+            <p data-i18n="usp_4_p">
+              Hassle-free transfers for all international packages.
+            </p>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-headset icon"></i>
-            <h3>24/7 Customer Support</h3>
-            <p>Always available to assist with any questions or concerns.</p>
+            <h3 data-i18n="usp_5_h3">24/7 Customer Support</h3>
+            <p data-i18n="usp_5_p">
+              Always available to assist with any questions or concerns.
+            </p>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-paw icon"></i>
-            <h3>Passion for Wildlife & Culture</h3>
-            <p>Dedicated to showcasing Angola's natural beauty and heritage.</p>
+            <h3 data-i18n="usp_6_h3">Passion for Wildlife & Culture</h3>
+            <p data-i18n="usp_6_p">
+              Dedicated to showcasing Angola's natural beauty and heritage.
+            </p>
           </div>
         </div>
       </div>
@@ -208,33 +222,37 @@
 
     <section class="section difference">
       <div class="container">
-        <h1 class="section-title">What Makes Us Different</h1>
+        <h1 class="section-title" data-i18n="different_title">
+          What Makes Us Different
+        </h1>
         <div class="highlights">
           <div class="highlight-item reveal">
             <i class="fas fa-check"></i>
-            <h3>Personal Touch</h3>
-            <p>Every trip is carefully tailored to your preference</p>
+            <h3 data-i18n="diff_1_h3">Personal Touch</h3>
+            <p data-i18n="diff_1_p">
+              Every trip is carefully tailored to your preference
+            </p>
           </div>
           <div class="highlight-item reveal">
             <i class="fas fa-map-marked-alt"></i>
-            <h3>Local Expertise</h3>
-            <p>
+            <h3 data-i18n="diff_2_h3">Local Expertise</h3>
+            <p data-i18n="diff_2_p">
               Our team knows the hidden gems, best routes, and insider tips to
               give you a deeper, richer experience
             </p>
           </div>
           <div class="highlight-item reveal">
             <i class="fas fa-money-check-dollar"></i>
-            <h3>Affordability Without Compromise</h3>
-            <p>
+            <h3 data-i18n="diff_3_h3">Affordability Without Compromise</h3>
+            <p data-i18n="diff_3_p">
               We give you top-notch service and unforgettable adventures; all
               while staying within your budget
             </p>
           </div>
           <div class="highlight-item reveal">
             <i class="fas fa-people-group"></i>
-            <h3>Passion for Nature & People</h3>
-            <p>
+            <h3 data-i18n="diff_4_h3">Passion for Nature & People</h3>
+            <p data-i18n="diff_4_p">
               We are passionate about our guests, passionate about wildlife, and
               passionate about showcasing the best of Angola
             </p>
@@ -245,57 +263,60 @@
 
     <section class="section services">
       <div class="container">
-        <h1 class="section-title">Our Services at a Glance</h1>
+        <h1 class="section-title" data-i18n="services_glance_title">
+          Our Services at a Glance
+        </h1>
         <div class="usp-grid">
           <div class="usp-item reveal">
             <i class="fas fa-binoculars icon"></i>
-            <h3>Wildlife Safaris</h3>
+            <h3 data-i18n="serv_1_h3_short">Wildlife Safaris</h3>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-umbrella-beach icon"></i>
-            <h3>Beach Holidays</h3>
+            <h3 data-i18n="serv_2_h3_short">Beach Holidays</h3>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-mountain icon"></i>
-            <h3>Mountain Treks</h3>
+            <h3 data-i18n="serv_3_h3_short">Mountain Treks</h3>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-person-hiking icon"></i>
-            <h3>Adventure Activities</h3>
+            <h3 data-i18n="serv_4_h3_short">Adventure Activities</h3>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-briefcase icon"></i>
-            <h3>MICE(Corporate Travel)</h3>
+            <h3 data-i18n="serv_5_h3_short">MICE(Corporate Travel)</h3>
           </div>
           <div class="usp-item reveal">
             <i class="fas fa-tree icon"></i>
-            <h3>Scenic Safaris</h3>
+            <h3 data-i18n="serv_6_h3_short">Scenic Safaris</h3>
           </div>
         </div>
       </div>
       <div class="btn-container">
-        <a href="../en/services/" class="btn-link">View Services</a>
+        <a href="/services/" class="btn-link" data-i18n="btn_view_services"
+          >View Services</a
+        >
       </div>
     </section>
 
     <section class="section cta">
       <div class="container">
-        <h1>Join Us on an Unforgettable Jouney</h1>
-        <p>
+        <h1 data-i18n="cta_about_title">Join Us on an Unforgettable Jouney</h1>
+        <p data-i18n="cta_about_p">
           Whether you are a first-time explorer or a seasoned traveller, we're
           here to make your dream trip a reality. From the savannahs of Angola
           to the beaches of Zanzibar, let's create something amazing together
         </p>
-        <a href="#" class="btn-link">Book a Tour</a>
+        <a href="#" class="btn-link" data-i18n="btn_book_tour">Book a Tour</a>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-container">
         <div class="footer-column">
-          <h3>Palanca Safari & Travel</h3>
-          <p>
+          <h3 data-i18n="footer_h3">Palanca Safari & Travel</h3>
+          <p data-i18n="footer_p">
             At Palanca Safari & Travel, we create journeys inspired by passion -
             for people, wildlife, and the breathtaking landscapes of Angola and
             the world. Whether you're craving a beach holiday, thrilling safari,
@@ -303,36 +324,36 @@
           </p>
         </div>
         <div class="footer-column">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="footer_links_h3">Quick Links</h3>
           <ul>
-            <li><a href="https://www.palancasafari.com">Home</a></li>
+            <li><a href="/" data-i18n="nav_home">Home</a></li>
             <li>
-              <a href="https://www.palancasafari.com/en/destinations/"
+              <a href="/destinations/" data-i18n="nav_destinations"
                 >Destinations</a
               >
             </li>
             <li>
-              <a href="https://www.palancasafari.com#packages">Packages</a>
+              <a href="/#packages" data-i18n="footer_packages_link">Packages</a>
             </li>
             <li>
-              <a href="https://www.palancasafari.com/en/contact/">Packages</a>
+              <a href="/contact/" data-i18n="footer_contact_link">Contact</a>
             </li>
             <li>
-              <a href="https://www.palancasafari.com/en/about/">About Us</a>
+              <a href="/about/" data-i18n="footer_about_link">About Us</a>
             </li>
           </ul>
         </div>
         <div class="footer-column">
-          <h3>Legal</h3>
+          <h3 data-i18n="footer_legal_h3">Legal</h3>
           <ul>
             <li>
-              <a href="https://www.palancasafari.com/legal/privacy-policy/"
+              <a href="/legal/privacy-policy/" data-i18n="footer_policy"
                 >Privacy Policy</a
               >
             </li>
-            <li><a href="#">Refund policy</a></li>
+            <li><a href="#" data-i18n="footer_refund">Refund policy</a></li>
           </ul>
-          <h3>Change Theme</h3>
+          <h3 data-i18n="footer_theme">Change Theme</h3>
           <select name="theme-select" id="theme-select">
             <option value="dark">Dark</option>
             <option value="light">Light</option>
@@ -340,11 +361,13 @@
           </select>
         </div>
         <div class="footer-column">
-          <h3>Contact Us</h3>
+          <h3 data-i18n="footer_contact_h3">Contact Us</h3>
           <p>
-            Viana<br />Luanda, Angola<br />Phone: +(244) 924-200397 | +(244) 951-000108 | +(244) 976-204118<br />Email:
+            <span data-i18n="contact_viana">Viana</span><br />
+            <span data-i18n="contact_luanda">Luanda, Angola</span><br />Phone:
+            +(244) 924-200397 | +(244) 951-000108 | +(244) 976-204118<br />Email:
             reservations@palancasafari.com <br />
-            info@palancasafari.com <br/>
+            info@palancasafari.com <br />
             palancasafari.andtravel@gmail.com
           </p>
           <div class="social-icons">
@@ -368,10 +391,11 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        Palanca Safari & Travel. All Rights Reserved.
+        <span data-i18n="copyright"
+          >Palanca Safari & Travel. All Rights Reserved.</span
+        >
       </div>
     </footer>
-    <!-- scroll to top -->
     <div class="scroll-up">
       <a href="#" class="circular-btn blinking">
         <i class="fas fa-arrow-up"></i>
@@ -379,14 +403,9 @@
       <div class="blinking-border"></div>
     </div>
 
-    <!-- js -->
     <script src="/assets/js/loader.js"></script>
-
-    <script src="../../assets/js/app.js"></script>
-    <script src="../../assets/js/langs.js"></script>
-
-    <!-- fontawesome -->
-    <script src="../../assets/fa_web/js/all.min.js"></script>
-    <!-- tawk.to script -->
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/langs.js"></script>
+    <script src="../assets/fa_web/js/all.min.js"></script>
   </body>
 </html>
