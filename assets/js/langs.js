@@ -140,6 +140,13 @@ async function setLanguage(lang) {
   document.documentElement.lang = lang;
 }
 
+document.documentElement.lang = lang;
+if (lang === "ar") {
+  document.documentElement.dir = "rtl";
+} else {
+  document.documentElement.dir = "ltr";
+}
+
 // --- Initialization & Event Handlers ---
 
 document.addEventListener("DOMContentLoaded", () => {
