@@ -1448,6 +1448,56 @@ textarea.form-input {
   }
 }
 
+/* ================================= PROMO FLYERS ================= */
+.promo-flyers {
+  background-color: var(--color-bg-dark);
+  padding: 60px 0;
+}
+
+.flyer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.flyer-item {
+  background-color: var(--color-bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.flyer-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.flyer-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.flyer-content h3 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.flyer-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 864px) {
+  .flyer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ============================= DESTINATIONS ============================ */
 .destinations-page {
   .hero {
