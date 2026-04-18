@@ -1306,7 +1306,7 @@ select {
 .form-input:focus,
 .form-input:not(:placeholder-shown) {
   border: 2px solid var(--color-secondary);
-  padding: 15px 13px 7px; /* Adjust padding to compensate for thicker border */
+  padding: 15px 13px 7px;
 }
 
 .form-input:focus + .form-label,
@@ -1450,15 +1450,15 @@ textarea.form-input {
 
 /* ================================= PROMO FLYERS ================= */
 .promo-flyers {
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-bg-light);
   padding: 60px 0;
 }
 
 .flyer-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  align-items: center;
+  align-items: start;
 }
 
 .flyer-item {
@@ -1468,34 +1468,52 @@ textarea.form-input {
   box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .flyer-item img {
   width: 100%;
-  height: auto;
+  max-height: 400px;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .flyer-content {
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
 .flyer-content h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: var(--color-primary);
+  font-size: 1.2rem;
 }
 
 .flyer-content p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
 }
 
-@media (max-width: 864px) {
+@media (max-width: 1024px) {
+  .flyer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
   .flyer-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.flyer-item.gallery-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flyer-item.gallery-item:hover {
+    transform: scale(1.02);
 }
 
 /* ============================= DESTINATIONS ============================ */
